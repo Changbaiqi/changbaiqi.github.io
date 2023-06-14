@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BFS算法模板 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="BFS算法模板 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="BFS
+
+介绍：
+
+BFS中文叫做广度优先搜索，BFS算是暴力搜索的其中一种算法，这个算法主要还是可以解决一些最小路径的问题，以及搜索问题，比如迷宫问题等等，其主要思想就是通过穷举所有可能走的路并找到答案或者试出最优答案，不过他相对于DFS..." />
+    <meta name="keywords" content="数据结构与算法,Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              BFS算法模板
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-17
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/9-SCUrgn5/" class="post-tag">
+                  # 数据结构与算法
+                </a>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/bfs-suan-fa-mo-ban.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="bfs">BFS</h1>
+<hr>
+<h2 id="介绍">介绍：</h2>
+<blockquote>
+<p>BFS中文叫做广度优先搜索，BFS算是暴力搜索的其中一种算法，这个算法主要还是可以解决一些最小路径的问题，以及搜索问题，比如迷宫问题等等，其主要思想就是通过穷举所有可能走的路并找到答案或者试出最优答案，不过他相对于DFS说其有点就在于广撒网，时间复杂度要比DFS低。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: TODO
+ * @author 长白崎
+ * @date 2023/3/25 17:42
+ * @version 1.0
+ */
+
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * BFS算法模板，BFS算法的模板写法主要分为这几步骤：
+ * 1、选择BFS的实现方式，一般有两种，一种是基于队列，一种是基于栈。
+ * 2、判断是否到达要求条件
+ * 3、穷举所有可能走的方向
+ * 4、通过第2步穷举的方向然后去走，当然走之前还要过滤那些不合格的方向，比如这这个方向的下一步走过了，不能再走了，或者这个方向的下一步有墙也不能走等，
+ *    实际的拦截条件根据题目要求添加。
+ * 5、最后将能走的入队或入栈。
+ * 因为BFS的算法的特性，基于队列的BFS第一次所搜索到的路径就是最短路径。
+ * 警告：如果你是想想通过BFS去查找最优步数以及最优路径推荐选择基于队列，基于栈可能出毛病。
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        int map[][] = new int[20][20]; //这个数组就是地图
+        int state[][] = new int[map.length][map[0].length]; //这个数组充当标记走过的路的数组
+
+        int minStep = bfs(map,0,0,19,19); //这里返回的值是从起点到终点的最小步数
+    }
+
+
+    public static int bfs(int map[][]/*传入地图,0为可以走，1为墙*/,int nx/*起点x坐标*/,int ny/*起点的y坐标*/,int ex/*终点的x坐标*/,int ey/*终点的y坐标*/){
+        Queue&lt;int[]&gt; data = new LinkedList&lt;&gt;(); //用于BFS的队列，这里也可以改成栈
+        int state[][] = new int[map.length][map[0].length]; //用于记录走过状态的数组，0为未走过，1为走过
+        data.add(new int[]{nx,ny,0}); //将起点加入到队列
+        state[ny][nx]=1; //将起点标记为走过
+
+        int minStep =Integer.MAX_VALUE; //用于记录到达终点的最小步数
+        while(!data.isEmpty()){
+            int point[] = data.poll(); //出队(栈)
+
+            //判断是否到达终点
+            if(point[0]==ex &amp;&amp; point[1]==ey){
+                minStep = Math.min(point[2],minStep); //更新最小步数
+                break;
+            }
+
+            //穷举所有可能走的方向
+            int next[][] ={
+                    {point[0],point[1]-1},//上
+                    {point[0],point[1]+1},//下
+                    {point[0]-1,point[1]},//左
+                    {point[0]+1,point[1]},//右
+            };
+
+            for(int i= 0 ; i&lt; next.length ; ++i){
+                //过滤数组越界
+                if(next[i][0]&lt;0 || next[i][1]&lt;0 || next[i][1]&gt;=map.length || next[i][0]&gt;=map[0].length)
+                    continue;
+                //过滤障碍物，比如墙
+                if(map[next[i][1]][next[i][0]]==1)
+                    continue;
+                //过滤走过的格子
+                if(state[next[i][1]][next[i][0]]==1)
+                    continue;
+
+                //其他附加过滤条件可以根据题目要求做调整
+                //......
+
+                state[next[i][1]][next[i][0]]=1; //将即将要走的格子标记为走过
+                data.offer(new int[]{next[i][0],next[i][0],point[2]+1}); //将要走的格子加入到队列
+            }
+        }
+        return minStep;
+    }
+}
+</code></pre>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#bfs">BFS</a>
+<ul>
+<li><a href="#%E4%BB%8B%E7%BB%8D">介绍：</a></li>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板：</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

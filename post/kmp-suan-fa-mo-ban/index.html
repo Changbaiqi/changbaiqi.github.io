@@ -1,0 +1,259 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KMP算法模板 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="KMP算法模板 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="KMP
+
+说明：
+
+KMP算法其实主要的作用就是匹配子字符串，就比如：
+父串：aabacdca
+子串：acd
+这里我们要查找父串中是否有子串，那么就可以用KMP算法。
+而KMP算法其实有点像一个状态机，或者说一个dp？
+其主要特点还是记录转..." />
+    <meta name="keywords" content="数据结构与算法,Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              KMP算法模板
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-17
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/9-SCUrgn5/" class="post-tag">
+                  # 数据结构与算法
+                </a>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/kmp-suan-fa-mo-ban.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="kmp">KMP</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>KMP算法其实主要的作用就是匹配子字符串，就比如：</p>
+<p>父串：aabacdca</p>
+<p>子串：acd</p>
+<p>这里我们要查找父串中是否有子串，那么就可以用KMP算法。</p>
+<p>而KMP算法其实有点像一个状态机，或者说一个dp？</p>
+<p>其主要特点还是记录转态回溯。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: KMP算法
+ * KMP是一种字符串匹配算法，他是一种时间复杂度低，比较优秀的一种字符串匹配算法，一般可以拿来做一下字符串匹配类的题目。他与一般的暴力匹配比较其有点就是
+ * 有记录和回溯子串的功能，相比普通的暴力匹配减少了很多没必要的匹配次数，其思想概念有点类似于dp，和简单状态机。
+ * @author 长白崎
+ * @date 2023/3/28 0:28
+ * @version 1.0
+ */
+public class KMP {
+
+
+    public static void main(String[] args) {
+
+        //测试数据集
+        boolean cmp = kmp(&quot;laskdjllsnvasldfnalsljasldfnvnzx,va;dkfapasdfalfasjgakskslbvkkzvaslkfhasklbxxvbsafhaslkkhaskkbasdfas&quot;,&quot;dfnvnzx,va;dkfa&quot;);
+        if(cmp)
+            System.out.println(&quot;匹配成功&quot;);
+        else
+            System.out.println(&quot;没有匹配的子串&quot;);
+    }
+
+
+    //KMP核心算法
+    public static boolean kmp(String str,String cmp){
+
+        int i =0; //主串指针
+        int j =0; //子串指针
+        while(i &lt; str.length()){
+
+            //这个是用于子串回溯的
+            while(cmp.charAt(j)!=str.charAt(i) &amp;&amp; j&gt;0) --j;
+
+            //用于判断当前i，j分别指向的主串和子串的字符是否匹配，匹配则子串指针j++。
+            if(str.charAt(i)==cmp.charAt(j))
+                ++j;
+            //判断是否匹配完了最后一个，如果j的引用指针大于等于他的字符串长度说明匹配完成了，直接可以返回说有此子串。
+            if(j==cmp.length()){
+                return true; //匹配到子串，直接返回true;
+            }
+            ++i;
+        }
+
+        return false;//未匹配到子串，返回false;
+    }
+}
+</code></pre>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#kmp">KMP</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a></li>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板：</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/dfs-suan-fa-mo-ban/">
+              <h3 class="post-title">
+                DFS算法模板
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

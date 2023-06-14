@@ -1,0 +1,316 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java日期使用技巧 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java日期使用技巧 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Java日期类使用技巧
+
+说明：
+
+Java特有的日期类的使用
+
+Java代码模板：
+
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Loca..." />
+    <meta name="keywords" content="Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java日期使用技巧
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-18
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="java日期类使用技巧">Java日期类使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java特有的日期类的使用</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+
+
+public class DateJudge {
+ public static void main(String[] args) {
+
+     LocalDateTime nowDateTime = LocalDateTime.of(2022, 12, 6, 12, 36,25);
+     // 2.1 int getYear()：获取年份字段。
+     System.out.println(nowDateTime.getYear()); //2022
+
+     // 2.2 Month getMonth()/ int getMonthValue()：获取时间的月份。
+     System.out.println(nowDateTime.getMonth()); // DECEMBER
+     System.out.println(nowDateTime.getMonthValue()); //12
+
+     // 2.3 int getDayOfMonth()：获取日期在当月中的天数。
+     System.out.println(nowDateTime.getDayOfMonth()); //6
+
+     // 2.4 DayOfWeek getDayOfWeek()：获取日期属于当前周的第几天
+     System.out.println(nowDateTime.getDayOfWeek()); //TUESDAY
+     System.out.println(nowDateTime.getDayOfWeek().getValue()); //2
+
+     // 2.5  int getDayOfYear()：获取日期时间在当前年的天数。
+     System.out.println(nowDateTime.getDayOfYear()); //340
+
+     //字符串转LocalDateTime
+     LocalDateTime localDateTime = LocalDateTime.parse(&quot;2021-01-28 13:12:11&quot;, DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;));
+
+
+     // 3.1 int getHour()：获取当前时间的小时数。
+     System.out.println(nowDateTime.getHour()); //12
+     // 3.2 int getMinute()：获取当前时间的分钟。
+     System.out.println(nowDateTime.getMinute()); //36
+     // 3.3  int getSecond()：获取当前时间秒数。
+     System.out.println(nowDateTime.getSecond()); //25
+
+     LocalDateTime tempTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     System.out.println(tempTime); //2021-07-06T11:36:25
+     System.out.println(&quot;x = 1年后的日期时间&quot;+tempTime.plusYears(1)); //x = 1年后的日期时间2022-07-06T11:36:25
+     System.out.println(&quot;x = 1月后的日期时间&quot;+tempTime.plusMonths(1)); //x = 1月后的日期时间2021-08-06T11:36:25
+     System.out.println(&quot;x = 1周后的日期时间&quot;+tempTime.plusWeeks(1)); //x = 1周后的日期时间2021-07-13T11:36:25
+     System.out.println(&quot;x = 1天后的日期时间&quot;+tempTime.plusDays(1)); //x = 1天后的日期时间2021-07-07T11:36:25
+     System.out.println(&quot;x = 1小时后的日期时间&quot;+tempTime.plusHours(1)); //x = 1小时后的日期时间2021-07-06T12:36:25
+     System.out.println(&quot;x = 1分钟后的日期时间&quot;+tempTime.plusMinutes(1)); //x = 1分钟后的日期时间2021-07-06T11:37:25
+
+
+     System.out.println(&quot;x = 1年前的日期时间&quot;+tempTime.minusYears(1)); //x = 1年前的日期时间2020-07-06T11:36:25
+     System.out.println(&quot;x = 1月前的日期时间&quot;+tempTime.minusMonths(1)); //x = 1月前的日期时间2021-06-06T11:36:25
+     System.out.println(&quot;x = 1周前的日期时间&quot;+tempTime.minusWeeks(1)); //x = 1周前的日期时间2021-06-29T11:36:25
+     System.out.println(&quot;x = 1天前的日期时间&quot;+tempTime.minusDays(1)); //x = 1天前的日期时间2021-07-05T11:36:25
+     System.out.println(&quot;x = 1小时前的日期时间&quot;+tempTime.minusHours(1)); //x = 1小时前的日期时间2021-07-06T10:36:25
+     System.out.println(&quot;x = 1分钟前的日期时间&quot;+tempTime.minusMinutes(1)); //x = 1分钟前的日期时间2021-07-06T11:35:25
+
+
+     LocalDateTime tempTime1 = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     LocalDateTime tempTime2 = LocalDateTime.of(2021, 8, 6, 12, 36,25);
+     // 5.1 判断tempTime1是否在tempTime2之后，是否比其更晚
+     boolean after = tempTime1.isAfter(tempTime2); // false
+     // 5.2 判断tempTime1是否在tempTime2之前，是否比其更早
+     boolean before = tempTime1.isBefore(tempTime2); //true
+     // 5.3 判断tempTime1是否与tempTime2相等
+     boolean equal = tempTime1.isEqual(tempTime2); // false
+
+
+     LocalDateTime changeBeforeTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     System.out.println(&quot;修改年份后的日期&quot; + changeBeforeTime.withYear(2022)); // 修改年份后的日期2022-07-06T11:36:25
+     System.out.println(&quot;修改月份后的日期&quot; + changeBeforeTime.withMonth(11)); // 修改月份后的日期2021-11-06T11:36:25
+     System.out.println(&quot;修改当月天数后的日期&quot; + changeBeforeTime.withDayOfMonth(11)); // 修改当月天数后的日期2021-07-11T11:36:25
+     System.out.println(&quot;修改当年天数后的日期&quot; + changeBeforeTime.withDayOfYear(11)); // 修改当年天数后的日期2021-01-11T11:36:25
+     System.out.println(&quot;修改小时后的日期&quot; + changeBeforeTime.withHour(10)); // 修改小时后的日期2021-07-06T10:36:25
+     System.out.println(&quot;修改分钟.秒后的日期&quot; + changeBeforeTime.withMinute(10).withSecond(10)); //修改分钟.秒后的日期2021-07-06T11:10:10
+
+
+
+
+
+
+     LocalDateTime beginTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     LocalDateTime endTime = LocalDateTime.of(2021, 9, 8, 01, 56,25);
+     // 相差的年份数
+     long betweenYears = ChronoUnit.YEARS.between(beginTime, endTime);
+     System.out.println(betweenYears);  // 0
+     // 相差的月份数
+     long betweenMonths = ChronoUnit.MONTHS.between(beginTime, endTime);
+     System.out.println(betweenMonths);  // 2
+     // 相差的天数
+     long betweenDays = ChronoUnit.DAYS.between(beginTime, endTime);
+     System.out.println(betweenDays);  // 63
+     // 相差的小时数
+     long betweenHours = ChronoUnit.HOURS.between(beginTime, endTime);
+     System.out.println(betweenHours); //1526
+     // 相差的分钟数
+     long betweenMinutes = ChronoUnit.MINUTES.between(beginTime, endTime);
+     System.out.println(betweenMinutes);//91580
+     // 相差的秒钟数
+     long betweenMillis = ChronoUnit.MILLIS.between(beginTime, endTime);
+     System.out.println(betweenMillis);//91580
+
+
+
+
+     Duration between1 = Duration.between(beginTime, endTime);
+     System.out.println(between1.toDays()); // 63
+     System.out.println(between1.toHours()); //1526 (63天*24小时+(24+1-11)不是整天的小时数)
+     System.out.println(between1.toMinutes()); // 91580 (1526小时*60分钟+（56-25）分钟外相差的秒数)
+     System.out.println(between1.toMillis()); // 5494800000
+
+ }
+
+}
+</code></pre>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#java%E6%97%A5%E6%9C%9F%E7%B1%BB%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7">Java日期类使用技巧</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a></li>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板：</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/qiu-zui-xiao-gong-bei-shu-suan-fa-mo-ban/">
+              <h3 class="post-title">
+                求最小公倍数算法模板
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

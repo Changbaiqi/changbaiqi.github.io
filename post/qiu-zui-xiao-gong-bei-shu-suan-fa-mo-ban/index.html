@@ -1,0 +1,244 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>求最小公倍数算法模板 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="求最小公倍数算法模板 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="求最小公倍数
+
+说明：
+
+求最小公倍数可以在求最大公因数的基础上进行，这样就可以极大提高效率,这里需要明白一个点：
+a×bgcd(a,b)\frac{a\times b}{gcd(a,b)}
+gcd(a,b)a×b​
+上面公式中gcd指的是..." />
+    <meta name="keywords" content="数据结构与算法,Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              求最小公倍数算法模板
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-18
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/9-SCUrgn5/" class="post-tag">
+                  # 数据结构与算法
+                </a>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/qiu-zui-xiao-gong-bei-shu-suan-fa-mo-ban.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="求最小公倍数">求最小公倍数</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>求最小公倍数可以在求最大公因数的基础上进行，这样就可以极大提高效率,这里需要明白一个点：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>a</mi><mo>×</mo><mi>b</mi></mrow><mrow><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{a\times b}{gcd(a,b)}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.30744em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>上面公式中gcd指的是求最大公因数，意思就是说a与b的最小公倍数就是a和b相乘再除以他们两的最大公因数。</p>
+</blockquote>
+<h2 id="java模板">Java模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: 求最小公倍数
+ * 这里的最小公倍数做了比较大优化(时间复杂度大大降低)，是通过最小公因数来求最小公倍数
+ * @author 长白崎
+ * @date 2023/4/5 21:00
+ * @version 1.0
+ */
+public class LCD {
+
+    public static void main(String[] args) {
+        //测试实例
+        System.out.println(lcd(3,4));
+    }
+
+    /**
+     * 求最小公倍数
+     * @param a 数字1
+     * @param b 数字2
+     * @return 返回最小公倍数
+     */
+    public static int lcd(int a, int b){
+        return a*b/gcd(a,b);
+    }
+
+    /**
+     * 计算最大公因数
+     * @param a 数字1
+     * @param b 数字2
+     * @return 返回最大公因数
+     */
+    public static int gcd(int a,int b){
+        return b==0?a:gcd(b,a%b);
+    }
+}
+</code></pre>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%B1%82%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0">求最小公倍数</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a></li>
+<li><a href="#java%E6%A8%A1%E6%9D%BF">Java模板：</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/pan-duan-shi-fou-wei-su-shu-suan-fa-mo-ban/">
+              <h3 class="post-title">
+                判断是否为素数算法模板
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

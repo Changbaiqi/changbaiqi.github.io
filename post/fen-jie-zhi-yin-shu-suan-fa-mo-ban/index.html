@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>分解质因数算法模板 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="分解质因数算法模板 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="分解质因数
+
+说明：
+
+分解质因数的主要作用就是将数字分解成多个质数因数，这些因数相乘等于这个数。
+推荐文章：
+(158条消息) 分解质因数_质因数分解_晴空๓的博客-CSDN博客
+ACM——常见的几种分解质因子的方法 - 知乎 (zhih..." />
+    <meta name="keywords" content="数据结构与算法,Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              分解质因数算法模板
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-18
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/9-SCUrgn5/" class="post-tag">
+                  # 数据结构与算法
+                </a>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/fen-jie-zhi-yin-shu-suan-fa-mo-ban.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="分解质因数">分解质因数</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>分解质因数的主要作用就是将数字分解成多个质数因数，这些因数相乘等于这个数。</p>
+<p>推荐文章：</p>
+<p><a href="https://blog.csdn.net/qq_41575507/article/details/115417602">(158条消息) 分解质因数_质因数分解_晴空๓的博客-CSDN博客</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/591377294">ACM——常见的几种分解质因子的方法 - 知乎 (zhihu.com)</a></p>
+</blockquote>
+<h3 id="java代码模板">Java代码模板：</h3>
+<pre><code class="language-java">/**
+ * @description: 分解质因数
+ * @author 长白崎
+ * @date 2023/5/6 10:33
+ * @version 1.0
+ */
+public class 分解质因数 {
+
+
+    public static void main(String[] args) {
+        //测试条例，可以忽略
+        System.out.println(slove(10));
+    }
+
+
+    /**
+     * 分解质因数核心算法
+     * @param n 需要分解的数字
+     * @return 返回可以分解多少个质因数
+     */
+    public static long slove(long n){
+        long ans =0;
+        for(int i =2 ; i &lt;= Math.sqrt(n) ; ++i){
+            while(n%i==0){
+                n/=i;
+                ++ans;
+            }
+        }
+
+        if(n&gt;1) ++ans;
+        return ans;
+    }
+}
+
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E5%88%86%E8%A7%A3%E8%B4%A8%E5%9B%A0%E6%95%B0">分解质因数</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a>
+<ul>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/dijkstra-suan-fa-mo-ban/">
+              <h3 class="post-title">
+                Dijkstra算法模板
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

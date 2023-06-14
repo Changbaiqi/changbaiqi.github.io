@@ -1,0 +1,305 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java大数字运算使用技巧 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java大数字运算使用技巧 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Java大数字运算使用技巧
+
+说明：
+
+Java大数字使用技巧,这里只演示BigInteger了，BigDecimal高精度大数字就不演示了(用法基本一样)。
+
+Java代码模板
+
+import java.math.BigInteger;
+..." />
+    <meta name="keywords" content="Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java大数字运算使用技巧
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-18
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/java-da-shu-zi-yun-suan-shi-yong-ji-qiao.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="java大数字运算使用技巧">Java大数字运算使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java大数字使用技巧,这里只演示BigInteger了，BigDecimal高精度大数字就不演示了(用法基本一样)。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板</h2>
+<blockquote>
+<pre><code class="language-java">import java.math.BigInteger;
+
+public class BigNumber {
+
+ public static void main(String[] args) {
+
+ }
+
+
+
+ /**
+     * 进制转换
+     */
+    public void testScale() {
+
+        //在构造将函数时，把radix进制的字符串转化为BigInteger
+        String str = &quot;1011100111&quot;;
+        int radix = 2;
+        BigInteger interNum1 = new BigInteger(str,radix);	//743
+
+        //我们通常不写，则是默认成10进制转换，如下：
+        BigInteger interNum2 = new BigInteger(str);			//1011100111
+    }
+
+
+
+
+    /**
+     * 大数字的基本运算
+     * 基本运算:add(),subtract(),multiply(),divide(),mod(),remainder(),pow(),abs(),negate()
+     */
+    public void testBasic() {
+        BigInteger a = new BigInteger(&quot;13&quot;);
+        BigInteger b = new BigInteger(&quot;4&quot;);
+        int n = 3;
+
+        //1.加
+        BigInteger bigNum1 = a.add(b);			//17
+        //2.减
+        BigInteger bigNum2 = a.subtract(b);		//9
+        //3.乘
+        BigInteger bigNum3 = a.multiply(b);		//52
+        //4.除
+        BigInteger bigNum4 = a.divide(b);		//3
+        //5.取模(需 b &gt; 0，否则出现异常：ArithmeticException(&quot;BigInteger: modulus not positive&quot;))
+        BigInteger bigNum5 = a.mod(b);			//1
+        //6.求余
+        BigInteger bigNum6 = a.remainder(b);	//1
+        //7.平方(需 n &gt;= 0，否则出现异常：ArithmeticException(&quot;Negative exponent&quot;))
+        BigInteger bigNum7 = a.pow(n);			//2197
+        //8.取绝对值
+        BigInteger bigNum8 = a.abs();			//13
+        //9.取相反数
+        BigInteger bigNum9 = a.negate();		//-13
+    }
+
+
+
+
+    /**
+     * 二进制运算(返回类型都为BigInteger，不常用，但有备无患)
+     */
+    public void testBinaryOperation() {
+        BigInteger a = new BigInteger(&quot;13&quot;);
+        BigInteger b = new BigInteger(&quot;2&quot;);
+        int n = 1;
+
+        //1.与：a&amp;b
+        BigInteger bigNum1 = a.and(b);			//0
+        //2.或：a|b
+        BigInteger bigNum2 = a.or(b);			//15
+        //3.异或：a^b
+        BigInteger bigNum3 = a.xor(b);			//15
+        //4.取反：~a
+        BigInteger bigNum4 = a.not();			//-14
+        //5.左移n位： (a &lt;&lt; n)
+        BigInteger bigNum5 = a.shiftLeft(n);	//26
+        //6.右移n位： (a &gt;&gt; n)
+        BigInteger bigNum6 = a.shiftRight(n);	//6
+    }
+
+    /**
+     * 毕竟大数字之间的大小
+     */
+    public void testCompare() {
+        BigInteger bigNum1 = new BigInteger(&quot;52&quot;);
+        BigInteger bigNum2 = new BigInteger(&quot;27&quot;);
+
+        //1.compareTo()：返回一个int型数据（1 大于； 0 等于； -1 小于）
+        int num = bigNum1.compareTo(bigNum2);			//1
+
+        //2.max()：直接返回大的那个数，类型为BigInteger
+        //	原理：return (compareTo(val) &gt; 0 ? this : val);
+        BigInteger compareMax = bigNum1.max(bigNum2);	//52
+
+        //3.min()：直接返回小的那个数，类型为BigInteger
+        //	原理：return (compareTo(val) &lt; 0 ? this : val);
+        BigInteger compareMin = bigNum1.min(bigNum2);	//27
+    }
+}
+</code></pre>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#java%E5%A4%A7%E6%95%B0%E5%AD%97%E8%BF%90%E7%AE%97%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7">Java大数字运算使用技巧</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a></li>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/java-zheng-ze-shi-yong-ji-qiao/">
+              <h3 class="post-title">
+                Java正则使用技巧
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

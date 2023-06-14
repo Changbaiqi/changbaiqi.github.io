@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://changbaiqi.github.io</id>
+    <title>长白崎的个人博客</title>
+    <updated>2023-06-14T09:58:24.783Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://changbaiqi.github.io"/>
+    <link rel="self" href="https://changbaiqi.github.io/atom.xml"/>
+    <subtitle>QQ交流群：955586867</subtitle>
+    <logo>https://changbaiqi.github.io/images/avatar.png</logo>
+    <icon>https://changbaiqi.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 长白崎的个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[计算机网络复习]]></title>
+        <id>https://changbaiqi.github.io/post/ji-suan-ji-wang-luo-fu-xi/</id>
+        <link href="https://changbaiqi.github.io/post/ji-suan-ji-wang-luo-fu-xi/">
+        </link>
+        <updated>2023-06-06T12:42:52.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="一-选择题">一、选择题</h2>
+<p>1、运输层传输数据单位？字节</p>
+<p>物理层： bit(比特)</p>
+<p>2、在OSI模型，几层？7层</p>
+<p>其中，完成【路径选择功能】是在网络层</p>
+<p>3、复用技术：频分复用、时分、统计时分、波分、码分复用</p>
+<p>一句自身频率（特性）的复用技术，频分复用，波分复用</p>
+<p>抗干扰能力最强的是，码分复用技术</p>
+<p>4、PPP是什么协议？Point to Point Protocol</p>
+<p>出现在哪一层？数据链路层的标准协议之一！！</p>
+<p>5、一共有三种交换：</p>
+<p>分组交换（IP电话）、报文交换（电报），电路交换(专线电话)</p>
+<p>6、香浓公式：求最大传输速率</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mo>=</mo><mi>W</mi><mo>×</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">C=W\times log(1+ \frac{S}{N})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>1）$$W=4KHZ ， \frac{S}{N}=1000$$</p>
+<p>​	$$C\approx 4\times j \times k \times \log 2 ^{(1+1000)} \approx 40k$$</p>
+<p>2）$$W=4KHZ ， \frac{S}{N} =2000$$</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mo>≈</mo><mn>4</mn><mi>k</mi><mo>×</mo><mi>log</mi><mo>⁡</mo><mn>2</mn><mo>(</mo><mn>1</mn><mo>+</mo><mn>2000</mn><mo>)</mo><mo>=</mo><mn>44</mn><mi>k</mi></mrow><annotation encoding="application/x-tex">C \approx 4k \times \log 2(1+2000) = 44k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mord">4</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span></p>
+<p>7、T568B的线序：白橙、橙、白绿、绿、蓝、白蓝、绿、白棕、棕</p>
+<p>8、IP地址包含什么：</p>
+<p>网络号+主机号</p>
+<p>网络号+子网号+主机号</p>
+<p>√网络地址+主机地址</p>
+<p>/24    /12    /8</p>
+<p>9.通讯方式：</p>
+<p>单工，半双工，全双工</p>
+<p>10.运输层也叫传输层</p>
+<p>UPD：不可靠</p>
+<p>TCP：可靠</p>
+<p>11、端到端的通信服务是哪一层？运输层！！！</p>
+<p>12、浏览器和万维网使用的协议是什么？</p>
+<p>FTP、TCP、UDP、RIP、IP、HTTP</p>
+<p>13、看ICMP包经过了哪些路由端IP，用的命令：tracert</p>
+<p>两个主机之间的连通性，用命令：ping</p>
+<p>14、在TCP/IP体系结构中，TCP和IP所提供的服务分别为：</p>
+<p>运输层服务           网络层服务器</p>
+<p>15、涉及了DNS，将【IP地址】和【网址】对应上！！！！！！</p>
+<p>DNS在域名服务器上，用ping命令通过IP地址访问该服务器，响应正常，但是使用DNS发现超时。</p>
+<p>说明什么问题：</p>
+<p>1、线路故障   2、主机故障   3、交换机故障   4、路由器故障   5、域名服务器解析系统故障√（这里选5）</p>
+<h2 id="二-填空题">二、填空题</h2>
+<p>1、IPv4多少位？32位。IPv6多少位？128位 √</p>
+<p>2、网络协议三要素：语义，语法，时序</p>
+<p>3、申请了一个C类IP地址，分成8个子网，</p>
+<p>3.1 主机数多少？2^5-2=30台</p>
+<p>3.2 子网掩码多少？255.255.255.224</p>
+<p>申请了一个B类IP地址，需要分成64个子网，网络号=16，子网号=6，主机=10位</p>
+<p>主机数多少？1011台</p>
+<p>子网掩码多少？255.255。252.0</p>
+<p>4.OSI模型：7层，TCP/IP：4层，课本：5层(这里考四层)</p>
+<p>5、FTP的端口号：21 HTTP的端口号：80     DNS：53</p>
+<p>6、封装成帧的帧：数据链路层</p>
+<p>7、FTP的端口号：21  HTTP的端口号：80   DNS：53</p>
+<p>8、不说了</p>
+<p>9、不说了</p>
+<p>10、默认A类：$$主机多少台=2^{24}-2$$</p>
+<p>默认B类：$$主机=2^{16}-2=65534$$</p>
+<p>默认C类：$$主机=2^8-2=254$$</p>
+<h2 id="三-翻译题">三、翻译题</h2>
+<p>一共十题。</p>
+<p>ISP：互联网服务提供商</p>
+<p>WAN：广域网</p>
+<p>LAN：局部区域网</p>
+<p>PAN：个人局域网</p>
+<p>VLAN：虚拟局域网</p>
+<p>PPP：点对点协议</p>
+<p>TCP：传输控制协议</p>
+<p>UDP：用户数据包协议</p>
+<p>IP：网际协议</p>
+<p>NAT：网络地址转换</p>
+<p>DHCP：动态主机配置协议</p>
+<p>RIP：路由信息协议</p>
+<p>OSPF：OSPF路由协议</p>
+<p>BGP：边界网关协议</p>
+<p>DNS：域名系统</p>
+<p>HTTP：超文本传输协议</p>
+<p>FTP：文件传输协议</p>
+<p>√ CSMA/CD：带有冲突检测的载波监听多路存取（载波侦听多路访问/冲突检测）</p>
+<p>VPN：虚拟专用网络</p>
+<p>RTT：延时往返</p>
+<p>TTL：（Time To Live）的缩写，该字段指定IP包被路由器丢弃之前允许通过的最大网段数量。</p>
+<p>ICMP：（Internet Control Message Protocol）Internet控制报文协议。</p>
+<p>IGMP：（Internet Group Management）Internet组管理协议</p>
+<p>NAPT：（Network Address Port Translation），即网络地址端口转换。</p>
+<h2 id="四-计算题">四、计算题</h2>
+<p>1.给你子网掩码，求可用主机数最多是多少？</p>
+<p>255.0.0.0 =》 $$2^{24}-2$$</p>
+<p>255.128.0.0 =》 $$2^{23}-2$$</p>
+<p>255.255.240.0 =》 $$2^{12}-2$$</p>
+<p>2.CRC</p>
+<p>要发送的数据是101110，生成多项式$$P(x)=x^3+1$$,</p>
+<p>求：</p>
+<p>实际发送的数据是？101110011</p>
+<p>添加的余数是多少？011</p>
+<p>记得写过程，不然零分。</p>
+<h2 id="五-画图题">五、画图题</h2>
+<p>画【滑动窗口】</p>
+<p>已知主机A向B发送5KB的数据，</p>
+<p>A的发送窗口大小是3KB。窗口由序号，假设序号从0开始。</p>
+<p>(1)一开始A就发送了1KB的数据，</p>
+<p>(2)A继续发送，直至全部发送完成</p>
+<p>（3）发送方A收到了对第1000号字节的确认报文段。</p>
+<p>（4）发送方A在发送了850B</p>
+<p>（5）A收到了ack=900的确认报文段</p>
+<h2 id="六-解答题">六、解答题</h2>
+<p>1、画图题</p>
+<p>编码方式：</p>
+<p>不归零制，归零制，曼彻斯特，差分曼彻斯特</p>
+<p>数据：10100011</p>
+<p>2、对IP地址进行分类，ABCD类</p>
+<p>如何判断ABCD类？</p>
+<p>看IP地址的开头，</p>
+<p>A： 0</p>
+<p>B： 10</p>
+<p>C： 110</p>
+<p>D： 1110</p>
+<p>127.1.1.1 =》A</p>
+<p>56.56.56.56 =》A</p>
+<p>139.78.2.3 =》B</p>
+<p>192.168.168.1 =》 C</p>
+<p>224.111.111.2 =》D</p>
+<p>3、用文字描述五层协议的网络体系结构的要点。及每层的主要功能。</p>
+<p>4、TCP连接建立的过程（三报文握手）</p>
+<p>可以用文字描述，也可以画图P240</p>
+<p>5、域名系统的主要功能是什么？授权域名服务器和根域名服务器的区别。</p>
+<p>看截图，问源端口，目的端口，确认号，窗口，序号。</p>
+<p>Source Port：8888</p>
+<p>Destination Port：21</p>
+<p>ack=1</p>
+<p>window=1024</p>
+<p>sequence=1</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java大数字运算使用技巧]]></title>
+        <id>https://changbaiqi.github.io/post/java-da-shu-zi-yun-suan-shi-yong-ji-qiao/</id>
+        <link href="https://changbaiqi.github.io/post/java-da-shu-zi-yun-suan-shi-yong-ji-qiao/">
+        </link>
+        <updated>2023-05-18T10:11:08.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="java大数字运算使用技巧">Java大数字运算使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java大数字使用技巧,这里只演示BigInteger了，BigDecimal高精度大数字就不演示了(用法基本一样)。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板</h2>
+<blockquote>
+<pre><code class="language-java">import java.math.BigInteger;
+
+public class BigNumber {
+
+ public static void main(String[] args) {
+
+ }
+
+
+
+ /**
+     * 进制转换
+     */
+    public void testScale() {
+
+        //在构造将函数时，把radix进制的字符串转化为BigInteger
+        String str = &quot;1011100111&quot;;
+        int radix = 2;
+        BigInteger interNum1 = new BigInteger(str,radix);	//743
+
+        //我们通常不写，则是默认成10进制转换，如下：
+        BigInteger interNum2 = new BigInteger(str);			//1011100111
+    }
+
+
+
+
+    /**
+     * 大数字的基本运算
+     * 基本运算:add(),subtract(),multiply(),divide(),mod(),remainder(),pow(),abs(),negate()
+     */
+    public void testBasic() {
+        BigInteger a = new BigInteger(&quot;13&quot;);
+        BigInteger b = new BigInteger(&quot;4&quot;);
+        int n = 3;
+
+        //1.加
+        BigInteger bigNum1 = a.add(b);			//17
+        //2.减
+        BigInteger bigNum2 = a.subtract(b);		//9
+        //3.乘
+        BigInteger bigNum3 = a.multiply(b);		//52
+        //4.除
+        BigInteger bigNum4 = a.divide(b);		//3
+        //5.取模(需 b &gt; 0，否则出现异常：ArithmeticException(&quot;BigInteger: modulus not positive&quot;))
+        BigInteger bigNum5 = a.mod(b);			//1
+        //6.求余
+        BigInteger bigNum6 = a.remainder(b);	//1
+        //7.平方(需 n &gt;= 0，否则出现异常：ArithmeticException(&quot;Negative exponent&quot;))
+        BigInteger bigNum7 = a.pow(n);			//2197
+        //8.取绝对值
+        BigInteger bigNum8 = a.abs();			//13
+        //9.取相反数
+        BigInteger bigNum9 = a.negate();		//-13
+    }
+
+
+
+
+    /**
+     * 二进制运算(返回类型都为BigInteger，不常用，但有备无患)
+     */
+    public void testBinaryOperation() {
+        BigInteger a = new BigInteger(&quot;13&quot;);
+        BigInteger b = new BigInteger(&quot;2&quot;);
+        int n = 1;
+
+        //1.与：a&amp;b
+        BigInteger bigNum1 = a.and(b);			//0
+        //2.或：a|b
+        BigInteger bigNum2 = a.or(b);			//15
+        //3.异或：a^b
+        BigInteger bigNum3 = a.xor(b);			//15
+        //4.取反：~a
+        BigInteger bigNum4 = a.not();			//-14
+        //5.左移n位： (a &lt;&lt; n)
+        BigInteger bigNum5 = a.shiftLeft(n);	//26
+        //6.右移n位： (a &gt;&gt; n)
+        BigInteger bigNum6 = a.shiftRight(n);	//6
+    }
+
+    /**
+     * 毕竟大数字之间的大小
+     */
+    public void testCompare() {
+        BigInteger bigNum1 = new BigInteger(&quot;52&quot;);
+        BigInteger bigNum2 = new BigInteger(&quot;27&quot;);
+
+        //1.compareTo()：返回一个int型数据（1 大于； 0 等于； -1 小于）
+        int num = bigNum1.compareTo(bigNum2);			//1
+
+        //2.max()：直接返回大的那个数，类型为BigInteger
+        //	原理：return (compareTo(val) &gt; 0 ? this : val);
+        BigInteger compareMax = bigNum1.max(bigNum2);	//52
+
+        //3.min()：直接返回小的那个数，类型为BigInteger
+        //	原理：return (compareTo(val) &lt; 0 ? this : val);
+        BigInteger compareMin = bigNum1.min(bigNum2);	//27
+    }
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java正则使用技巧]]></title>
+        <id>https://changbaiqi.github.io/post/java-zheng-ze-shi-yong-ji-qiao/</id>
+        <link href="https://changbaiqi.github.io/post/java-zheng-ze-shi-yong-ji-qiao/">
+        </link>
+        <updated>2023-05-18T10:10:35.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="java正则使用技巧">Java正则使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java正则使用</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMatches
+{
+ public static void main( String[] args ){
+
+   // 按指定模式在字符串查找
+   String line = &quot;This order was placed for QT3000! OK?&quot;;
+   String pattern = &quot;(\\D*)(\\d+)(.*)&quot;;
+
+   // 创建 Pattern 对象
+   Pattern r = Pattern.compile(pattern);
+
+   // 现在创建 matcher 对象
+   Matcher m = r.matcher(line);
+   if (m.find( )) {
+      System.out.println(&quot;Found value: &quot; + m.group(0) );
+      System.out.println(&quot;Found value: &quot; + m.group(1) );
+      System.out.println(&quot;Found value: &quot; + m.group(2) );
+      System.out.println(&quot;Found value: &quot; + m.group(3) ); 
+   } else {
+      System.out.println(&quot;NO MATCH&quot;);
+   }
+}
+}
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字符</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">\</td>
+<td style="text-align:left">将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如， <strong>n</strong>匹配字符 <strong>n</strong>。<strong>\n</strong> 匹配换行符。序列 <strong>\\</strong> 匹配 <strong>\</strong> ，<strong>\(</strong> 匹配 <strong>(</strong>。</td>
+</tr>
+<tr>
+<td style="text-align:left">^</td>
+<td style="text-align:left">匹配输入字符串开始的位置。如果设置了 <strong>RegExp</strong> 对象的 <strong>Multiline</strong> 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">$</td>
+<td style="text-align:left">匹配输入字符串结尾的位置。如果设置了 <strong>RegExp</strong> 对象的 <strong>Multiline</strong> 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。</td>
+</tr>
+<tr>
+<td style="text-align:left">+</td>
+<td style="text-align:left">一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。</td>
+</tr>
+<tr>
+<td style="text-align:left">?</td>
+<td style="text-align:left">零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>}</td>
+<td style="text-align:left"><em>n</em> 是非负整数。正好匹配 <em>n</em> 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>,}</td>
+<td style="text-align:left"><em>n</em> 是非负整数。至少匹配 <em>n</em> 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>,<em>m</em>}</td>
+<td style="text-align:left"><em>m</em> 和 <em>n</em> 是非负整数，其中 <em>n</em> &lt;= <em>m</em>。匹配至少 <em>n</em> 次，至多 <em>m</em> 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。'o{0,1}' 等效于 'o?'。注意：您不能将空格插入逗号和数字之间。</td>
+</tr>
+<tr>
+<td style="text-align:left">?</td>
+<td style="text-align:left">当此字符紧随任何其他限定符（*、+、?、{<em>n</em>}、{<em>n</em>,}、{<em>n</em>,<em>m</em>}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">.</td>
+<td style="text-align:left">匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。</td>
+</tr>
+<tr>
+<td style="text-align:left">(<em>pattern</em>)</td>
+<td style="text-align:left">匹配 <em>pattern</em> 并捕获该匹配的子表达式。可以使用 <strong>$0…$9</strong> 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;(&quot;或者&quot;)&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?:<em>pattern</em>)</td>
+<td style="text-align:left">匹配 <em>pattern</em> 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，'industr(?:y|ies) 是比 'industry|industries' 更经济的表达式。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?=<em>pattern</em>)</td>
+<td style="text-align:left">执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 <em>pattern</em> 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?=95|98|NT|2000)' 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?!<em>pattern</em>)</td>
+<td style="text-align:left">执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 <em>pattern</em> 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?!95|98|NT|2000)' 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>x</em>|<em>y</em></td>
+<td style="text-align:left">匹配 <em>x</em> 或 <em>y</em>。例如，'z|food' 匹配&quot;z&quot;或&quot;food&quot;。'(z|f)ood' 匹配&quot;zood&quot;或&quot;food&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[<em>xyz</em>]</td>
+<td style="text-align:left">字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[^<em>xyz</em>]</td>
+<td style="text-align:left">反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[<em>a-z</em>]</td>
+<td style="text-align:left">字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。</td>
+</tr>
+<tr>
+<td style="text-align:left">[^<em>a-z</em>]</td>
+<td style="text-align:left">反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">\b</td>
+<td style="text-align:left">匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">\B</td>
+<td style="text-align:left">非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">\c<em>x</em></td>
+<td style="text-align:left">匹配 <em>x</em> 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。<em>x</em> 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。</td>
+</tr>
+<tr>
+<td style="text-align:left">\d</td>
+<td style="text-align:left">数字字符匹配。等效于 [0-9]。</td>
+</tr>
+<tr>
+<td style="text-align:left">\D</td>
+<td style="text-align:left">非数字字符匹配。等效于 [^0-9]。</td>
+</tr>
+<tr>
+<td style="text-align:left">\f</td>
+<td style="text-align:left">换页符匹配。等效于 \x0c 和 \cL。</td>
+</tr>
+<tr>
+<td style="text-align:left">\n</td>
+<td style="text-align:left">换行符匹配。等效于 \x0a 和 \cJ。</td>
+</tr>
+<tr>
+<td style="text-align:left">\r</td>
+<td style="text-align:left">匹配一个回车符。等效于 \x0d 和 \cM。</td>
+</tr>
+<tr>
+<td style="text-align:left">\s</td>
+<td style="text-align:left">匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\S</td>
+<td style="text-align:left">匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\t</td>
+<td style="text-align:left">制表符匹配。与 \x09 和 \cI 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\v</td>
+<td style="text-align:left">垂直制表符匹配。与 \x0b 和 \cK 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\w</td>
+<td style="text-align:left">匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\W</td>
+<td style="text-align:left">与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\x<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>，此处的 <em>n</em> 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。</td>
+</tr>
+<tr>
+<td style="text-align:left">*num*</td>
+<td style="text-align:left">匹配 <em>num</em>，此处的 <em>num</em> 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">*n*</td>
+<td style="text-align:left">标识一个八进制转义码或反向引用。如果 *n* 前面至少有 <em>n</em> 个捕获子表达式，那么 <em>n</em> 是反向引用。否则，如果 <em>n</em> 是八进制数 (0-7)，那么 <em>n</em> 是八进制转义码。</td>
+</tr>
+<tr>
+<td style="text-align:left">*nm*</td>
+<td style="text-align:left">标识一个八进制转义码或反向引用。如果 *nm* 前面至少有 <em>nm</em> 个捕获子表达式，那么 <em>nm</em> 是反向引用。如果 *nm* 前面至少有 <em>n</em> 个捕获，则 <em>n</em> 是反向引用，后面跟有字符 <em>m</em>。如果两种前面的情况都不存在，则 *nm* 匹配八进制值 <em>nm</em>，其中 <em>n</em> 和 <em>m</em> 是八进制数字 (0-7)。</td>
+</tr>
+<tr>
+<td style="text-align:left">\nml</td>
+<td style="text-align:left">当 <em>n</em> 是八进制数 (0-3)，<em>m</em> 和 <em>l</em> 是八进制数 (0-7) 时，匹配八进制转义码 <em>nml</em>。</td>
+</tr>
+<tr>
+<td style="text-align:left">\u<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>，其中 <em>n</em> 是以四位十六进制数表示的 Unicode 字符。例如，\u00A9 匹配版权符号 (©)。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?!)<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>并且不区分大小写。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>根据 Java Language Specification 的要求，Java 源代码的字符串中的反斜线被解释为 Unicode 转义或其他字符转义。因此必须在字符串字面值中使用两个反斜线，表示正则表达式受到保护，不被 Java 字节码编译器解释。例如，当解释为正则表达式时，字符串字面值 &quot;\b&quot; 与单个退格字符匹配，而 &quot;\b&quot; 与单词边界匹配。字符串字面值 &quot;(hello)&quot; 是非法的，将导致编译时错误；要与字符串 (hello) 匹配，必须使用字符串字面值 &quot;\(hello\)&quot;。</p>
+</blockquote>
+<h2 id="matcher-类的方法">Matcher 类的方法</h2>
+<h2 id="索引方法">索引方法</h2>
+<p>索引方法提供了有用的索引值，精确表明输入字符串中在哪能找到匹配：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public int start()</strong> 返回以前匹配的初始索引。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public int start(int group)</strong>  返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public int end()</strong> 返回最后匹配字符之后的偏移量。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public int end(int group)</strong> 返回在以前的匹配操作期间，由给定组所捕获子序列的最后字符之后的偏移量。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="查找方法">查找方法</h2>
+<p>查找方法用来检查输入字符串并返回一个布尔值，表示是否找到该模式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public boolean lookingAt()</strong>  尝试将从区域开头开始的输入序列与该模式匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public boolean find()</strong> 尝试查找与该模式匹配的输入序列的下一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public boolean find(int start</strong>**）** 重置此匹配器，然后尝试查找匹配该模式、从指定索引开始的输入序列的下一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public boolean matches()</strong> 尝试将整个区域与模式匹配。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="替换方法">替换方法</h2>
+<p>替换方法是替换输入字符串里文本的方法：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public Matcher appendReplacement(StringBuffer sb, String replacement)</strong> 实现非终端添加和替换步骤。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public StringBuffer appendTail(StringBuffer sb)</strong> 实现终端添加和替换步骤。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public String replaceAll(String replacement)</strong>  替换模式与给定替换字符串相匹配的输入序列的每个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public String replaceFirst(String replacement)</strong>  替换模式与给定替换字符串匹配的输入序列的第一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left"><strong>public static String quoteReplacement(String s)</strong> 返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给Matcher类的appendReplacement 方法一个字面字符串一样工作。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="start-和-end-方法">start 和 end 方法</h2>
+<p>下面是一个对单词 &quot;cat&quot; 出现在输入字符串中出现次数进行计数的例子：</p>
+<h2 id="regexmatchesjava-文件代码">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static final String REGEX = &quot;\\bcat\\b&quot;;    
+    private static final String INPUT = &quot;cat cat cat cattie cat&quot;;     
+    public static void main( String[] args ){       
+        Pattern p = Pattern.compile(REGEX);       
+        Matcher m = p.matcher(INPUT); // 获取 matcher 对象       
+        int count = 0;        
+        while(m.find()) {         
+            count++;         
+            System.out.println(&quot;Match number &quot;+count);         
+            System.out.println(&quot;start(): &quot;+m.start());         
+            System.out.println(&quot;end(): &quot;+m.end());      
+        }   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>Match number 1
+start(): 0
+end(): 3
+Match number 2
+start(): 4
+end(): 7
+Match number 3
+start(): 8
+end(): 11
+Match number 4
+start(): 19
+end(): 22
+</code></pre>
+<p>可以看到这个例子是使用单词边界，以确保字母 &quot;c&quot; &quot;a&quot; &quot;t&quot; 并非仅是一个较长的词的子串。它也提供了一些关于输入字符串中匹配发生位置的有用信息。</p>
+<p>Start 方法返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引，end 方法最后一个匹配字符的索引加 1。</p>
+<h2 id="matches-和-lookingat-方法">matches 和 lookingAt 方法</h2>
+<p>matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而lookingAt 不要求。</p>
+<p>lookingAt 方法虽然不需要整句都匹配，但是需要从第一个字符开始匹配。</p>
+<p>这两个方法经常在输入字符串的开始使用。</p>
+<p>我们通过下面这个例子，来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-2">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static final String REGEX = &quot;foo&quot;;    
+    private static final String INPUT = &quot;fooooooooooooooooo&quot;;    
+    private static final String INPUT2 = &quot;ooooofoooooooooooo&quot;;    
+    private static Pattern pattern;    
+    private static Matcher matcher;    
+    private static Matcher matcher2;     
+    
+    public static void main( String[] args ){       
+        pattern = Pattern.compile(REGEX);       
+        matcher = pattern.matcher(INPUT);       
+        matcher2 = pattern.matcher(INPUT2);        
+        System.out.println(&quot;Current REGEX is: &quot;+REGEX);       
+        System.out.println(&quot;Current INPUT is: &quot;+INPUT);       
+        System.out.println(&quot;Current INPUT2 is: &quot;+INPUT2);         
+        System.out.println(&quot;lookingAt(): &quot;+matcher.lookingAt());       
+        System.out.println(&quot;matches(): &quot;+matcher.matches());       
+        System.out.println(&quot;lookingAt(): &quot;+matcher2.lookingAt());   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>Current REGEX is: foo
+Current INPUT is: fooooooooooooooooo
+Current INPUT2 is: ooooofoooooooooooo
+lookingAt(): true
+matches(): false
+lookingAt(): false
+</code></pre>
+<h2 id="replacefirst-和-replaceall-方法">replaceFirst 和 replaceAll 方法</h2>
+<p>replaceFirst 和 replaceAll 方法用来替换匹配正则表达式的文本。不同的是，replaceFirst 替换首次匹配，replaceAll 替换所有匹配。</p>
+<p>下面的例子来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-3">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static String REGEX = &quot;dog&quot;;    
+    private static String INPUT = &quot;The dog says meow. &quot; +&quot;All dogs say meow.&quot;;    
+    private static String REPLACE = &quot;cat&quot;;    
+    
+    public static void main(String[] args) {       
+        Pattern p = Pattern.compile(REGEX);       
+        // get a matcher object       
+        Matcher m = p.matcher(INPUT);        
+        INPUT = m.replaceAll(REPLACE);       
+        System.out.println(INPUT);   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>The cat says meow. All cats say meow.
+</code></pre>
+<h2 id="appendreplacement-和-appendtail-方法">appendReplacement 和 appendTail 方法</h2>
+<p>Matcher 类也提供了appendReplacement 和 appendTail 方法用于文本替换：</p>
+<p>看下面的例子来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-4">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {   
+    private static String REGEX = &quot;a*b&quot;;   
+    private static String INPUT = &quot;aabfooaabfooabfoobkkk&quot;;   
+    private static String REPLACE = &quot;-&quot;;   
+    public static void main(String[] args) {      
+        Pattern p = Pattern.compile(REGEX);      
+        // 获取 matcher 对象      
+        Matcher m = p.matcher(INPUT);      
+        StringBuffer sb = new StringBuffer();      
+        while(m.find()){         
+            m.appendReplacement(sb,REPLACE);      
+        }      
+        m.appendTail(sb);      
+        System.out.println(sb.toString());   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>-foo-foo-foo-kkk
+</code></pre>
+<h2 id="patternsyntaxexception-类的方法">PatternSyntaxException 类的方法</h2>
+<p>PatternSyntaxException 是一个非强制异常类，它指示一个正则表达式模式中的语法错误。</p>
+<p>PatternSyntaxException 类提供了下面的方法来帮助我们查看发生了什么错误。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public String getDescription()</strong> 获取错误的描述。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public int getIndex()</strong>  获取错误的索引。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public String getPattern()</strong> 获取错误的正则表达式模式。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public String getMessage()</strong> 返回多行字符串，包含语法错误及其索引的描述、错误的正则表达式模式和模式中错误索引的可视化指示。</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java日期使用技巧]]></title>
+        <id>https://changbaiqi.github.io/post/java-ri-qi-shi-yong-ji-qiao/</id>
+        <link href="https://changbaiqi.github.io/post/java-ri-qi-shi-yong-ji-qiao/">
+        </link>
+        <updated>2023-05-18T10:10:04.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="java日期类使用技巧">Java日期类使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java特有的日期类的使用</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+
+
+public class DateJudge {
+ public static void main(String[] args) {
+
+     LocalDateTime nowDateTime = LocalDateTime.of(2022, 12, 6, 12, 36,25);
+     // 2.1 int getYear()：获取年份字段。
+     System.out.println(nowDateTime.getYear()); //2022
+
+     // 2.2 Month getMonth()/ int getMonthValue()：获取时间的月份。
+     System.out.println(nowDateTime.getMonth()); // DECEMBER
+     System.out.println(nowDateTime.getMonthValue()); //12
+
+     // 2.3 int getDayOfMonth()：获取日期在当月中的天数。
+     System.out.println(nowDateTime.getDayOfMonth()); //6
+
+     // 2.4 DayOfWeek getDayOfWeek()：获取日期属于当前周的第几天
+     System.out.println(nowDateTime.getDayOfWeek()); //TUESDAY
+     System.out.println(nowDateTime.getDayOfWeek().getValue()); //2
+
+     // 2.5  int getDayOfYear()：获取日期时间在当前年的天数。
+     System.out.println(nowDateTime.getDayOfYear()); //340
+
+     //字符串转LocalDateTime
+     LocalDateTime localDateTime = LocalDateTime.parse(&quot;2021-01-28 13:12:11&quot;, DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;));
+
+
+     // 3.1 int getHour()：获取当前时间的小时数。
+     System.out.println(nowDateTime.getHour()); //12
+     // 3.2 int getMinute()：获取当前时间的分钟。
+     System.out.println(nowDateTime.getMinute()); //36
+     // 3.3  int getSecond()：获取当前时间秒数。
+     System.out.println(nowDateTime.getSecond()); //25
+
+     LocalDateTime tempTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     System.out.println(tempTime); //2021-07-06T11:36:25
+     System.out.println(&quot;x = 1年后的日期时间&quot;+tempTime.plusYears(1)); //x = 1年后的日期时间2022-07-06T11:36:25
+     System.out.println(&quot;x = 1月后的日期时间&quot;+tempTime.plusMonths(1)); //x = 1月后的日期时间2021-08-06T11:36:25
+     System.out.println(&quot;x = 1周后的日期时间&quot;+tempTime.plusWeeks(1)); //x = 1周后的日期时间2021-07-13T11:36:25
+     System.out.println(&quot;x = 1天后的日期时间&quot;+tempTime.plusDays(1)); //x = 1天后的日期时间2021-07-07T11:36:25
+     System.out.println(&quot;x = 1小时后的日期时间&quot;+tempTime.plusHours(1)); //x = 1小时后的日期时间2021-07-06T12:36:25
+     System.out.println(&quot;x = 1分钟后的日期时间&quot;+tempTime.plusMinutes(1)); //x = 1分钟后的日期时间2021-07-06T11:37:25
+
+
+     System.out.println(&quot;x = 1年前的日期时间&quot;+tempTime.minusYears(1)); //x = 1年前的日期时间2020-07-06T11:36:25
+     System.out.println(&quot;x = 1月前的日期时间&quot;+tempTime.minusMonths(1)); //x = 1月前的日期时间2021-06-06T11:36:25
+     System.out.println(&quot;x = 1周前的日期时间&quot;+tempTime.minusWeeks(1)); //x = 1周前的日期时间2021-06-29T11:36:25
+     System.out.println(&quot;x = 1天前的日期时间&quot;+tempTime.minusDays(1)); //x = 1天前的日期时间2021-07-05T11:36:25
+     System.out.println(&quot;x = 1小时前的日期时间&quot;+tempTime.minusHours(1)); //x = 1小时前的日期时间2021-07-06T10:36:25
+     System.out.println(&quot;x = 1分钟前的日期时间&quot;+tempTime.minusMinutes(1)); //x = 1分钟前的日期时间2021-07-06T11:35:25
+
+
+     LocalDateTime tempTime1 = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     LocalDateTime tempTime2 = LocalDateTime.of(2021, 8, 6, 12, 36,25);
+     // 5.1 判断tempTime1是否在tempTime2之后，是否比其更晚
+     boolean after = tempTime1.isAfter(tempTime2); // false
+     // 5.2 判断tempTime1是否在tempTime2之前，是否比其更早
+     boolean before = tempTime1.isBefore(tempTime2); //true
+     // 5.3 判断tempTime1是否与tempTime2相等
+     boolean equal = tempTime1.isEqual(tempTime2); // false
+
+
+     LocalDateTime changeBeforeTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     System.out.println(&quot;修改年份后的日期&quot; + changeBeforeTime.withYear(2022)); // 修改年份后的日期2022-07-06T11:36:25
+     System.out.println(&quot;修改月份后的日期&quot; + changeBeforeTime.withMonth(11)); // 修改月份后的日期2021-11-06T11:36:25
+     System.out.println(&quot;修改当月天数后的日期&quot; + changeBeforeTime.withDayOfMonth(11)); // 修改当月天数后的日期2021-07-11T11:36:25
+     System.out.println(&quot;修改当年天数后的日期&quot; + changeBeforeTime.withDayOfYear(11)); // 修改当年天数后的日期2021-01-11T11:36:25
+     System.out.println(&quot;修改小时后的日期&quot; + changeBeforeTime.withHour(10)); // 修改小时后的日期2021-07-06T10:36:25
+     System.out.println(&quot;修改分钟.秒后的日期&quot; + changeBeforeTime.withMinute(10).withSecond(10)); //修改分钟.秒后的日期2021-07-06T11:10:10
+
+
+
+
+
+
+     LocalDateTime beginTime = LocalDateTime.of(2021, 7, 6, 11, 36,25);
+     LocalDateTime endTime = LocalDateTime.of(2021, 9, 8, 01, 56,25);
+     // 相差的年份数
+     long betweenYears = ChronoUnit.YEARS.between(beginTime, endTime);
+     System.out.println(betweenYears);  // 0
+     // 相差的月份数
+     long betweenMonths = ChronoUnit.MONTHS.between(beginTime, endTime);
+     System.out.println(betweenMonths);  // 2
+     // 相差的天数
+     long betweenDays = ChronoUnit.DAYS.between(beginTime, endTime);
+     System.out.println(betweenDays);  // 63
+     // 相差的小时数
+     long betweenHours = ChronoUnit.HOURS.between(beginTime, endTime);
+     System.out.println(betweenHours); //1526
+     // 相差的分钟数
+     long betweenMinutes = ChronoUnit.MINUTES.between(beginTime, endTime);
+     System.out.println(betweenMinutes);//91580
+     // 相差的秒钟数
+     long betweenMillis = ChronoUnit.MILLIS.between(beginTime, endTime);
+     System.out.println(betweenMillis);//91580
+
+
+
+
+     Duration between1 = Duration.between(beginTime, endTime);
+     System.out.println(between1.toDays()); // 63
+     System.out.println(between1.toHours()); //1526 (63天*24小时+(24+1-11)不是整天的小时数)
+     System.out.println(between1.toMinutes()); // 91580 (1526小时*60分钟+（56-25）分钟外相差的秒数)
+     System.out.println(between1.toMillis()); // 5494800000
+
+ }
+
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求最小公倍数算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/qiu-zui-xiao-gong-bei-shu-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/qiu-zui-xiao-gong-bei-shu-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-18T10:09:21.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="求最小公倍数">求最小公倍数</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>求最小公倍数可以在求最大公因数的基础上进行，这样就可以极大提高效率,这里需要明白一个点：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>a</mi><mo>×</mo><mi>b</mi></mrow><mrow><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{a\times b}{gcd(a,b)}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.30744em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">c</span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>上面公式中gcd指的是求最大公因数，意思就是说a与b的最小公倍数就是a和b相乘再除以他们两的最大公因数。</p>
+</blockquote>
+<h2 id="java模板">Java模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: 求最小公倍数
+ * 这里的最小公倍数做了比较大优化(时间复杂度大大降低)，是通过最小公因数来求最小公倍数
+ * @author 长白崎
+ * @date 2023/4/5 21:00
+ * @version 1.0
+ */
+public class LCD {
+
+    public static void main(String[] args) {
+        //测试实例
+        System.out.println(lcd(3,4));
+    }
+
+    /**
+     * 求最小公倍数
+     * @param a 数字1
+     * @param b 数字2
+     * @return 返回最小公倍数
+     */
+    public static int lcd(int a, int b){
+        return a*b/gcd(a,b);
+    }
+
+    /**
+     * 计算最大公因数
+     * @param a 数字1
+     * @param b 数字2
+     * @return 返回最大公因数
+     */
+    public static int gcd(int a,int b){
+        return b==0?a:gcd(b,a%b);
+    }
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[判断是否为素数算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/pan-duan-shi-fou-wei-su-shu-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/pan-duan-shi-fou-wei-su-shu-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-18T10:08:49.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="判断是否为素数">判断是否为素数</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>质数是指在大于1的<a href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394">自然数</a>中，除了1和它本身以外不再有其他<a href="https://baike.baidu.com/item/%E5%9B%A0%E6%95%B0/9539111">因数</a>的自然数。(0，1不是素数)</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: 质数是指在大于1的自然数中，除了1和它本身以外不再有其他因数的自然数。
+ * @author 长白崎
+ * @date 2023/3/30 12:29
+ * @version 1.0
+ */
+public class PrimeNumber {
+
+    public static void main(String[] args) {
+        //测试集，这里是判断100是否为素数
+        System.out.println( primeNumber(100) );
+    }
+
+    /**
+     * 判断素数模板
+     * @param num 需要判断的数字
+     * @return 如果为素数那么就返回true，否则就返回false
+     */
+    public static boolean primeNumber(int num){
+
+        for(int i =2; i &lt; Math.sqrt(num); ++i){
+            if (num%i==0)
+                return false;
+        }
+        return true;
+    }
+}
+
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Manacher算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/manacher-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/manacher-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-18T10:08:11.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="manacher">Manacher</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Manacher算法主要是用于字符串查找最长回文子串，其原理就是在原本的字符串插入其他特殊符号达到把我们所有需要所有需要匹配的回文都变成了奇回文，并且以其奇回文的中点向左右扩散计算其回文长度。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.util.Scanner;
+
+/**
+ * @description: 马拉车(Manacher)算法模板
+ * 此算法是一种匹配子串最长回文算法，可以大大减少时间复杂度
+ * @author 长白崎
+ * @date 2023/3/27 2:20
+ * @version 1.0
+ */
+public class Manacher {
+
+    public static void main(String[] args) {
+        //以下用于测试集，可以直接忽略掉
+        Scanner sc = new Scanner(System.in);
+        String text = sc.next();
+
+        //开始manacher算法
+        manacher(text);
+
+    }
+
+
+    /**
+     * Manacher核心算法
+     * @param text
+     */
+    public static void manacher(String text){
+        String m = &quot;&quot;; //用于存储Manacher处理之后的字符串
+        m+=&quot;$&quot;; //插入头标记符号
+        m+=&quot;#&quot;; //插入特殊符号
+        for(int i=0 ; i &lt; text.length() ; ++i){
+            m +=text.charAt(i);//插入字符串
+            m +=&quot;#&quot;; //插入特殊符号
+        }
+        m+=&quot;^&quot;; //插入末尾标记符号
+
+        int data[] = new int[m.length()];
+        int i= 1; //遍历计数用的
+        int max =0; //用于记录最大回文子串长度
+        while(i &lt; m.length()-1){
+            int j =0; //以i点为回文中心，向左右拓展j位匹配是否相同。
+            while(m.charAt(i-j-1)==m.charAt(i+j+1)) //开始匹配，直至不是回文为止
+                ++j;
+            data[i] = j;
+            max = Math.max(max,j); //更新最长回文子串的大小
+            ++i;
+        }
+
+
+        System.out.println(&quot;最长回文子串的长度为：&quot;+max);
+
+        testPrint(m,data); //这个不用管，使用的时候记得删掉，这个只是用于输出可视化数据的，没啥用
+    }
+
+    /**
+     * 这个函数不用管，只是用于输出数据可视化，方便大家更直观的看
+     * @param m
+     * @param data
+     */
+    public static void testPrint(String m,int data[]){
+        for(int i = 0 ; i &lt; m.length() ; ++i){
+            System.out.print(m.charAt(i)+&quot;    &quot;);
+        }
+        System.out.println();
+        for(int i = 0 ; i &lt; data.length ; ++i){
+            System.out.print(data[i]+&quot;    &quot;);
+        }
+
+    }
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kruskal算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/kruskal-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/kruskal-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-18T10:07:37.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="kruskal">Kruskal</h1>
+<hr>
+<h2 id="介绍">介绍：</h2>
+<blockquote>
+<p>Kruskal算法是一种基于图的算法，他的主要作用就是找出图中的最小生成树，这个算法会在一些比如铺设电网最小开销等问题上有相应的应用。</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">/**
+ * @description: TODO
+ * @author 长白崎
+ * @date 2023/3/25 18:00
+ * @version 1.0
+ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
+/**
+ * Kruskal算法的思想其实很简单，但是了其核心难点在于如何查出闭环，而查闭环这一步骤需要用到一个算法，那就是并查集算法，如果还没有了解过并查集算法的同学可以先去了解一下
+ * 以下是Kruskal算法的主要步骤：
+ * 1、首先就是先整理好所有的结点，这里的话比如把所有结点都加入到一个数组或者一个集合里面,但是这里一定要注意，那就是数组或集合对应的下标一定要对应相应的Point类里面的table标签值，不然会出问题。
+ * 2、用一个集合存所有边，也就是题目里面输入的所有点到点的边
+ * (这里一定要特别注意！！！！！边的起点和结束点标签一定要有规律，比如你要么起始结点的标签比结束标签的结点大，要么小，千万别搞混了)
+ * 3、对所有的边基于他的长度或者说成本进行从小到达排序
+ * 4、基于第三步拿到排序后的边的集合后逐一遍历选取边进行连接。当然，这里要主要在进行连接的同时要先检验所选边是否会形成回路，这里就要用到并查集算法了
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+        //以下为测试集，不用理睬。。。。。。
+        Point point[] = new Point[10];
+        point[0] = new Point(1,3,0);
+        point[1] = new Point(4,7,1);
+        point[2] = new Point(3,10,2);
+        point[3] = new Point(9,4,3);
+        point[4] = new Point(12,2,4);
+        point[5] = new Point(11,2,5);
+        point[6] = new Point(12,5,6);
+        point[7] = new Point(23,7,7);
+        point[8] = new Point(1,2,8);
+        point[9] = new Point(6,8,9);
+
+        E e[] = new E[9+8+7+6+5+4+3+2+1];
+        for(int y= 0,i=0; y &lt; point.length ; ++y){
+            for(int x = y+1; x &lt; point.length ; ++x,++i){
+                e[i] = new E(point[y],point[x], (int) (Math.random()*100+1));
+            }
+        }
+
+
+
+        kruskal(point,e);
+
+    }
+
+
+
+    public static void kruskal(Point point[]/*所有的点*/,E e[]/*所有的边*/){
+
+        //定制化排序对存边的数组基于他的长度进行从小到大排序。
+        Arrays.sort(e,(a,b)-&gt; a.getLen()-b.getLen());
+
+        //并查集用的数组，下标代表子结点，对应下标存的内容代表父结点
+        int parent[] = new int[point.length];
+        for(int i = 0 ; i&lt; parent.length ; ++i) parent[i] =i; //初始化并查集的数组
+
+        ArrayList&lt;E&gt; selectE = new ArrayList&lt;&gt;(); //这个用来存选的边
+
+        for(int i= 0 ; i&lt; e.length ; ++i){
+            E ne = e[i];
+            int startRoot = find(parent,ne.getStartPoint().getTable()); //查询起始结点的根结点
+            int endRoot = find(parent,ne.getEndPoint().getTable()); //查询结束结点的根结点
+            //如果其实结点和结束的结点的根结点是同一个，那么说明会形成闭环，那就不选这条边
+            if(startRoot == endRoot)
+                continue;
+
+            //选择该边
+            parent[startRoot] = endRoot; // 更新并查集父子结点关系
+            selectE.add(ne); //将边加入到选择的集合当中
+        }
+
+        int ans = 0;
+        for(int i =0 ; i &lt; selectE.size(); ++i){
+            System.out.println(selectE.get(i).getStartPoint().getTable()+&quot;——&quot;+selectE.get(i).getEndPoint().getTable());
+            ans+= selectE.get(i).getLen();
+        }
+        System.out.println(&quot;最小生成树的边总长度大小：&quot;+ans);
+    }
+
+    /**
+     * 并查集核心算法
+     * @param parent 代表的是并查集用的数组
+     * @param point 代表的是需要查的结点的根结点
+     * @return
+     */
+    public static int find(int parent[],int point){
+        while(parent[point]!=point)
+            point = parent[point];
+        return point;
+    }
+}
+
+/**
+ * 这个类代表的是一个结点，一个节点里面所包含的信息有这个点的x坐标和y坐标
+ */
+class Point{
+    private int x; //代表点的x坐标
+    private int y; //代表点的y坐标
+
+    private int table; //代表结点的标签，比如结点第一个那这里就是1，第二个结点那么就是2
+
+    public Point(int x, int y,int table) {
+        this.x = x;
+        this.y = y;
+        this.table = table;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getTable() {
+        return table;
+    }
+
+    public void setTable(int table) {
+        this.table = table;
+    }
+}
+
+/**
+ * 这个类代表的是边，也就是两节点之间的一条连接的边
+ */
+class E{
+    Point startPoint; //边的起始结点
+    Point endPoint; //边的结束结点
+
+    int len; //边的长度
+
+    public E(Point startPoint, Point endPoint, int len) {
+        this.startPoint = startPoint;
+        this.endPoint = endPoint;
+        this.len = len;
+    }
+
+    public Point getStartPoint() {
+        return startPoint;
+    }
+
+    public void setStartPoint(Point startPoint) {
+        this.startPoint = startPoint;
+    }
+
+    public Point getEndPoint() {
+        return endPoint;
+    }
+
+    public void setEndPoint(Point endPoint) {
+        this.endPoint = endPoint;
+    }
+
+    public int getLen() {
+        return len;
+    }
+
+    public void setLen(int len) {
+        this.len = len;
+    }
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分解质因数算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/fen-jie-zhi-yin-shu-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/fen-jie-zhi-yin-shu-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-18T10:06:56.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="分解质因数">分解质因数</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>分解质因数的主要作用就是将数字分解成多个质数因数，这些因数相乘等于这个数。</p>
+<p>推荐文章：</p>
+<p><a href="https://blog.csdn.net/qq_41575507/article/details/115417602">(158条消息) 分解质因数_质因数分解_晴空๓的博客-CSDN博客</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/591377294">ACM——常见的几种分解质因子的方法 - 知乎 (zhihu.com)</a></p>
+</blockquote>
+<h3 id="java代码模板">Java代码模板：</h3>
+<pre><code class="language-java">/**
+ * @description: 分解质因数
+ * @author 长白崎
+ * @date 2023/5/6 10:33
+ * @version 1.0
+ */
+public class 分解质因数 {
+
+
+    public static void main(String[] args) {
+        //测试条例，可以忽略
+        System.out.println(slove(10));
+    }
+
+
+    /**
+     * 分解质因数核心算法
+     * @param n 需要分解的数字
+     * @return 返回可以分解多少个质因数
+     */
+    public static long slove(long n){
+        long ans =0;
+        for(int i =2 ; i &lt;= Math.sqrt(n) ; ++i){
+            while(n%i==0){
+                n/=i;
+                ++ans;
+            }
+        }
+
+        if(n&gt;1) ++ans;
+        return ans;
+    }
+}
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dijkstra算法模板]]></title>
+        <id>https://changbaiqi.github.io/post/dijkstra-suan-fa-mo-ban/</id>
+        <link href="https://changbaiqi.github.io/post/dijkstra-suan-fa-mo-ban/">
+        </link>
+        <updated>2023-05-17T13:13:10.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="dijkstra">Dijkstra</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Dijkstra算法是一种求图的单元最短路径的算法</p>
+<p>参考视屏：https://www.bilibili.com/video/BV1zz4y1m7Nq</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.util.*;
+
+/**
+ * @description: Dijkstra算法
+ * Dijkstra用于算法用于求图的最小单元路径
+ * @author 长白崎
+ * @date 2023/4/5 16:40
+ * @version 1.0
+ */
+public class Dijkstra {
+    public static void main(String[] args) {
+
+        //这部分为测试用的数据集
+        int map[][] = new int[5][5];
+
+        map[0][1] =2;
+        map[1][0] = 2;
+
+        map[0][2] =4;
+        map[2][0] =4;
+
+        map[1][3] = 5;
+        map[3][1] = 5;
+
+        map[1][2] = 6;
+        map[2][1] = 6;
+
+        map[2][3] = 1;
+        map[3][2] = 1;
+
+        map[2][4] = 3;
+        map[4][2] = 3;
+
+        map[3][4] =8;
+        map[4][3] =8;
+
+
+
+        dijkstra(map,0,4);
+    }
+
+    /**
+     * Dijkstra核心算法
+     * @param map 地图
+     * @param start 起始点
+     * @param end 终点
+     */
+    public static void dijkstra(int map[][],int start,int end){
+
+        //用于寄存最小距离
+        int dis[] = new int[map.length];
+        //用于寄存父结点
+        int parent[] = new int[map.length];
+        //标记是否选择了
+        boolean select[] = new boolean[map.length];
+
+        //初始化距离全为最大值
+        Arrays.fill(dis,Integer.MAX_VALUE);
+        //初始化父结点为自身
+        for(int i = 0 ; i &lt;parent.length ; ++i)
+            parent[i] = i;
+
+        //初始化起点
+        dis[start] = 0; //自己到自己的距离为0
+        select[start] = true; //标记为选择了
+
+        //代表当前所选的点
+        int point  = start;
+        while(true){
+            int resPoint = -1; //临时存储所选点
+            int resDis = Integer.MAX_VALUE; //临时存储所选边的长度
+
+            for(int i= 0; i &lt; map.length ; ++i){
+                //过滤已选点
+                if(select[i])
+                    continue;
+
+                //过滤题目要求，比如距离为0的点表示不连通
+                if(map[point][i]==0)
+                    conti·nue;
+                //。。。。
+
+                //判断是否总值是否小于当面边的距离
+                if(dis[i]&lt;map[i][point]+dis[point])
+                    continue;
+
+                //更新距离
+                dis[i] = map[i][point]+dis[point];
+                parent[i] = point;
+            }
+
+            //找最小边
+            for(int i = 0; i &lt; select.length ; ++i){
+                //过滤已选边
+                if(select[i])
+                    continue;
+                //过滤比单当前大的值
+                if(resDis&lt;dis[i])
+                    continue;
+
+                resPoint =i;
+                resDis = dis[i];
+            }
+            //选择最小边
+            if(resPoint!=-1){
+                point = resPoint;
+                select[point]=true;
+            }
+
+            //如果已经搜寻到终点那么就退出
+            if(point==end)
+                break;
+        }
+        //输出最小距离
+        System.out.println(dis[end]);
+        //输出回溯路径
+        pr(parent,end);
+    }
+
+    //这一部分用于回溯路径
+    public static void pr(int parent[],int end){
+        while(end!=parent[end]){
+            System.out.print(end+&quot;&lt;-&quot;);
+            end = parent[end];
+        }
+        System.out.print(end);
+    }
+
+}
+</code></pre>
+</blockquote>
+]]></content>
+    </entry>
+</feed>

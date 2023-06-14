@@ -1,0 +1,664 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java正则使用技巧 | 长白崎的个人博客</title>
+<link rel="shortcut icon" href="https://changbaiqi.github.io/favicon.ico?v=1686736694602">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://changbaiqi.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java正则使用技巧 | 长白崎的个人博客 - Atom Feed" href="https://changbaiqi.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Java正则使用技巧
+
+说明：
+
+Java正则使用
+
+Java代码模板：
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Rege..." />
+    <meta name="keywords" content="Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://changbaiqi.github.io">
+  <img class="avatar" src="https://changbaiqi.github.io/images/avatar.png?v=1686736694602" alt="">
+  </a>
+  <h1 class="site-title">
+    长白崎的个人博客
+  </h1>
+  <p class="site-description">
+    QQ交流群：955586867
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Changbaiqi" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/CHINACBQ" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java正则使用技巧
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-18
+              </span>
+              <span>
+                16 min read
+              </span>
+              
+                <a href="https://changbaiqi.github.io/tag/DId6K8Wcc/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://changbaiqi.github.io/post-images/java-zheng-ze-shi-yong-ji-qiao.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="java正则使用技巧">Java正则使用技巧</h1>
+<hr>
+<h2 id="说明">说明：</h2>
+<blockquote>
+<p>Java正则使用</p>
+</blockquote>
+<h2 id="java代码模板">Java代码模板：</h2>
+<blockquote>
+<pre><code class="language-java">import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMatches
+{
+ public static void main( String[] args ){
+
+   // 按指定模式在字符串查找
+   String line = &quot;This order was placed for QT3000! OK?&quot;;
+   String pattern = &quot;(\\D*)(\\d+)(.*)&quot;;
+
+   // 创建 Pattern 对象
+   Pattern r = Pattern.compile(pattern);
+
+   // 现在创建 matcher 对象
+   Matcher m = r.matcher(line);
+   if (m.find( )) {
+      System.out.println(&quot;Found value: &quot; + m.group(0) );
+      System.out.println(&quot;Found value: &quot; + m.group(1) );
+      System.out.println(&quot;Found value: &quot; + m.group(2) );
+      System.out.println(&quot;Found value: &quot; + m.group(3) ); 
+   } else {
+      System.out.println(&quot;NO MATCH&quot;);
+   }
+}
+}
+</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字符</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">\</td>
+<td style="text-align:left">将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如， <strong>n</strong>匹配字符 <strong>n</strong>。<strong>\n</strong> 匹配换行符。序列 <strong>\\</strong> 匹配 <strong>\</strong> ，<strong>\(</strong> 匹配 <strong>(</strong>。</td>
+</tr>
+<tr>
+<td style="text-align:left">^</td>
+<td style="text-align:left">匹配输入字符串开始的位置。如果设置了 <strong>RegExp</strong> 对象的 <strong>Multiline</strong> 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">$</td>
+<td style="text-align:left">匹配输入字符串结尾的位置。如果设置了 <strong>RegExp</strong> 对象的 <strong>Multiline</strong> 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。</td>
+</tr>
+<tr>
+<td style="text-align:left">+</td>
+<td style="text-align:left">一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。</td>
+</tr>
+<tr>
+<td style="text-align:left">?</td>
+<td style="text-align:left">零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>}</td>
+<td style="text-align:left"><em>n</em> 是非负整数。正好匹配 <em>n</em> 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>,}</td>
+<td style="text-align:left"><em>n</em> 是非负整数。至少匹配 <em>n</em> 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">{<em>n</em>,<em>m</em>}</td>
+<td style="text-align:left"><em>m</em> 和 <em>n</em> 是非负整数，其中 <em>n</em> &lt;= <em>m</em>。匹配至少 <em>n</em> 次，至多 <em>m</em> 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。'o{0,1}' 等效于 'o?'。注意：您不能将空格插入逗号和数字之间。</td>
+</tr>
+<tr>
+<td style="text-align:left">?</td>
+<td style="text-align:left">当此字符紧随任何其他限定符（*、+、?、{<em>n</em>}、{<em>n</em>,}、{<em>n</em>,<em>m</em>}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">.</td>
+<td style="text-align:left">匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。</td>
+</tr>
+<tr>
+<td style="text-align:left">(<em>pattern</em>)</td>
+<td style="text-align:left">匹配 <em>pattern</em> 并捕获该匹配的子表达式。可以使用 <strong>$0…$9</strong> 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;(&quot;或者&quot;)&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?:<em>pattern</em>)</td>
+<td style="text-align:left">匹配 <em>pattern</em> 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，'industr(?:y|ies) 是比 'industry|industries' 更经济的表达式。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?=<em>pattern</em>)</td>
+<td style="text-align:left">执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 <em>pattern</em> 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?=95|98|NT|2000)' 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?!<em>pattern</em>)</td>
+<td style="text-align:left">执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 <em>pattern</em> 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，'Windows (?!95|98|NT|2000)' 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>x</em>|<em>y</em></td>
+<td style="text-align:left">匹配 <em>x</em> 或 <em>y</em>。例如，'z|food' 匹配&quot;z&quot;或&quot;food&quot;。'(z|f)ood' 匹配&quot;zood&quot;或&quot;food&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[<em>xyz</em>]</td>
+<td style="text-align:left">字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[^<em>xyz</em>]</td>
+<td style="text-align:left">反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">[<em>a-z</em>]</td>
+<td style="text-align:left">字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。</td>
+</tr>
+<tr>
+<td style="text-align:left">[^<em>a-z</em>]</td>
+<td style="text-align:left">反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">\b</td>
+<td style="text-align:left">匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">\B</td>
+<td style="text-align:left">非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。</td>
+</tr>
+<tr>
+<td style="text-align:left">\c<em>x</em></td>
+<td style="text-align:left">匹配 <em>x</em> 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。<em>x</em> 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。</td>
+</tr>
+<tr>
+<td style="text-align:left">\d</td>
+<td style="text-align:left">数字字符匹配。等效于 [0-9]。</td>
+</tr>
+<tr>
+<td style="text-align:left">\D</td>
+<td style="text-align:left">非数字字符匹配。等效于 [^0-9]。</td>
+</tr>
+<tr>
+<td style="text-align:left">\f</td>
+<td style="text-align:left">换页符匹配。等效于 \x0c 和 \cL。</td>
+</tr>
+<tr>
+<td style="text-align:left">\n</td>
+<td style="text-align:left">换行符匹配。等效于 \x0a 和 \cJ。</td>
+</tr>
+<tr>
+<td style="text-align:left">\r</td>
+<td style="text-align:left">匹配一个回车符。等效于 \x0d 和 \cM。</td>
+</tr>
+<tr>
+<td style="text-align:left">\s</td>
+<td style="text-align:left">匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\S</td>
+<td style="text-align:left">匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\t</td>
+<td style="text-align:left">制表符匹配。与 \x09 和 \cI 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\v</td>
+<td style="text-align:left">垂直制表符匹配。与 \x0b 和 \cK 等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\w</td>
+<td style="text-align:left">匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\W</td>
+<td style="text-align:left">与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。</td>
+</tr>
+<tr>
+<td style="text-align:left">\x<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>，此处的 <em>n</em> 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。</td>
+</tr>
+<tr>
+<td style="text-align:left">*num*</td>
+<td style="text-align:left">匹配 <em>num</em>，此处的 <em>num</em> 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">*n*</td>
+<td style="text-align:left">标识一个八进制转义码或反向引用。如果 *n* 前面至少有 <em>n</em> 个捕获子表达式，那么 <em>n</em> 是反向引用。否则，如果 <em>n</em> 是八进制数 (0-7)，那么 <em>n</em> 是八进制转义码。</td>
+</tr>
+<tr>
+<td style="text-align:left">*nm*</td>
+<td style="text-align:left">标识一个八进制转义码或反向引用。如果 *nm* 前面至少有 <em>nm</em> 个捕获子表达式，那么 <em>nm</em> 是反向引用。如果 *nm* 前面至少有 <em>n</em> 个捕获，则 <em>n</em> 是反向引用，后面跟有字符 <em>m</em>。如果两种前面的情况都不存在，则 *nm* 匹配八进制值 <em>nm</em>，其中 <em>n</em> 和 <em>m</em> 是八进制数字 (0-7)。</td>
+</tr>
+<tr>
+<td style="text-align:left">\nml</td>
+<td style="text-align:left">当 <em>n</em> 是八进制数 (0-3)，<em>m</em> 和 <em>l</em> 是八进制数 (0-7) 时，匹配八进制转义码 <em>nml</em>。</td>
+</tr>
+<tr>
+<td style="text-align:left">\u<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>，其中 <em>n</em> 是以四位十六进制数表示的 Unicode 字符。例如，\u00A9 匹配版权符号 (©)。</td>
+</tr>
+<tr>
+<td style="text-align:left">(?!)<em>n</em></td>
+<td style="text-align:left">匹配 <em>n</em>并且不区分大小写。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>根据 Java Language Specification 的要求，Java 源代码的字符串中的反斜线被解释为 Unicode 转义或其他字符转义。因此必须在字符串字面值中使用两个反斜线，表示正则表达式受到保护，不被 Java 字节码编译器解释。例如，当解释为正则表达式时，字符串字面值 &quot;\b&quot; 与单个退格字符匹配，而 &quot;\b&quot; 与单词边界匹配。字符串字面值 &quot;(hello)&quot; 是非法的，将导致编译时错误；要与字符串 (hello) 匹配，必须使用字符串字面值 &quot;\(hello\)&quot;。</p>
+</blockquote>
+<h2 id="matcher-类的方法">Matcher 类的方法</h2>
+<h2 id="索引方法">索引方法</h2>
+<p>索引方法提供了有用的索引值，精确表明输入字符串中在哪能找到匹配：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public int start()</strong> 返回以前匹配的初始索引。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public int start(int group)</strong>  返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public int end()</strong> 返回最后匹配字符之后的偏移量。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public int end(int group)</strong> 返回在以前的匹配操作期间，由给定组所捕获子序列的最后字符之后的偏移量。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="查找方法">查找方法</h2>
+<p>查找方法用来检查输入字符串并返回一个布尔值，表示是否找到该模式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public boolean lookingAt()</strong>  尝试将从区域开头开始的输入序列与该模式匹配。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public boolean find()</strong> 尝试查找与该模式匹配的输入序列的下一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public boolean find(int start</strong>**）** 重置此匹配器，然后尝试查找匹配该模式、从指定索引开始的输入序列的下一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public boolean matches()</strong> 尝试将整个区域与模式匹配。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="替换方法">替换方法</h2>
+<p>替换方法是替换输入字符串里文本的方法：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public Matcher appendReplacement(StringBuffer sb, String replacement)</strong> 实现非终端添加和替换步骤。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public StringBuffer appendTail(StringBuffer sb)</strong> 实现终端添加和替换步骤。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public String replaceAll(String replacement)</strong>  替换模式与给定替换字符串相匹配的输入序列的每个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public String replaceFirst(String replacement)</strong>  替换模式与给定替换字符串匹配的输入序列的第一个子序列。</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left"><strong>public static String quoteReplacement(String s)</strong> 返回指定字符串的字面替换字符串。这个方法返回一个字符串，就像传递给Matcher类的appendReplacement 方法一个字面字符串一样工作。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="start-和-end-方法">start 和 end 方法</h2>
+<p>下面是一个对单词 &quot;cat&quot; 出现在输入字符串中出现次数进行计数的例子：</p>
+<h2 id="regexmatchesjava-文件代码">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static final String REGEX = &quot;\\bcat\\b&quot;;    
+    private static final String INPUT = &quot;cat cat cat cattie cat&quot;;     
+    public static void main( String[] args ){       
+        Pattern p = Pattern.compile(REGEX);       
+        Matcher m = p.matcher(INPUT); // 获取 matcher 对象       
+        int count = 0;        
+        while(m.find()) {         
+            count++;         
+            System.out.println(&quot;Match number &quot;+count);         
+            System.out.println(&quot;start(): &quot;+m.start());         
+            System.out.println(&quot;end(): &quot;+m.end());      
+        }   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>Match number 1
+start(): 0
+end(): 3
+Match number 2
+start(): 4
+end(): 7
+Match number 3
+start(): 8
+end(): 11
+Match number 4
+start(): 19
+end(): 22
+</code></pre>
+<p>可以看到这个例子是使用单词边界，以确保字母 &quot;c&quot; &quot;a&quot; &quot;t&quot; 并非仅是一个较长的词的子串。它也提供了一些关于输入字符串中匹配发生位置的有用信息。</p>
+<p>Start 方法返回在以前的匹配操作期间，由给定组所捕获的子序列的初始索引，end 方法最后一个匹配字符的索引加 1。</p>
+<h2 id="matches-和-lookingat-方法">matches 和 lookingAt 方法</h2>
+<p>matches 和 lookingAt 方法都用来尝试匹配一个输入序列模式。它们的不同是 matches 要求整个序列都匹配，而lookingAt 不要求。</p>
+<p>lookingAt 方法虽然不需要整句都匹配，但是需要从第一个字符开始匹配。</p>
+<p>这两个方法经常在输入字符串的开始使用。</p>
+<p>我们通过下面这个例子，来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-2">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static final String REGEX = &quot;foo&quot;;    
+    private static final String INPUT = &quot;fooooooooooooooooo&quot;;    
+    private static final String INPUT2 = &quot;ooooofoooooooooooo&quot;;    
+    private static Pattern pattern;    
+    private static Matcher matcher;    
+    private static Matcher matcher2;     
+    
+    public static void main( String[] args ){       
+        pattern = Pattern.compile(REGEX);       
+        matcher = pattern.matcher(INPUT);       
+        matcher2 = pattern.matcher(INPUT2);        
+        System.out.println(&quot;Current REGEX is: &quot;+REGEX);       
+        System.out.println(&quot;Current INPUT is: &quot;+INPUT);       
+        System.out.println(&quot;Current INPUT2 is: &quot;+INPUT2);         
+        System.out.println(&quot;lookingAt(): &quot;+matcher.lookingAt());       
+        System.out.println(&quot;matches(): &quot;+matcher.matches());       
+        System.out.println(&quot;lookingAt(): &quot;+matcher2.lookingAt());   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>Current REGEX is: foo
+Current INPUT is: fooooooooooooooooo
+Current INPUT2 is: ooooofoooooooooooo
+lookingAt(): true
+matches(): false
+lookingAt(): false
+</code></pre>
+<h2 id="replacefirst-和-replaceall-方法">replaceFirst 和 replaceAll 方法</h2>
+<p>replaceFirst 和 replaceAll 方法用来替换匹配正则表达式的文本。不同的是，replaceFirst 替换首次匹配，replaceAll 替换所有匹配。</p>
+<p>下面的例子来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-3">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {    
+    private static String REGEX = &quot;dog&quot;;    
+    private static String INPUT = &quot;The dog says meow. &quot; +&quot;All dogs say meow.&quot;;    
+    private static String REPLACE = &quot;cat&quot;;    
+    
+    public static void main(String[] args) {       
+        Pattern p = Pattern.compile(REGEX);       
+        // get a matcher object       
+        Matcher m = p.matcher(INPUT);        
+        INPUT = m.replaceAll(REPLACE);       
+        System.out.println(INPUT);   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>The cat says meow. All cats say meow.
+</code></pre>
+<h2 id="appendreplacement-和-appendtail-方法">appendReplacement 和 appendTail 方法</h2>
+<p>Matcher 类也提供了appendReplacement 和 appendTail 方法用于文本替换：</p>
+<p>看下面的例子来解释这个功能：</p>
+<h2 id="regexmatchesjava-文件代码-4">RegexMatches.java 文件代码：</h2>
+<pre><code class="language-java">import java.util.regex.Matcher; 
+import java.util.regex.Pattern;  
+public class RegexMatches {   
+    private static String REGEX = &quot;a*b&quot;;   
+    private static String INPUT = &quot;aabfooaabfooabfoobkkk&quot;;   
+    private static String REPLACE = &quot;-&quot;;   
+    public static void main(String[] args) {      
+        Pattern p = Pattern.compile(REGEX);      
+        // 获取 matcher 对象      
+        Matcher m = p.matcher(INPUT);      
+        StringBuffer sb = new StringBuffer();      
+        while(m.find()){         
+            m.appendReplacement(sb,REPLACE);      
+        }      
+        m.appendTail(sb);      
+        System.out.println(sb.toString());   
+    } 
+}
+</code></pre>
+<p>以上实例编译运行结果如下：</p>
+<pre><code>-foo-foo-foo-kkk
+</code></pre>
+<h2 id="patternsyntaxexception-类的方法">PatternSyntaxException 类的方法</h2>
+<p>PatternSyntaxException 是一个非强制异常类，它指示一个正则表达式模式中的语法错误。</p>
+<p>PatternSyntaxException 类提供了下面的方法来帮助我们查看发生了什么错误。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>序号</strong></th>
+<th style="text-align:left"><strong>方法及说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>public String getDescription()</strong> 获取错误的描述。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><strong>public int getIndex()</strong>  获取错误的索引。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><strong>public String getPattern()</strong> 获取错误的正则表达式模式。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>public String getMessage()</strong> 返回多行字符串，包含语法错误及其索引的描述、错误的正则表达式模式和模式中错误索引的可视化指示。</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#java%E6%AD%A3%E5%88%99%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7">Java正则使用技巧</a>
+<ul>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明：</a></li>
+<li><a href="#java%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF">Java代码模板：</a></li>
+<li><a href="#matcher-%E7%B1%BB%E7%9A%84%E6%96%B9%E6%B3%95">Matcher 类的方法</a></li>
+<li><a href="#%E7%B4%A2%E5%BC%95%E6%96%B9%E6%B3%95">索引方法</a></li>
+<li><a href="#%E6%9F%A5%E6%89%BE%E6%96%B9%E6%B3%95">查找方法</a></li>
+<li><a href="#%E6%9B%BF%E6%8D%A2%E6%96%B9%E6%B3%95">替换方法</a></li>
+<li><a href="#start-%E5%92%8C-end-%E6%96%B9%E6%B3%95">start 和 end 方法</a></li>
+<li><a href="#regexmatchesjava-%E6%96%87%E4%BB%B6%E4%BB%A3%E7%A0%81">RegexMatches.java 文件代码：</a></li>
+<li><a href="#matches-%E5%92%8C-lookingat-%E6%96%B9%E6%B3%95">matches 和 lookingAt 方法</a></li>
+<li><a href="#regexmatchesjava-%E6%96%87%E4%BB%B6%E4%BB%A3%E7%A0%81-2">RegexMatches.java 文件代码：</a></li>
+<li><a href="#replacefirst-%E5%92%8C-replaceall-%E6%96%B9%E6%B3%95">replaceFirst 和 replaceAll 方法</a></li>
+<li><a href="#regexmatchesjava-%E6%96%87%E4%BB%B6%E4%BB%A3%E7%A0%81-3">RegexMatches.java 文件代码：</a></li>
+<li><a href="#appendreplacement-%E5%92%8C-appendtail-%E6%96%B9%E6%B3%95">appendReplacement 和 appendTail 方法</a></li>
+<li><a href="#regexmatchesjava-%E6%96%87%E4%BB%B6%E4%BB%A3%E7%A0%81-4">RegexMatches.java 文件代码：</a></li>
+<li><a href="#patternsyntaxexception-%E7%B1%BB%E7%9A%84%E6%96%B9%E6%B3%95">PatternSyntaxException 类的方法</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://changbaiqi.github.io/post/java-ri-qi-shi-yong-ji-qiao/">
+              <h3 class="post-title">
+                Java日期使用技巧
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://changbaiqi.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
