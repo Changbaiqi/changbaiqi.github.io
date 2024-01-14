@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="ChangBaiQi">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2024/01/15/learnnote/java学习笔记/jsp复习/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="JSP复习    一、解释类： 相关端口号： http端口80 https端口443 MySQL端口默认3306 Tomcat端口默认8080  名词解释： UTF-8：是一种可变长字符编码，其占位为1-4byte，前部分字符与ASCII码对应。 GBK：GBK是中国标准，占2byte，只在中国使用，并没有表示大多数其它国家的编码；而各国又陆续推出各自的编码标准，互不兼容，非常不利于全球化发展。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JSP%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JSP复习    一、解释类： 相关端口号： http端口80 https端口443 MySQL端口默认3306 Tomcat端口默认8080  名词解释： UTF-8：是一种可变长字符编码，其占位为1-4byte，前部分字符与ASCII码对应。 GBK：GBK是中国标准，占2byte，只在中国使用，并没有表示大多数其它国家的编码；而各国又陆续推出各自的编码标准，互不兼容，非常不利于全球化发展。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&nk=2084069833&s=640">
+<meta property="article:published_time" content="2024-01-14T21:09:49.395Z">
+<meta property="article:modified_time" content="2023-12-25T05:51:18.955Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://q1.qlogo.cn/g?b=qq&nk=2084069833&s=640">
+    
+    
+        <!-- Google tag (gtag.js) -->
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-BNDXDVC6ZN"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BNDXDVC6ZN');
+        </script>
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="http://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="http://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+    <!--- Page Info-->
+    
+    <title>
+        
+        长白崎的个人博客
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        长白崎的个人博客
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"G-BNDXDVC6ZN"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/1f54c5ab85845cd6c2e29ee5a109605a.webp"},"title":"长白崎の个人博客","subtitle":{"text":["记录点点滴滴","欢迎来到我的个人博客"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://www.github.com/Changbaiqi","instagram":null,"zhihu":null,"twitter":null,"fa-duotone fa-envelope":"changbaiqi@foxmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"同じ高みへ","artist":"水月陵 (みずつき りょう)","url":"http://music.163.com/song/media/outer/url?id=22706973.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M00000397FdL3rnzT3_1.jpg"},{"name":"光放て！","artist":"柳麻美 (やなぎ まみ)","url":"https://vodkgeyttp8.vod.126.net/cloudmusic/obj/core/1953684844/1016b80564983ddc780304ddbb71d5c9.mp4?wsSecret=3ede5eadc192dfec14924fe4e875cc0e&wsTime=1705259191","cover":"https://p2.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+        
+<link rel="stylesheet" href="/fontawesome/duotone.min.css">
+
+    
+    
+<meta name="generator" content="Hexo 7.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+
+    <div class="navbar-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="http://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                长白崎的个人博客
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories/"
+                                        >
+                                    <i class="fa-solid fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories/"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-solid fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">4</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">99</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3"></h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="http://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">ChangBaiQi</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv5</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-01-15 05:09:49</span>
+        <span class="mobile">2024-01-15 05:09:49</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-12-25 13:51:18</span>
+            <span class="mobile">2023-12-25 13:51:18</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.1k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>13 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="JSP复习"><a href="#JSP复习" class="headerlink" title="JSP复习"></a>JSP复习</h1><hr>
+<blockquote>
+<div align="center"><img  width="200" 
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://q1.qlogo.cn/g?b=qq&nk=2084069833&s=640"
+                     
+                ></img></div>
+</blockquote>
+<h2 id="一、解释类："><a href="#一、解释类：" class="headerlink" title="一、解释类："></a>一、解释类：</h2><hr>
+<h3 id="相关端口号："><a href="#相关端口号：" class="headerlink" title="相关端口号："></a>相关端口号：</h3><blockquote>
+<p>http端口80</p>
+<p>https端口443</p>
+<p>MySQL端口默认3306</p>
+<p>Tomcat端口默认8080</p>
+</blockquote>
+<h3 id="名词解释："><a href="#名词解释：" class="headerlink" title="名词解释："></a>名词解释：</h3><blockquote>
+<p>UTF-8：是一种可变长字符编码，其占位为1-4byte，前部分字符与ASCII码对应。</p>
+<p>GBK：GBK是中国标准，占2byte，只在中国使用，并没有表示大多数其它国家的编码；而各国又陆续推出各自的编码标准，互不兼容，非常不利于全球化发展。</p>
+<p>JSP内置对象：在JSP页面中可以直接使用的对象。</p>
+</blockquote>
+<h3 id="Tomcat目录解释："><a href="#Tomcat目录解释：" class="headerlink" title="Tomcat目录解释："></a>Tomcat目录解释：</h3><hr>
+<blockquote>
+<p>Tomcat目录一共有7个：</p>
+<p>bin目录：主要用于存放tomcat的命令，主要有两大类，一种是linux使用的shell指令，一种是以bat结尾的windows指令。</p>
+<p>conf目录：主要是存一些tomcat的一些配置文件，可以配置其tomcat访问的端口号域名，以及日志输出等。</p>
+<p>lib目录：主要是用在存放tomcat运行我们项目的时候所需要依赖的jar包，比如我们使用OKHTTP请求依赖库时，可以将其加入到lib目录下。</p>
+<p>logs目录：这个是用来存放tomcat运行时所产生的日志文件。</p>
+<p>temp目录：这个主要是用于存放tomcat在运行时候所产生的临时文件。</p>
+<p>webapps目录：这个目录主要用于存放我们基于Servlet写好的Java项目程序，可以以文件夹、war包、jar包的形式发布。</p>
+<p>work目录：这个目录主要是用于存放tomcat在运行时的编译后的文件，例如jsp编译后的文件。</p>
+</blockquote>
+<h3 id="注释注解的区别："><a href="#注释注解的区别：" class="headerlink" title="注释注解的区别："></a>注释注解的区别：</h3><blockquote>
+<p>注释：这个在编写程序的时候主要是给程序员看的，相当于作为相应代码的说明等，不是参与代码的编译与运行。</p>
+<p>注解：注解的作用在Java中不仅仅可以给程序员看，他还可以参与代码的编译与运行，通过注解我们可以实现很多有趣的功能，比如我们可以通过注解加反射来进行相关功能的编写，其Spring框架中单例模式的实现其实就是通过反射扫描注解对应的类和属性来实现的Bean注入的。</p>
+</blockquote>
+<h3 id="列举说明Path环境变量的作用？"><a href="#列举说明Path环境变量的作用？" class="headerlink" title="列举说明Path环境变量的作用？"></a>列举说明Path环境变量的作用？</h3><blockquote>
+<p>path环境变量定义了操作系统在哪些目录中搜索可执行程序。它简化了在命令行终端执行命令时不必提供完整路径，例如将java的bin目录添加到path之后，可以在任意目录下去调用执行java编译器或运行器。</p>
+</blockquote>
+<h3 id="举例说明CLASSPATH环境变量作用？"><a href="#举例说明CLASSPATH环境变量作用？" class="headerlink" title="举例说明CLASSPATH环境变量作用？"></a>举例说明CLASSPATH环境变量作用？</h3><blockquote>
+<p>CLASSPATH的作用主要是用来指定Java程序所依赖的类库的位置，在JDK1.5之前的版本中，需要通过配置环境变量CLASSPATH来指定Java程序所依赖的类库的位置，否则程序无法找到相关的类库。而在后续版本中默认指定为当前目录，所以其实没有特殊的需求不配置CLASSPATH也是可以的。</p>
+</blockquote>
+<h3 id="java指令解释："><a href="#java指令解释：" class="headerlink" title="java指令解释："></a>java指令解释：</h3><blockquote>
+<p>javac：java编译器，Java程序的编译工具，用来将Java程序的源文件编程成字节码文件，也就是class文件。</p>
+<p>java：Java解释器，解释和执行已经转换成字节码的Java程序。</p>
+<p>javap：java反汇编器，显示编译类文件中的方法和变量，还可可以显示字节代码的含义。</p>
+<p>jar：jar文件管理器，可以将类文件打包成一个文件。</p>
+</blockquote>
+<h3 id="网页中如何实现不同页面之前的数据共享？"><a href="#网页中如何实现不同页面之前的数据共享？" class="headerlink" title="网页中如何实现不同页面之前的数据共享？"></a>网页中如何实现不同页面之前的数据共享？</h3><blockquote>
+<p> 网页中实现不同网页的数据的共享是SESSION。</p>
+</blockquote>
+<h3 id="如何通过反射获取当前类中所有的成员方法"><a href="#如何通过反射获取当前类中所有的成员方法" class="headerlink" title="如何通过反射获取当前类中所有的成员方法"></a>如何通过反射获取当前类中所有的成员方法</h3><blockquote>
+<p>首先我可以通过Class类中的forName静态方法来启用反射获取对应我们需要获取的类。然后通过传过来的Class对象中的getDeclaredMethods方法来获取对应类中的所有方法，getDeclaredMethods方法调用其返回的是一个Method对象数组，其Method数组就是其对应类的所有成员方法。</p>
+</blockquote>
+<h3 id="maven的配置文件名称是什么？"><a href="#maven的配置文件名称是什么？" class="headerlink" title="maven的配置文件名称是什么？"></a>maven的配置文件名称是什么？</h3><blockquote>
+<p>Maven的配置文件名称为pom.xml</p>
+</blockquote>
+<h3 id="Javaweb的配置文件名称是什么？"><a href="#Javaweb的配置文件名称是什么？" class="headerlink" title="Javaweb的配置文件名称是什么？"></a>Javaweb的配置文件名称是什么？</h3><blockquote>
+<p>Javaweb的配置文件名称为web.xml</p>
+</blockquote>
+<h3 id="log4j的配置文件名是什么？"><a href="#log4j的配置文件名是什么？" class="headerlink" title="log4j的配置文件名是什么？"></a>log4j的配置文件名是什么？</h3><blockquote>
+<p>log4j的配置文件名称为log4j.properties</p>
+</blockquote>
+<h3 id="简述maven中本地-中央-远程仓库之前的关系"><a href="#简述maven中本地-中央-远程仓库之前的关系" class="headerlink" title="简述maven中本地&#x2F;中央&#x2F;远程仓库之前的关系"></a>简述maven中本地&#x2F;中央&#x2F;远程仓库之前的关系</h3><blockquote>
+<p>在maven中，本地仓库是存储已下载或自行导入的依赖，远程仓库提供了项目构建所需的依赖下载，中央仓库是默认的远程仓库，存储了众多开源项目的构建，这三者协同工作，一般默认情况我们用maven导入依赖时会先去本地仓库去寻找是否有相关的依赖，如果没有才会去中央仓库或者自己设置的仓库镜像去寻找下载到本地。</p>
+</blockquote>
+<h3 id="request是什么？"><a href="#request是什么？" class="headerlink" title="request是什么？"></a>request是什么？</h3><blockquote>
+<p>request对象在servlet里面主要起到的是接收前端所发送给服务端的请求，我们程序员在编写servlet程序的时候可以通过doGet或者doPost中的request对象来接收前端所传过来的http请求信息，并且加以处理。</p>
+</blockquote>
+<h3 id="response是什么？"><a href="#response是什么？" class="headerlink" title="response是什么？"></a>response是什么？</h3><blockquote>
+<p>response在Servlet中，主要可以起到针对request请求返回给对应请求用户信息的作用，也就是说当我们使用request接收请求后可以根据request中的信息内容做一系列业务逻辑处理后通过response返回最终结果信息给请求用户前端。</p>
+</blockquote>
+<h3 id="解释为什么eclipse中web-xml中会有自动提示（关键要讲到schemaLocation这玩意）"><a href="#解释为什么eclipse中web-xml中会有自动提示（关键要讲到schemaLocation这玩意）" class="headerlink" title="解释为什么eclipse中web.xml中会有自动提示（关键要讲到schemaLocation这玩意）"></a>解释为什么eclipse中web.xml中会有自动提示（关键要讲到schemaLocation这玩意）</h3><blockquote>
+<p>eclipse有自动提示web.xml内容主要是因为在头部中schemaLocation属性有对应xsd或者dtd文档指定，其对应的指定文档有对xml书写的约束，而eclipse可以通过读取这些文档进行针对性进行约束提示。所以其实不管是Servlet的xml配置文档还是我们自定义xml其实都可以实现自动提示，前提是你规范化了xsd文档或者dtd文档。</p>
+</blockquote>
+<h3 id="反射，注解在开发中的作用。"><a href="#反射，注解在开发中的作用。" class="headerlink" title="反射，注解在开发中的作用。"></a>反射，注解在开发中的作用。</h3><blockquote>
+<p>通过反射我们可以在Java程序运行中动态的将class字节码文件加载到jvm虚拟机当中调用对象的方法和操作对象的属性，通过使用反射，我们可以在编译期间未知具体类型的情况下，对类进行操作，这也体现了java程序的动态拓展性质，比如部分Java所编写的游戏就可以利用这一特性动态的加载游戏mod，例如《Minecraft》。</p>
+<p>注解，可以附加在package,class,method,filed等上面，相当于给他们添加了额外的辅助信息，我们可以通过反射机制编程实现对这些元数据的访问，并且通过注解我们可以实现更多有趣的功能，比如Jackson的json序列化和反序列化就可以通过注解来实现一些特殊功能。</p>
+</blockquote>
+<h3 id="当我们修改jsp文件，tomcat的运行过程。"><a href="#当我们修改jsp文件，tomcat的运行过程。" class="headerlink" title="当我们修改jsp文件，tomcat的运行过程。"></a>当我们修改jsp文件，tomcat的运行过程。</h3><blockquote>
+<p>首先，tomcat会将jsp文件转换成Java文件然后再编译成class文件加加载到jvm虚拟机中，如果修改jsp，再次访问jsp文件之后会重新编译，重新加载class文件。</p>
+</blockquote>
+<h3 id="log4j的作用？"><a href="#log4j的作用？" class="headerlink" title="log4j的作用？"></a>log4j的作用？</h3><blockquote>
+<p>log4j是一个功能强大的日志组件,提供方便的日志记录，同时也支持日志持久化输出存储。</p>
+</blockquote>
+<h2 id="二、填空题"><a href="#二、填空题" class="headerlink" title="二、填空题:"></a>二、填空题:</h2><hr>
+<h3 id="相关快捷键"><a href="#相关快捷键" class="headerlink" title="相关快捷键"></a>相关快捷键</h3><blockquote>
+<p>块选择菜单：alt+shift+A</p>
+<p>surround with： alt+shift+z</p>
+<p>代码生成菜单：alt+shift+s</p>
+<p>行注释快捷键：ctrl+&#x2F;</p>
+<p>块注释：ctrl+shift+&#x2F;</p>
+<p>取消注释代码：ctrl+alt+&#x2F;</p>
+<p>查看结构：ctrl+t</p>
+</blockquote>
+<h3 id="专业术语翻译"><a href="#专业术语翻译" class="headerlink" title="专业术语翻译"></a>专业术语翻译</h3><blockquote>
+<p>syntax 语法</p>
+<p>Exception 异常</p>
+<p>database 数据库</p>
+<p>SQL 结构化查询语言</p>
+<p>manual 手册</p>
+<p>corresponds to 与什么什么通信</p>
+<p>Null Pointer 空指针</p>
+<p>Communication 通讯</p>
+<p>constraint 约束</p>
+<p>violation 违反</p>
+<p>Duplicate 重复</p>
+<p>primary key 主键</p>
+<p>driver 驱动</p>
+<p>packet 数据包</p>
+<p>millisecond 毫秒</p>
+<p>access 访问</p>
+<p>deny 拒绝</p>
+<p>statement 陈述</p>
+<p>query 查询</p>
+<p>suitable 合适</p>
+<p>issue 问题</p>
+<p>failed 失败</p>
+<p>reflect 反射</p>
+<p>annotation 注解</p>
+<p>error 错误</p>
+<p>warn 警告</p>
+</blockquote>
+<h2 id="三、代码题："><a href="#三、代码题：" class="headerlink" title="三、代码题："></a>三、代码题：</h2><hr>
+<h3 id="如何用反射的方法去实例化对象？"><a href="#如何用反射的方法去实例化对象？" class="headerlink" title="如何用反射的方法去实例化对象？"></a>如何用反射的方法去实例化对象？</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class&lt;?&gt; clazz = Class.forName(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">           <span class="type">Hello</span> <span class="variable">o</span> <span class="operator">=</span> (Hello)clazz.getDeclaredConstructor().newInstance();</span><br><span class="line">           System.out.println(o.name);</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;张三&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="默写名为xxx的类，要求这个类可以通过某个网页地址访问。"><a href="#默写名为xxx的类，要求这个类可以通过某个网页地址访问。" class="headerlink" title="默写名为xxx的类，要求这个类可以通过某个网页地址访问。"></a>默写名为xxx的类，要求这个类可以通过某个网页地址访问。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebServlet(&quot;hello&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">XXX</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span>&#123;</span><br><span class="line">    </span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request,HttpServletResponse response)</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">           response.setContentType(<span class="string">&quot;text/html&quot;</span>);</span><br><span class="line">        </span><br><span class="line">           <span class="comment">//Hello</span></span><br><span class="line">           <span class="type">PrintWriter</span> <span class="variable">out</span> <span class="operator">=</span> response.getWriter();</span><br><span class="line">           out.println(<span class="string">&quot;&lt;html&gt;&lt;body&gt;&quot;</span>+<span class="string">&quot;&lt;h1&gt;&quot;</span>+<span class="string">&quot;Ciallo～(∠・ω&lt; )⌒★&quot;</span>+<span class="string">&quot;&lt;/h1&gt;&quot;</span>+<span class="string">&quot;&lt;/body&gt;&lt;/html&gt;&quot;</span>);</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="默一个servlet的实现。"><a href="#默一个servlet的实现。" class="headerlink" title="默一个servlet的实现。"></a>默一个servlet的实现。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebServlet(&quot;hello&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">XXX</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span>&#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request,HttpServletResponse response)</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">     </span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doPost</span><span class="params">(HttpServletRequest request,HttpServletResponse response)</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">        </span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="默一个java的单例实现代码。"><a href="#默一个java的单例实现代码。" class="headerlink" title="默一个java的单例实现代码。"></a>默一个java的单例实现代码。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           <span class="type">Hello</span> <span class="variable">instance</span> <span class="operator">=</span> Hello.getInstance();</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">       <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> Hello hello;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">public</span> <span class="title function_">Hello</span><span class="params">()</span>&#123;&#125;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> Hello <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">           <span class="keyword">if</span>(hello==<span class="literal">null</span>)&#123;</span><br><span class="line">               <span class="keyword">synchronized</span> (Hello.class)&#123;</span><br><span class="line">                   <span class="keyword">if</span>(hello == <span class="literal">null</span>)&#123;</span><br><span class="line">                       hello = <span class="keyword">new</span> <span class="title class_">Hello</span>();</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">return</span> hello;</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="用反射实例化某个类，并枚举所有函数，并调用kk无参无返回值的函数。"><a href="#用反射实例化某个类，并枚举所有函数，并调用kk无参无返回值的函数。" class="headerlink" title="用反射实例化某个类，并枚举所有函数，并调用kk无参无返回值的函数。"></a>用反射实例化某个类，并枚举所有函数，并调用kk无参无返回值的函数。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class clazz= Class.forName(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">           <span class="keyword">for</span> (Method method : clazz.getMethods()) &#123;</span><br><span class="line">               <span class="keyword">if</span> (method.getName().equals(<span class="string">&quot;kk&quot;</span>)) &#123;</span><br><span class="line">                   method.invoke(clazz.getDeclaredConstructor().newInstance());</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">kk</span><span class="params">()</span>&#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;Ciallo～(∠・ω&lt; )⌒★&quot;</span>);</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+</blockquote>
+<h3 id="用反射实例化某个类，并枚举他的所有属性。"><a href="#用反射实例化某个类，并枚举他的所有属性。" class="headerlink" title="用反射实例化某个类，并枚举他的所有属性。"></a>用反射实例化某个类，并枚举他的所有属性。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestMain</span> &#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class clazz= Class.forName(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">           Field[] fields = clazz.getDeclaredFields();</span><br><span class="line"></span><br><span class="line">           <span class="keyword">for</span>(Field field : fields)&#123;</span><br><span class="line">               <span class="type">Object</span> <span class="variable">o</span> <span class="operator">=</span> clazz.getDeclaredConstructor().newInstance();</span><br><span class="line">               field.setAccessible(<span class="literal">true</span>);</span><br><span class="line">               System.out.println(<span class="string">&quot;属性名：&quot;</span>+field.getName()+<span class="string">&quot;变量内容：&quot;</span>+field.get(o));</span><br><span class="line">               field.setAccessible(<span class="literal">false</span>);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">       <span class="keyword">private</span> <span class="type">Integer</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18</span>;</span><br><span class="line">       <span class="keyword">public</span> <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;张三&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+</blockquote>
+<h3 id="请你手工实现一个注解，并在程序中打印注解默认值。"><a href="#请你手工实现一个注解，并在程序中打印注解默认值。" class="headerlink" title="请你手工实现一个注解，并在程序中打印注解默认值。"></a>请你手工实现一个注解，并在程序中打印注解默认值。</h3><blockquote>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">     <span class="meta">@Ciallo</span></span><br><span class="line">     <span class="keyword">private</span> String txt;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Ciallo</span></span><br><span class="line">     <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class&lt;?&gt; main = Class.forName(<span class="string">&quot;Main&quot;</span>);</span><br><span class="line">           <span class="keyword">for</span> (Field declaredField : main.getDeclaredFields()) &#123;</span><br><span class="line">               <span class="keyword">if</span> (declaredField.isAnnotationPresent(Ciallo.class)) &#123;</span><br><span class="line">                   <span class="type">Ciallo</span> <span class="variable">annotation</span> <span class="operator">=</span> declaredField.getAnnotation(Ciallo.class);</span><br><span class="line">                   System.out.println(annotation.txt());</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">for</span> (Method method : main.getMethods()) &#123;</span><br><span class="line">               <span class="keyword">if</span> (method.isAnnotationPresent(Ciallo.class)) &#123;</span><br><span class="line">                   <span class="type">Ciallo</span> <span class="variable">annotation</span> <span class="operator">=</span> method.getAnnotation(Ciallo.class);</span><br><span class="line">                   System.out.println(annotation.txt());</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.METHOD,ElementType.FIELD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> Ciallo&#123;</span><br><span class="line">     String <span class="title function_">txt</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;Ciallo～(∠・ω&lt; )⌒☆&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h2 id="四、看图写程序"><a href="#四、看图写程序" class="headerlink" title="四、看图写程序:"></a>四、看图写程序:</h2><blockquote>
+<p>略</p>
+</blockquote>
+<h3 id="请你根据MySQL查询界面，请写出对应的Java程序。"><a href="#请你根据MySQL查询界面，请写出对应的Java程序。" class="headerlink" title="请你根据MySQL查询界面，请写出对应的Java程序。"></a>请你根据MySQL查询界面，请写出对应的Java程序。</h3><h4 id="增："><a href="#增：" class="headerlink" title="增："></a>增：</h4><blockquote>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> `<span class="keyword">user</span>`(uid,name,age) <span class="keyword">values</span> (&quot;114514&quot;,&quot;葬送的芙蓉王&quot;,<span class="number">12</span>)</span><br></pre></td></tr></table></figure></div>
+
+
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class.forName(<span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);</span><br><span class="line">           <span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">           <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">               insert into `user`(uid,name,age) values (?,?,?)</span></span><br><span class="line"><span class="string">               &quot;&quot;&quot;</span>;</span><br><span class="line">               <span class="type">PreparedStatement</span> <span class="variable">pre</span> <span class="operator">=</span> con.prepareStatement(sql);</span><br><span class="line">           pre.setString(<span class="number">1</span>,<span class="string">&quot;114514&quot;</span>);</span><br><span class="line">           pre.setString(<span class="number">2</span>,<span class="string">&quot;葬送的芙蓉王&quot;</span>);</span><br><span class="line">           pre.setInt(<span class="number">3</span>,<span class="number">12</span>);</span><br><span class="line">           <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> pre.executeUpdate();</span><br><span class="line">           <span class="keyword">if</span>(i&gt;<span class="number">0</span>)</span><br><span class="line">               System.out.println(<span class="string">&quot;添加成功&quot;</span>);</span><br><span class="line"></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h4 id="删："><a href="#删：" class="headerlink" title="删："></a>删：</h4><blockquote>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> `<span class="keyword">user</span>` <span class="keyword">where</span> `name`<span class="operator">=</span><span class="string">&#x27;葬送的芙蓉王&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        Class.forName(<span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);</span><br><span class="line">        <span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;delete FROM `user` where `name`=?&quot;</span>;</span><br><span class="line">        <span class="type">PreparedStatement</span> <span class="variable">pre</span> <span class="operator">=</span> con.prepareStatement(sql);</span><br><span class="line">        pre.setString(<span class="number">1</span>,<span class="string">&quot;葬送的芙蓉王&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> pre.executeUpdate();</span><br><span class="line">        <span class="keyword">if</span>(i&gt;<span class="number">0</span>)</span><br><span class="line">            System.out.println(<span class="string">&quot;删除成功&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h4 id="改："><a href="#改：" class="headerlink" title="改："></a>改：</h4><blockquote>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> `<span class="keyword">user</span>` <span class="keyword">set</span> `age`<span class="operator">=</span><span class="number">21</span> <span class="keyword">where</span> `name`<span class="operator">=</span><span class="string">&#x27;亚托莉&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">           Class.forName(<span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);</span><br><span class="line">           <span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">           <span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">               update `user` set `age`=? where `name`=?;</span></span><br><span class="line"><span class="string">           &quot;&quot;&quot;</span>;</span><br><span class="line">               <span class="type">PreparedStatement</span> <span class="variable">pre</span> <span class="operator">=</span> con.prepareStatement(sql);</span><br><span class="line">           pre.setInt(<span class="number">1</span>,<span class="number">21</span>);</span><br><span class="line">           pre.setString(<span class="number">2</span>,<span class="string">&quot;亚托莉&quot;</span>);</span><br><span class="line">           <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> pre.executeUpdate();</span><br><span class="line">           <span class="keyword">if</span>(i&gt;<span class="number">0</span>)</span><br><span class="line">               System.out.println(<span class="string">&quot;修改成功&quot;</span>);</span><br><span class="line"></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+</blockquote>
+<h4 id="查："><a href="#查：" class="headerlink" title="查："></a>查：</h4><blockquote>
+<table>
+<thead>
+<tr>
+<th>uid</th>
+<th>name</th>
+<th>age</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1001</td>
+<td>亚托莉</td>
+<td>18</td>
+</tr>
+</tbody></table>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> `<span class="keyword">user</span>` <span class="keyword">where</span> name<span class="operator">=</span><span class="string">&#x27;张三&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">     <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">           Class.forName(<span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);</span><br><span class="line">           <span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(<span class="string">&quot;jdbc:mysql://localhost:3306/test&quot;</span>, <span class="string">&quot;root&quot;</span>, <span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">           <span class="type">PreparedStatement</span> <span class="variable">pre</span> <span class="operator">=</span> con.prepareStatement(<span class="string">&quot;select * from user where name=?&quot;</span>);</span><br><span class="line">           pre.setString(<span class="number">1</span>,<span class="string">&quot;亚托莉&quot;</span>);</span><br><span class="line"></span><br><span class="line">           <span class="type">ResultSet</span> <span class="variable">resultSet</span> <span class="operator">=</span> pre.executeQuery();</span><br><span class="line"></span><br><span class="line">           <span class="keyword">while</span> (resultSet.next())&#123;</span><br><span class="line">               System.out.printf(<span class="string">&quot;uid：%s，name：%s，age：%d \n&quot;</span>,resultSet.getString(<span class="number">1</span>),resultSet.getString(<span class="number">2</span>),resultSet.getInt(<span class="number">3</span>));</span><br><span class="line">           &#125;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> </li>
+        <li><strong>Author:</strong> ChangBaiQi</li>
+        <li><strong>Created at
+                :</strong> 2024-01-15 05:09:49</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-12-25 13:51:18
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://www.changbaiqi.top/2024/01/15/LearnNote/JAVA学习笔记/JSP复习/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JDBC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://blogs-comment-4r0fyugme-changbaiqis-projects.vercel.app',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JSP%E5%A4%8D%E4%B9%A0"><span class="nav-text">JSP复习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%A7%A3%E9%87%8A%E7%B1%BB%EF%BC%9A"><span class="nav-text">一、解释类：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E7%AB%AF%E5%8F%A3%E5%8F%B7%EF%BC%9A"><span class="nav-text">相关端口号：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%EF%BC%9A"><span class="nav-text">名词解释：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomcat%E7%9B%AE%E5%BD%95%E8%A7%A3%E9%87%8A%EF%BC%9A"><span class="nav-text">Tomcat目录解释：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-text">注释注解的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E4%B8%BE%E8%AF%B4%E6%98%8EPath%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="nav-text">列举说明Path环境变量的作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BE%E4%BE%8B%E8%AF%B4%E6%98%8ECLASSPATH%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="nav-text">举例说明CLASSPATH环境变量作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java%E6%8C%87%E4%BB%A4%E8%A7%A3%E9%87%8A%EF%BC%9A"><span class="nav-text">java指令解释：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E4%B8%AD%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%8D%E5%90%8C%E9%A1%B5%E9%9D%A2%E4%B9%8B%E5%89%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB%EF%BC%9F"><span class="nav-text">网页中如何实现不同页面之前的数据共享？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E5%8F%8D%E5%B0%84%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%B1%BB%E4%B8%AD%E6%89%80%E6%9C%89%E7%9A%84%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95"><span class="nav-text">如何通过反射获取当前类中所有的成员方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#maven%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">maven的配置文件名称是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javaweb%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">Javaweb的配置文件名称是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#log4j%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8D%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">log4j的配置文件名是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E8%BF%B0maven%E4%B8%AD%E6%9C%AC%E5%9C%B0-%E4%B8%AD%E5%A4%AE-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E4%B9%8B%E5%89%8D%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text">简述maven中本地&#x2F;中央&#x2F;远程仓库之前的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#request%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">request是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#response%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-text">response是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A%E4%B8%BA%E4%BB%80%E4%B9%88eclipse%E4%B8%ADweb-xml%E4%B8%AD%E4%BC%9A%E6%9C%89%E8%87%AA%E5%8A%A8%E6%8F%90%E7%A4%BA%EF%BC%88%E5%85%B3%E9%94%AE%E8%A6%81%E8%AE%B2%E5%88%B0schemaLocation%E8%BF%99%E7%8E%A9%E6%84%8F%EF%BC%89"><span class="nav-text">解释为什么eclipse中web.xml中会有自动提示（关键要讲到schemaLocation这玩意）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%B0%84%EF%BC%8C%E6%B3%A8%E8%A7%A3%E5%9C%A8%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8%E3%80%82"><span class="nav-text">反射，注解在开发中的作用。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%93%E6%88%91%E4%BB%AC%E4%BF%AE%E6%94%B9jsp%E6%96%87%E4%BB%B6%EF%BC%8Ctomcat%E7%9A%84%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%E3%80%82"><span class="nav-text">当我们修改jsp文件，tomcat的运行过程。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#log4j%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="nav-text">log4j的作用？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="nav-text">二、填空题:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-text">相关快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD%E7%BF%BB%E8%AF%91"><span class="nav-text">专业术语翻译</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%BB%A3%E7%A0%81%E9%A2%98%EF%BC%9A"><span class="nav-text">三、代码题：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E7%94%A8%E5%8F%8D%E5%B0%84%E7%9A%84%E6%96%B9%E6%B3%95%E5%8E%BB%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%AF%B9%E8%B1%A1%EF%BC%9F"><span class="nav-text">如何用反射的方法去实例化对象？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E5%86%99%E5%90%8D%E4%B8%BAxxx%E7%9A%84%E7%B1%BB%EF%BC%8C%E8%A6%81%E6%B1%82%E8%BF%99%E4%B8%AA%E7%B1%BB%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%9F%90%E4%B8%AA%E7%BD%91%E9%A1%B5%E5%9C%B0%E5%9D%80%E8%AE%BF%E9%97%AE%E3%80%82"><span class="nav-text">默写名为xxx的类，要求这个类可以通过某个网页地址访问。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E4%B8%80%E4%B8%AAservlet%E7%9A%84%E5%AE%9E%E7%8E%B0%E3%80%82"><span class="nav-text">默一个servlet的实现。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E4%B8%80%E4%B8%AAjava%E7%9A%84%E5%8D%95%E4%BE%8B%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E3%80%82"><span class="nav-text">默一个java的单例实现代码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E5%8F%8D%E5%B0%84%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%9F%90%E4%B8%AA%E7%B1%BB%EF%BC%8C%E5%B9%B6%E6%9E%9A%E4%B8%BE%E6%89%80%E6%9C%89%E5%87%BD%E6%95%B0%EF%BC%8C%E5%B9%B6%E8%B0%83%E7%94%A8kk%E6%97%A0%E5%8F%82%E6%97%A0%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E5%87%BD%E6%95%B0%E3%80%82"><span class="nav-text">用反射实例化某个类，并枚举所有函数，并调用kk无参无返回值的函数。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E5%8F%8D%E5%B0%84%E5%AE%9E%E4%BE%8B%E5%8C%96%E6%9F%90%E4%B8%AA%E7%B1%BB%EF%BC%8C%E5%B9%B6%E6%9E%9A%E4%B8%BE%E4%BB%96%E7%9A%84%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7%E3%80%82"><span class="nav-text">用反射实例化某个类，并枚举他的所有属性。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E4%BD%A0%E6%89%8B%E5%B7%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%B3%A8%E8%A7%A3%EF%BC%8C%E5%B9%B6%E5%9C%A8%E7%A8%8B%E5%BA%8F%E4%B8%AD%E6%89%93%E5%8D%B0%E6%B3%A8%E8%A7%A3%E9%BB%98%E8%AE%A4%E5%80%BC%E3%80%82"><span class="nav-text">请你手工实现一个注解，并在程序中打印注解默认值。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%9C%8B%E5%9B%BE%E5%86%99%E7%A8%8B%E5%BA%8F"><span class="nav-text">四、看图写程序:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E4%BD%A0%E6%A0%B9%E6%8D%AEMySQL%E6%9F%A5%E8%AF%A2%E7%95%8C%E9%9D%A2%EF%BC%8C%E8%AF%B7%E5%86%99%E5%87%BA%E5%AF%B9%E5%BA%94%E7%9A%84Java%E7%A8%8B%E5%BA%8F%E3%80%82"><span class="nav-text">请你根据MySQL查询界面，请写出对应的Java程序。</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ChangBaiQi</a>
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.0</a></span>
+        </div>
+        
+            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
+                
+                https://beian.miit.gov.cn
+                
+                ">桂ICP备2022007220号-2</a></div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
+
+
+</body>
+</html>
