@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>hello-world</title>
-    <url>/2022/09/28/hello-world/</url>
+    <url>/project/2022/09/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -26,7 +26,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/README/</url>
+    <url>/project/2024/01/15/LearnNote/README/</url>
     <content><![CDATA[<h1 id="计算机技术学习笔记"><a href="#计算机技术学习笔记" class="headerlink" title="计算机技术学习笔记"></a>计算机技术学习笔记</h1><hr>
 <blockquote>
 <p>这里是长白崎平常学习计算机技术时所做的笔记，有需要的同学可以看看。</p>
@@ -46,7 +46,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Flutter%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Flutter%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Flutter%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Flutter%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Flutter基础学习"><a href="#Flutter基础学习" class="headerlink" title="Flutter基础学习"></a>Flutter基础学习</h1><p>目录结构</p>
 <blockquote>
 <p>android：用于android软件的相关</p>
@@ -92,7 +92,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <url>/project/2024/01/15/LearnNote/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="Hexo博客搭建教程"><a href="#Hexo博客搭建教程" class="headerlink" title="Hexo博客搭建教程"></a>Hexo博客搭建教程</h1><hr>
 <h2 id="常见Front-matter"><a href="#常见Front-matter" class="headerlink" title="常见Front-matter"></a>常见Front-matter</h2><div class="highlight-container" data-rel="Txt"><figure class="iseeu highlight txt"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: typora-vue-theme主题介绍</span><br><span class="line">date: 2018-09-07 09:25:00</span><br><span class="line">author: 赵奇</span><br><span class="line">img: /source/images/xxx.jpg</span><br><span class="line">top: true</span><br><span class="line">hide: false</span><br><span class="line">cover: true</span><br><span class="line">coverImg: /images/1.jpg</span><br><span class="line">password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span><br><span class="line">toc: false</span><br><span class="line">mathjax: false</span><br><span class="line">summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</span><br><span class="line">categories: Markdown</span><br><span class="line">tags:</span><br><span class="line">  - Typora</span><br><span class="line">  - Markdown</span><br><span class="line">---</span><br></pre></td></tr></table></figure></div>
 
@@ -100,13 +100,13 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Kotlin%E5%9F%BA%E7%A1%80/</url>
+    <url>/project/2024/01/15/LearnNote/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Kotlin%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h1 id="Kotlin基础"><a href="#Kotlin基础" class="headerlink" title="Kotlin基础"></a>Kotlin基础</h1><hr>
 ]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/SQL%E5%AD%A6%E4%B9%A0/SQL%E5%A4%A7%E5%85%A8/</url>
+    <url>/project/2024/01/15/LearnNote/SQL%E5%AD%A6%E4%B9%A0/SQL%E5%A4%A7%E5%85%A8/</url>
     <content><![CDATA[<h1 id="常用SQL大全"><a href="#常用SQL大全" class="headerlink" title="常用SQL大全"></a>常用SQL大全</h1><hr>
 <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">#显示查询数据库文件存储所在磁盘位置</span><br><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%datadir%&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
 
@@ -116,7 +116,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/MarkDown/MarkDown%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8/</url>
+    <url>/project/2024/01/15/LearnNote/MarkDown/MarkDown%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="MarkDown数学符号收集表"><a href="#MarkDown数学符号收集表" class="headerlink" title="MarkDown数学符号收集表"></a>MarkDown数学符号收集表</h1><hr>
 <h2 id="希腊字母表"><a href="#希腊字母表" class="headerlink" title="希腊字母表"></a>希腊字母表</h2><table>
 <thead>
@@ -704,13 +704,13 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Deeplearning4j%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Deeplearning4j%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Deeplearning4j深度学习框架使用"><a href="#Deeplearning4j深度学习框架使用" class="headerlink" title="Deeplearning4j深度学习框架使用"></a>Deeplearning4j深度学习框架使用</h1><hr>
 ]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="第一章-Docker概述"><a href="#第一章-Docker概述" class="headerlink" title="第一章 Docker概述"></a>第一章 Docker概述</h1><hr>
 <h2 id="1-1虚拟化技术发展史"><a href="#1-1虚拟化技术发展史" class="headerlink" title="1.1虚拟化技术发展史"></a>1.1虚拟化技术发展史</h2><hr>
 <p>在虚拟化技术出现之前，如果我们想搭建一台服务器，我们需要做如下的工作：</p>
@@ -1135,7 +1135,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Git%E5%AD%A6%E4%B9%A0/Git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <url>/project/2024/01/15/LearnNote/Git%E5%AD%A6%E4%B9%A0/Git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h2 id="理解工作区和暂存区的区别？"><a href="#理解工作区和暂存区的区别？" class="headerlink" title="理解工作区和暂存区的区别？"></a>理解工作区和暂存区的区别？</h2><p>工作区：就是你在电脑上看到的目录，比如目录下testgit里的文件(.git隐藏目录版本库除外)。或者以后需要再新建的目录文件等等都属于工作区范畴。<br>版本库(Repository)：工作区有一个隐藏目录.git,这个不属于工作区，这是版本库。其中版本库里面存了很多东西，其中最重要的就是stage(暂存区)，还有Git为我们自动创建了第一个分支master,以及指向master的一个指针HEAD。</p>
 <p>使用Git提交文件到版本库有两步：</p>
 <p>第一步：是使用 git add 把文件添加进去，实际上就是把文件添加到暂存区。</p>
@@ -1260,12 +1260,12 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BServlet%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BServlet%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Java之Servlet学习"><a href="#Java之Servlet学习" class="headerlink" title="Java之Servlet学习"></a>Java之Servlet学习</h1><hr>
 <p>流程图：</p>
 <p><img  
@@ -1881,7 +1881,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JDBC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JDBC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h1><hr>
 <h2 id="1-JDBC是什么？"><a href="#1-JDBC是什么？" class="headerlink" title="1.JDBC是什么？"></a>1.JDBC是什么？</h2><blockquote>
 <p>Java DataBase Connectivity（Java语言连接数据库）</p>
@@ -1969,7 +1969,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="SpringMVC简介"><a href="#SpringMVC简介" class="headerlink" title="SpringMVC简介"></a>SpringMVC简介</h1><h2 id="1-SpringMVC概述"><a href="#1-SpringMVC概述" class="headerlink" title="1.SpringMVC概述"></a>1.SpringMVC概述</h2><blockquote>
 <p>SpringMVC是一种基于Java的实现MVC设计模型的请求驱动类型的轻量级Web框架，属于SpringFrameWork的后续产品，已经融合在Spring Web Flow中。</p>
 <p>SpringMVC已经成为目前最主流的MVC框架之一，并且随着Spring3.0的发布，全面超越Struts2，成为最优秀的MVC框架。它通过一套注解，让一个简单的Java类成为处理请求的控制器，而无需实现任何接口。同时它还支持RESTful编程风格的请求。</p>
@@ -2274,7 +2274,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="踩坑笔记"><a href="#踩坑笔记" class="headerlink" title="踩坑笔记"></a>踩坑笔记</h1><hr>
 <h2 id="Java如何在打包成jar包之后也能读取resource文件夹里面的文件？"><a href="#Java如何在打包成jar包之后也能读取resource文件夹里面的文件？" class="headerlink" title="Java如何在打包成jar包之后也能读取resource文件夹里面的文件？"></a>Java如何在打包成jar包之后也能读取resource文件夹里面的文件？</h2><blockquote>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取文件的URL</span></span><br><span class="line"><span class="type">URL</span> <span class="variable">url</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">HintUtil</span>().getClass().getClassLoader().getResource(<span class="string">&quot;notice.wav&quot;</span>);</span><br><span class="line"><span class="type">InputStream</span> <span class="variable">resourceAsStream</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">HintUtil</span>().getClass().getResourceAsStream(<span class="string">&quot;/notice.wav&quot;</span>);</span><br><span class="line"><span class="type">BufferedInputStream</span> <span class="variable">myStream</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedInputStream</span>(resourceAsStream);</span><br><span class="line">as = AudioSystem.getAudioInputStream(myStream);</span><br></pre></td></tr></table></figure></div>
@@ -2291,7 +2291,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E4%B9%8BSpring%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><h2 id="一、介绍："><a href="#一、介绍：" class="headerlink" title="一、介绍："></a>一、介绍：</h2><h3 id="1-1-Spring是什么"><a href="#1-1-Spring是什么" class="headerlink" title="1.1.Spring是什么"></a>1.1.Spring是什么</h3><blockquote>
 <p>Spring是分层的JavaSE&#x2F;EE应用full-stack轻量级开源框架，以IOC（Inverse Of Control：反转控制）和AOP（Aspect Oriented Programming：面向切面编程）为内核。</p>
 <p>提供了展现层SpringMVC和持久层SpringJDBCTemplate以及业务层事务管理等众多的企业级应用技术，还能整合开源世界众多著名的第三方框架和类库，逐渐成为使用最多的JavaEE企业应用开源框架。</p>
@@ -2493,7 +2493,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%88%86%E5%B1%82%E6%80%9D%E6%83%B3%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Java分层思想"><a href="#Java分层思想" class="headerlink" title="Java分层思想"></a>Java分层思想</h1><hr>
 <p>结构图：</p>
 <p><img  
@@ -2642,7 +2642,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E6%8E%A5%E5%8F%A3%E7%BC%96%E7%A8%8B%E5%8F%8AAOP%E7%BC%96%E7%A8%8B/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E6%8E%A5%E5%8F%A3%E7%BC%96%E7%A8%8B%E5%8F%8AAOP%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="Java注解编程及AOP编程"><a href="#Java注解编程及AOP编程" class="headerlink" title="Java注解编程及AOP编程"></a>Java注解编程及AOP编程</h1><hr>
 <p>Java注解（Annotation）又称Java标注，是JDK5.0引入的一种注释机制。</p>
 <p>Java语言中的类、方法、变量、参数和包等都可以被标注。和 Javadoc 不同，Java 标注可以通过反射获取标注内容。在编译器生成类文件时，标注可以被嵌入到字节码中。Java 虚拟机可以保留标注内容，在运行时可以获取到标注内容 。 当然它也支持自定义 Java 标注。</p>
@@ -2782,7 +2782,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Java并发编程"><a href="#Java并发编程" class="headerlink" title="Java并发编程"></a>Java并发编程</h1><hr>
 <h2 id="1、java-JUC快速入门"><a href="#1、java-JUC快速入门" class="headerlink" title="1、java-JUC快速入门"></a>1、java-JUC快速入门</h2><hr>
 <h3 id="1-1、JUC是什么？"><a href="#1-1、JUC是什么？" class="headerlink" title="1.1、JUC是什么？"></a>1.1、JUC是什么？</h3><blockquote>
@@ -2969,7 +2969,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="MySQL学习笔记"><a href="#MySQL学习笔记" class="headerlink" title="MySQL学习笔记"></a>MySQL学习笔记</h1><hr>
 <blockquote>
 <p>auto_increment —自增序列</p>
@@ -2979,12 +2979,12 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/RabbitMQ%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/RabbitMQ%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Native-Image%E6%8A%80%E6%9C%AF%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Native-Image%E6%8A%80%E6%9C%AF%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Native-image技术与应用"><a href="#Native-image技术与应用" class="headerlink" title="Native-image技术与应用"></a>Native-image技术与应用</h1><hr>
 <h2 id="1-背景相关"><a href="#1-背景相关" class="headerlink" title="1. 背景相关"></a>1. 背景相关</h2><hr>
 <p>作为一个程序员，总是会在工作的时候开发一些方便自己工作的程序，但是作为一个Java程序员，给自己或者朋友开发的办公小程序总是使用一个Jar包并不是一个很好的体验，主要是：</p>
@@ -3083,7 +3083,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SSM%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SSM%E6%9E%B6%E6%9E%84%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<h1 id="SSM开发配置文档"><a href="#SSM开发配置文档" class="headerlink" title="SSM开发配置文档"></a>SSM开发配置文档</h1><hr>
 <h2 id="一、开发步骤"><a href="#一、开发步骤" class="headerlink" title="一、开发步骤"></a>一、开发步骤</h2><blockquote>
 <ol>
@@ -3212,7 +3212,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h1><hr>
 <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><hr>
 <ol>
@@ -3646,7 +3646,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="SpringCloud学习笔记"><a href="#SpringCloud学习笔记" class="headerlink" title="SpringCloud学习笔记"></a>SpringCloud学习笔记</h1><hr>
 <h2 id="1-Spring-Cloud-Eureka简介"><a href="#1-Spring-Cloud-Eureka简介" class="headerlink" title="1.Spring Cloud Eureka简介"></a>1.Spring Cloud Eureka简介</h2><p>注册发现中心</p>
 <p>Eureka来源于古希腊词汇，意为“发现了”。在软件领域，Eureka是Netflix在线影片公司开源的一个服务注册与发现的 组件，和其他Netflix公司的服务组件（例如负载均衡、熔断器、网关等）一起，被Spring Cloud社区整合为 Spring Cloud Netflix模块。</p>
@@ -4203,7 +4203,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringSecurity%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringSecurity%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Spring-Security框架"><a href="#Spring-Security框架" class="headerlink" title="Spring Security框架"></a>Spring Security框架</h1><hr>
 <h2 id="第一章了解Spring-Security"><a href="#第一章了解Spring-Security" class="headerlink" title="第一章了解Spring Security"></a>第一章了解Spring Security</h2><hr>
 <p>Spring Security是基于Spring的安全框架。它提供全面的安全性解决方案，同时在Web请求和方法调用级处理身份确认和授权。在Spring Framework基础上，Spring Security充分利用了依赖注入（DI）和面向切面编程（AOP）功能，为应用系统提供声明式的安全访问控制功能，减少了为企业系统安全控制编写大量重复代码的工作。是一个轻量级的安全框架。他与SpringMVC有很好地集成。</p>
@@ -4477,7 +4477,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Web%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%BC%80%E5%8F%91/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Web%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<h1 id="Web项目实战"><a href="#Web项目实战" class="headerlink" title="Web项目实战"></a>Web项目实战</h1><p>web项目的开发：如何分析，设计，编码，测试。</p>
 <h2 id="2-CRM项目："><a href="#2-CRM项目：" class="headerlink" title="2.CRM项目："></a>2.CRM项目：</h2><blockquote>
 <p>CRM项目就是客户关系管理项目。客户关系管理（CRM）是利用信息科学技术，实现市场营销、销售、服务等活动自动化，使企业能更高效地为客户提供满意、周到的服务，以提高客户满意度、忠诚度为目的的一种管理经营方式。客户关系管理既是一种管理理念，又是一种软件技术。以客户为中心的管理理念是CRM实施的基础。Crm项目的背景分为起源背景和发展背景两部分。</p>
@@ -4515,7 +4515,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/WebRTC/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/WebRTC/</url>
     <content><![CDATA[<h1 id="WebRTC进阶"><a href="#WebRTC进阶" class="headerlink" title="WebRTC进阶"></a>WebRTC进阶</h1><hr>
 <p>WebTRC支持点对点通信，但是WebRTC仍然需要服务端：</p>
 <ul>
@@ -4654,14 +4654,14 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%A8WebSocket%E7%BB%93%E5%90%88WebRTC%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%A7%86%E5%B1%8F%E9%80%9A%E8%AF%9D/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%A8WebSocket%E7%BB%93%E5%90%88WebRTC%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%A7%86%E5%B1%8F%E9%80%9A%E8%AF%9D/</url>
     <content><![CDATA[<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>RTC视频通话测试页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span> <span class="comment">&lt;!-- for HTML5 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width,initial-scale=1,maximum-scale=1&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">background</span>: <span class="number">#000</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">button</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">40px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">line-height</span>: <span class="number">40px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">500px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">top</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">15px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">contain</span>: content;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">background</span>: <span class="number">#ccc</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">border</span>: none;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">margin-bottom</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.wrap</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">100vw</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">100vh</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">justify-content</span>: center;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">align-items</span>: center;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.video-box</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">border-radius</span>: <span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">background</span>: pink;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">position</span>: relative;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">800px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">600px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.remote-video</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">800px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">600px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.local-video</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">320px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">240px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">right</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">bottom</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-tag">video</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">100%</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">100%</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;wrap&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;video-box&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;local-video&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">&quot;local-video&quot;</span> <span class="attr">autoplay</span> <span class="attr">style</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;remote-video&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">&quot;remote-video&quot;</span> <span class="attr">autoplay</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;startVideo();&quot;</span>&gt;</span>开启本机摄像和音频<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;connect();&quot;</span>&gt;</span>建立连接<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;hangUp();&quot;</span>&gt;</span>挂断<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;refreshPage();&quot;</span>&gt;</span>刷新页面<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// ===================以下是socket=======================</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> user = <span class="title class_">Math</span>.<span class="title function_">round</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">1000</span>) + <span class="string">&quot;&quot;</span></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//var socketUrl = &quot;ws://localhost:8080/msgServer/&quot; + user;</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> socketUrl = <span class="string">&quot;ws://172.29.40.176:8080/msgServer/&quot;</span>+ user;</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> socket = <span class="literal">null</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> socketRead = <span class="literal">false</span></span></span><br><span class="line"><span class="language-javascript">    <span class="variable language_">window</span>.<span class="property">onload</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        socket = <span class="keyword">new</span> <span class="title class_">WebSocket</span>(socketUrl)</span></span><br><span class="line"><span class="language-javascript">        socket.<span class="property">onopen</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;成功连接到服务器...&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">            socketRead = <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">        socket.<span class="property">onclose</span> = <span class="keyword">function</span>(<span class="params">e</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;与服务器连接关闭: &#x27;</span> + e.<span class="property">code</span>)</span></span><br><span class="line"><span class="language-javascript">            socketRead = <span class="literal">false</span></span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        socket.<span class="property">onmessage</span> = <span class="keyword">function</span>(<span class="params">res</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">var</span> evt = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(res.<span class="property">data</span>)</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(evt)</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">if</span> (evt.<span class="property">type</span> === <span class="string">&#x27;offer&#x27;</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接收到offer,设置offer,发送answer....&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">                <span class="title function_">onOffer</span>(evt);</span></span><br><span class="line"><span class="language-javascript">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (evt.<span class="property">type</span> === <span class="string">&#x27;answer&#x27;</span> &amp;&amp; peerStarted) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;接收到answer,设置answer SDP&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="title function_">onAnswer</span>(evt);</span></span><br><span class="line"><span class="language-javascript">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (evt.<span class="property">type</span> === <span class="string">&#x27;candidate&#x27;</span> &amp;&amp; peerStarted) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;接收到ICE候选者..&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="title function_">onCandidate</span>(evt);</span></span><br><span class="line"><span class="language-javascript">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (evt.<span class="property">type</span> === <span class="string">&#x27;bye&#x27;</span> &amp;&amp; peerStarted) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;WebRTC通信断开&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="title function_">stop</span>();</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// ===================以上是socket=======================</span></span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> localVideo = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;local-video&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> remoteVideo = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;remote-video&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> localStream = <span class="literal">null</span>;</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> peerConnection = <span class="literal">null</span>;</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> peerStarted = <span class="literal">false</span>;</span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> mediaConstraints = &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="string">&#x27;mandatory&#x27;</span>: &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&#x27;OfferToReceiveAudio&#x27;</span>: <span class="literal">false</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&#x27;OfferToReceiveVideo&#x27;</span>: <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">    &#125;;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//----------------------交换信息 -----------------------</span></span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">onOffer</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接收到offer...&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(evt);</span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">setOffer</span>(evt);</span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">sendAnswer</span>(evt);</span></span><br><span class="line"><span class="language-javascript">        peerStarted = <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">onAnswer</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接收到Answer...&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(evt);</span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">setAnswer</span>(evt);</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">onCandidate</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> candidate = <span class="keyword">new</span> <span class="title class_">RTCIceCandidate</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">sdpMLineIndex</span>: evt.<span class="property">sdpMLineIndex</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">sdpMid</span>: evt.<span class="property">sdpMid</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">candidate</span>: evt.<span class="property">candidate</span></span></span><br><span class="line"><span class="language-javascript">        &#125;);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;接收到Candidate...&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(candidate);</span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">addIceCandidate</span>(candidate);</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">sendSDP</span>(<span class="params">sdp</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> text = <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(sdp);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;发送sdp.....&#x27;</span>)</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(text); <span class="comment">// &quot;type&quot;:&quot;offer&quot;....</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// textForSendSDP.value = text;</span></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 通过socket发送sdp</span></span></span><br><span class="line"><span class="language-javascript">        socket.<span class="title function_">send</span>(text)</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">sendCandidate</span>(<span class="params">candidate</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> text = <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(candidate);</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(text); <span class="comment">// &quot;type&quot;:&quot;candidate&quot;,&quot;sdpMLineIndex&quot;:0,&quot;sdpMid&quot;:&quot;0&quot;,&quot;candidate&quot;:&quot;....</span></span></span><br><span class="line"><span class="language-javascript">        socket.<span class="title function_">send</span>(text) <span class="comment">// socket发送</span></span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//---------------------- 视频处理 -----------------------</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">startVideo</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        navigator.<span class="property">mediaDevices</span>.<span class="title function_">enumerateDevices</span>()</span></span><br><span class="line"><span class="language-javascript">        .<span class="title function_">then</span>(<span class="keyword">function</span> (<span class="params">devices</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            devices.<span class="title function_">forEach</span>(<span class="keyword">function</span> (<span class="params">device</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//打印设备类型，设备名称，设备ID</span></span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(device.<span class="property">kind</span>+<span class="string">&quot;:&quot;</span>+device.<span class="property">label</span>+<span class="string">&quot; id=&quot;</span>+device.<span class="property">deviceId</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//根据设备名称，去获取特定的摄像头</span></span></span><br><span class="line"><span class="language-javascript">                <span class="keyword">if</span>(device.<span class="property">label</span>.<span class="title function_">indexOf</span>(<span class="string">&quot;Logitech&quot;</span>)!=-<span class="number">1</span>)&#123;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">                &#125;</span></span><br><span class="line"><span class="language-javascript">            &#125;)</span></span><br><span class="line"><span class="language-javascript">        &#125;);</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">if</span> (navigator.<span class="property">mediaDevices</span>.<span class="property">getUserMedia</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">//最新的标准API</span></span></span><br><span class="line"><span class="language-javascript">            navigator.<span class="property">mediaDevices</span>.<span class="title function_">getUserMedia</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">video</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">audio</span>: <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">            &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">stream</span>) &#123; <span class="comment">//success</span></span></span><br><span class="line"><span class="language-javascript">                localStream = stream;</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">srcObject</span> = stream;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//localVideo.src = window.URL.createObjectURL(stream);</span></span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">volume</span> = <span class="number">0</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;).<span class="title function_">catch</span>(<span class="keyword">function</span>(<span class="params">error</span>) &#123; <span class="comment">//error</span></span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;发生了一个错误: [错误代码：&#x27;</span> + error.<span class="property">code</span> + <span class="string">&#x27;]&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="keyword">return</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;);</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (navigator.<span class="property">webkitGetUserMedia</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">//webkit核心浏览器</span></span></span><br><span class="line"><span class="language-javascript">            navigator.<span class="title function_">webkitGetUserMedia</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">video</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">audio</span>: <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">            &#125;,<span class="keyword">function</span>(<span class="params">stream</span>) &#123; <span class="comment">//success</span></span></span><br><span class="line"><span class="language-javascript">                localStream = stream;</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">srcObject</span> = stream;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//localVideo.src = window.URL.createObjectURL(stream);</span></span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">volume</span> = <span class="number">0</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;, error)</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (navigator.<span class="property">mozGetUserMedia</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">//firfox浏览器</span></span></span><br><span class="line"><span class="language-javascript">            navigator.<span class="title function_">mozGetUserMedia</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">video</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">audio</span>: <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">            &#125;, <span class="keyword">function</span>(<span class="params">stream</span>) &#123; <span class="comment">//success</span></span></span><br><span class="line"><span class="language-javascript">                localStream = stream;</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">srcObject</span> = stream;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//localVideo.src = window.URL.createObjectURL(stream);</span></span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">volume</span> = <span class="number">0</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;, error);</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (navigator.<span class="property">getUserMedia</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">//旧版API</span></span></span><br><span class="line"><span class="language-javascript">            navigator.<span class="title function_">getUserMedia</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">video</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                <span class="attr">audio</span>: <span class="literal">true</span></span></span><br><span class="line"><span class="language-javascript">            &#125;, <span class="keyword">function</span>(<span class="params">stream</span>) &#123; <span class="comment">//success</span></span></span><br><span class="line"><span class="language-javascript">                localStream = stream;</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">srcObject</span> = stream;</span></span><br><span class="line"><span class="language-javascript">                <span class="comment">//localVideo.src = window.URL.createObjectURL(stream);</span></span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="title function_">play</span>();</span></span><br><span class="line"><span class="language-javascript">                localVideo.<span class="property">volume</span> = <span class="number">0</span>;</span></span><br><span class="line"><span class="language-javascript">            &#125;, error);</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">        </span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">refreshPage</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        location.<span class="title function_">reload</span>();</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//---------------------- 处理连接 -----------------------</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">prepareNewConnection</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> pc_config = &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;iceServers&quot;</span>: []</span></span><br><span class="line"><span class="language-javascript">        &#125;;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> peer = <span class="literal">null</span>;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">try</span> &#123;</span></span><br><span class="line"><span class="language-javascript">            peer = <span class="keyword">new</span> <span class="title class_">RTCPeerConnection</span>(pc_config);</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">catch</span> (e) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;建立连接失败，错误：&quot;</span> + e.<span class="property">message</span>);</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 发送所有ICE候选者给对方</span></span></span><br><span class="line"><span class="language-javascript">        peer.<span class="property">onicecandidate</span> = <span class="keyword">function</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">if</span> (evt.<span class="property">candidate</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="variable language_">console</span>.<span class="title function_">log</span>(evt.<span class="property">candidate</span>);</span></span><br><span class="line"><span class="language-javascript">                <span class="title function_">sendCandidate</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                    <span class="attr">type</span>: <span class="string">&quot;candidate&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                    <span class="attr">sdpMLineIndex</span>: evt.<span class="property">candidate</span>.<span class="property">sdpMLineIndex</span>,</span></span><br><span class="line"><span class="language-javascript">                    <span class="attr">sdpMid</span>: evt.<span class="property">candidate</span>.<span class="property">sdpMid</span>,</span></span><br><span class="line"><span class="language-javascript">                    <span class="attr">candidate</span>: evt.<span class="property">candidate</span>.<span class="property">candidate</span></span></span><br><span class="line"><span class="language-javascript">                &#125;);</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">        &#125;;</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;添加本地视频流...&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">        peer.<span class="title function_">addStream</span>(localStream);</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        peer.<span class="title function_">addEventListener</span>(<span class="string">&quot;addstream&quot;</span>, onRemoteStreamAdded, <span class="literal">false</span>);</span></span><br><span class="line"><span class="language-javascript">        peer.<span class="title function_">addEventListener</span>(<span class="string">&quot;removestream&quot;</span>, onRemoteStreamRemoved, <span class="literal">false</span>);</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 当接收到远程视频流时，使用本地video元素进行显示</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">onRemoteStreamAdded</span>(<span class="params">event</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;添加远程视频流&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">// remoteVideo.src = window.URL.createObjectURL(event.stream);</span></span></span><br><span class="line"><span class="language-javascript">            remoteVideo.<span class="property">srcObject</span> = event.<span class="property">stream</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 当远程结束通信时，取消本地video元素中的显示</span></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">function</span> <span class="title function_">onRemoteStreamRemoved</span>(<span class="params">event</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;移除远程视频流&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">            remoteVideo.<span class="property">src</span> = <span class="string">&quot;&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">return</span> peer;</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">sendOffer</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        peerConnection = <span class="title function_">prepareNewConnection</span>();</span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">createOffer</span>(<span class="keyword">function</span>(<span class="params">sessionDescription</span>) &#123; <span class="comment">//成功时调用</span></span></span><br><span class="line"><span class="language-javascript">            peerConnection.<span class="title function_">setLocalDescription</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;发送: SDP&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">sendSDP</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">        &#125;, <span class="keyword">function</span>(<span class="params">err</span>) &#123; <span class="comment">//失败时调用</span></span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;创建Offer失败&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        &#125;, mediaConstraints);</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">setOffer</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">if</span> (peerConnection) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;peerConnection已存在!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">        peerConnection = <span class="title function_">prepareNewConnection</span>();</span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">setRemoteDescription</span>(<span class="keyword">new</span> <span class="title class_">RTCSessionDescription</span>(evt));</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">sendAnswer</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;发送Answer,创建远程会话描述...&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">if</span> (!peerConnection) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;peerConnection不存在!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">createAnswer</span>(<span class="keyword">function</span>(<span class="params">sessionDescription</span>) &#123; <span class="comment">//成功时</span></span></span><br><span class="line"><span class="language-javascript">            peerConnection.<span class="title function_">setLocalDescription</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;发送: SDP&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">sendSDP</span>(sessionDescription);</span></span><br><span class="line"><span class="language-javascript">        &#125;, <span class="keyword">function</span>(<span class="params"></span>) &#123; <span class="comment">//失败时</span></span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;创建Answer失败&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        &#125;, mediaConstraints);</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">setAnswer</span>(<span class="params">evt</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">if</span> (!peerConnection) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">console</span>.<span class="title function_">error</span>(<span class="string">&#x27;peerConnection不存在!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">return</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">setRemoteDescription</span>(<span class="keyword">new</span> <span class="title class_">RTCSessionDescription</span>(evt));</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//-------- 处理用户UI事件 -----</span></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 开始建立连接</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">connect</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">if</span> (!localStream) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">&quot;请首先捕获本地视频数据.&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (peerStarted || !socketRead) &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">&quot;请刷新页面后重试.&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">sendOffer</span>();</span></span><br><span class="line"><span class="language-javascript">            peerStarted = <span class="literal">true</span>;</span></span><br><span class="line"><span class="language-javascript">        &#125;</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 停止连接</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">hangUp</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;挂断.&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">stop</span>();</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">function</span> <span class="title function_">stop</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        peerConnection.<span class="title function_">close</span>();</span></span><br><span class="line"><span class="language-javascript">        peerConnection = <span class="literal">null</span>;</span></span><br><span class="line"><span class="language-javascript">        peerStarted = <span class="literal">false</span>;</span></span><br><span class="line"><span class="language-javascript">    &#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
 ]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%9F%B9%E8%AE%AD%E6%8C%87%E5%8D%97/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%9F%B9%E8%AE%AD%E6%8C%87%E5%8D%97/</url>
+    <url>/project/2024/01/15/LearnNote/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%9F%B9%E8%AE%AD%E6%8C%87%E5%8D%97/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%9F%B9%E8%AE%AD%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h1 id="培训指南"><a href="#培训指南" class="headerlink" title="培训指南"></a>培训指南</h1><hr>
 <h2 id="一、常用便捷软件培训"><a href="#一、常用便捷软件培训" class="headerlink" title="一、常用便捷软件培训"></a>一、常用便捷软件培训</h2><hr>
 <blockquote>
@@ -4727,7 +4727,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Linux%E5%AD%A6%E4%B9%A0/Linux%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Linux%E5%AD%A6%E4%B9%A0/Linux%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Linux学习"><a href="#Linux学习" class="headerlink" title="Linux学习"></a>Linux学习</h1><hr>
 <h2 id="目录作用"><a href="#目录作用" class="headerlink" title="目录作用"></a>目录作用</h2><blockquote>
 <p>&#x2F;	根目录</p>
@@ -4854,7 +4854,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Ajax%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Ajax%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>AJAX特点</p>
 <p>优点</p>
 <ol>
@@ -4877,7 +4877,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Axios%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Axios%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Axios学习"><a href="#Axios学习" class="headerlink" title="Axios学习"></a>Axios学习</h1><hr>
 <h2 id="什么是Axios？"><a href="#什么是Axios？" class="headerlink" title="什么是Axios？"></a>什么是Axios？</h2><hr>
 <p>Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。</p>
@@ -5100,7 +5100,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Vue3%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Vue3%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Vue3学习"><a href="#Vue3学习" class="headerlink" title="Vue3学习"></a>Vue3学习</h1><hr>
 <h2 id="创建Vue3-0工程"><a href="#创建Vue3-0工程" class="headerlink" title="创建Vue3.0工程"></a>创建Vue3.0工程</h2><h3 id="1-使用vue-cli创建"><a href="#1-使用vue-cli创建" class="headerlink" title="1.使用vue-cli创建"></a>1.使用vue-cli创建</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上</span><br><span class="line">vue --version</span><br><span class="line">## 安装或者升级你的@vue/cli</span><br><span class="line">np m install -g @vue/cli</span><br><span class="line">## 创建</span><br><span class="line">vue create vue_test</span><br><span class="line">## 启动</span><br><span class="line">cd vue_test</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure></div>
 
@@ -5233,7 +5233,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Vue%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Vue%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><hr>
 <h2 id="创建Vue项目的命令："><a href="#创建Vue项目的命令：" class="headerlink" title="创建Vue项目的命令："></a>创建Vue项目的命令：</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm init vue@latest</span><br></pre></td></tr></table></figure></div>
 
@@ -5714,7 +5714,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/BP%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95/</url>
+    <url>/project/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/BP%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="BP神经网络算法"><a href="#BP神经网络算法" class="headerlink" title="BP神经网络算法"></a>BP神经网络算法</h1><hr>
 <h2 id="1-BP神经网络概念"><a href="#1-BP神经网络概念" class="headerlink" title="1 BP神经网络概念"></a>1 BP神经网络概念</h2><hr>
 <p>首先从名称中可以看出，Bp神经网络可以分为两个部分，bp和神经网络。bp是 Back Propagation 的简写 ，意思是反向传播。</p>
@@ -5805,7 +5805,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Web%E5%B8%83%E5%B1%80%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/Web%E5%89%8D%E7%AB%AF/Web%E5%B8%83%E5%B1%80%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Web前端布局"><a href="#Web前端布局" class="headerlink" title="Web前端布局"></a>Web前端布局</h1><hr>
 <h2 id="标准文档流"><a href="#标准文档流" class="headerlink" title="标准文档流"></a>标准文档流</h2><ul>
 <li><p>标准文档流为从上到下排列</p>
@@ -5864,7 +5864,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95/</url>
+    <url>/project/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="卷积神经网络算法"><a href="#卷积神经网络算法" class="headerlink" title="卷积神经网络算法"></a>卷积神经网络算法</h1><hr>
 <h2 id="1、卷积神经网络-CNN-的基本原理"><a href="#1、卷积神经网络-CNN-的基本原理" class="headerlink" title="1、卷积神经网络-CNN 的基本原理"></a>1、卷积神经网络-CNN 的基本原理</h2><blockquote>
 <p> 卷积神经网络(Convolutional Neural Networks, CNNs)是一种深度学习算法，特别适用于图像处理和分析。其设计灵感来源于生物学中视觉皮层的机制，是一种强大的特征提取和分类工具。</p>
@@ -6018,7 +6018,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/ReLU%E5%87%BD%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/ReLU%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h1 id="ReLU函数"><a href="#ReLU函数" class="headerlink" title="ReLU函数"></a>ReLU函数</h1><hr>
 <p>介绍：</p>
 <blockquote>
@@ -6048,7 +6048,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%B8%B8%E8%A7%81%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%B8%B8%E8%A7%81%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h1 id="常见激活函数"><a href="#常见激活函数" class="headerlink" title="常见激活函数"></a>常见激活函数</h1><hr>
 <blockquote>
 <p>sigmoid: $\sigma (x) &#x3D;  {1 \over 1+ e^{-x}}$</p>
@@ -6072,14 +6072,14 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E4%BD%9B%E7%A5%96%E6%A8%A1%E6%9D%BF/README/</url>
+    <url>/project/2024/01/15/LearnNote/%E4%BD%9B%E7%A5%96%E6%A8%A1%E6%9D%BF/README/</url>
     <content><![CDATA[<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><hr>
 <p>使用时只需要把文件名改为banner.txt然后拖入SpringBoot项目的resource文件夹里面即可。</p>
 ]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README/</url>
     <content><![CDATA[<h1 id="算法模板"><a href="#算法模板" class="headerlink" title="算法模板"></a>算法模板</h1><hr>
 <blockquote>
 <p>这里整理了一些个人自己整理的算法模板，同时也方便以后比赛回顾方便，有需要的自取。</p>
@@ -6131,7 +6131,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Redis%E5%AD%A6%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Redis%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="Redis学习"><a href="#Redis学习" class="headerlink" title="Redis学习"></a>Redis学习</h1><hr>
 <h2 id="Redis安装流程"><a href="#Redis安装流程" class="headerlink" title="Redis安装流程"></a>Redis安装流程</h2><hr>
 <p>1.Redis是开源的数据库，首先如果要运行话先要用gcc编译器编译好之后才能运行。</p>
@@ -6469,7 +6469,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JSP%E5%A4%8D%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/JAVA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/JSP%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="JSP复习"><a href="#JSP复习" class="headerlink" title="JSP复习"></a>JSP复习</h1><hr>
 <blockquote>
 <div align="center"><img  width="200" 
@@ -6668,7 +6668,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E5%88%86%E5%80%BC%E8%AF%84%E4%BC%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7%E5%88%86%E5%80%BC%E8%AF%84%E4%BC%B0/</url>
     <content><![CDATA[<hr>
 <p>英语四级总分是710分。</p>
 <p>一、英语四级作文</p>
@@ -6692,7 +6692,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E6%95%B0%E4%BD%8DDP%E7%9A%84%E8%AE%A8%E8%AE%BA/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E6%95%B0%E4%BD%8DDP%E7%9A%84%E8%AE%A8%E8%AE%BA/</url>
     <content><![CDATA[<h1 id="数位DP题目的讨论"><a href="#数位DP题目的讨论" class="headerlink" title="数位DP题目的讨论"></a>数位DP题目的讨论</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>就目前来说，所遇见的数位DP的题目类型主要可以分为以下几种类型：</p>
@@ -6705,7 +6705,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="操作系统复习"><a href="#操作系统复习" class="headerlink" title="操作系统复习"></a>操作系统复习</h1><hr>
 <h2 id="操作系统概念、层次"><a href="#操作系统概念、层次" class="headerlink" title="操作系统概念、层次"></a>操作系统概念、层次</h2><blockquote>
 <p> 操作系统是一种庞大的系统软件，由大量复杂的程序和众多的数据组合而成，他具有层次和模块结构的特点，其内部分为三个层次：操作系统对象、控制和管理的软件集合、用户接口。</p>
@@ -6741,7 +6741,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E8%80%83%E7%A0%94%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E8%80%83%E7%A0%94%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="考研数据结构与算法"><a href="#考研数据结构与算法" class="headerlink" title="考研数据结构与算法"></a>考研数据结构与算法</h1><hr>
 <h2 id="常见四类基本结构"><a href="#常见四类基本结构" class="headerlink" title="常见四类基本结构"></a>常见四类基本结构</h2><blockquote>
 <p>集合</p>
@@ -6800,7 +6800,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E6%A0%91%E5%BD%A2dp%E7%9A%84%E8%AE%A8%E8%AE%BA/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E6%A0%91%E5%BD%A2dp%E7%9A%84%E8%AE%A8%E8%AE%BA/</url>
     <content><![CDATA[<h1 id="树形DP的讨论"><a href="#树形DP的讨论" class="headerlink" title="树形DP的讨论"></a>树形DP的讨论</h1><hr>
 <h3 id="讨论："><a href="#讨论：" class="headerlink" title="讨论："></a>讨论：</h3><blockquote>
 <p>关于树形DP。树形DP比较适合解决一些有相互关系和依赖的的题型，比较典型的有<a class="link"   href="https://www.luogu.com.cn/problem/P1352" >没有上司的舞会 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、<a class="link"   href="https://www.luogu.com.cn/problem/P1064" >金明的预算方案 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>、这一类题目。</p>
@@ -6832,7 +6832,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/BinarySearch/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/BinarySearch/</url>
     <content><![CDATA[<h1 id="BinarySearch"><a href="#BinarySearch" class="headerlink" title="BinarySearch"></a>BinarySearch</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>BinarySearch中文又叫做二分查找，这是一种查找类的算法，但是其使用是有一定的限制的，那就是必须要区间类必须要满足相应的单调性，不然的话是无法使用的。</p>
@@ -6846,7 +6846,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/BFS/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/BFS/</url>
     <content><![CDATA[<h1 id="BFS"><a href="#BFS" class="headerlink" title="BFS"></a>BFS</h1><hr>
 <h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><blockquote>
 <p>BFS中文叫做广度优先搜索，BFS算是暴力搜索的其中一种算法，这个算法主要还是可以解决一些最小路径的问题，以及搜索问题，比如迷宫问题等等，其主要思想就是通过穷举所有可能走的路并找到答案或者试出最优答案，不过他相对于DFS说其有点就在于广撒网，时间复杂度要比DFS低。</p>
@@ -6857,7 +6857,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E6%97%A5%E6%9C%9F%E7%B1%BB%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E6%97%A5%E6%9C%9F%E7%B1%BB%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="Java日期类使用技巧"><a href="#Java日期类使用技巧" class="headerlink" title="Java日期类使用技巧"></a>Java日期类使用技巧</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>Java特有的日期类的使用</p>
@@ -6868,7 +6868,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/DFS/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/DFS/</url>
     <content><![CDATA[<h1 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h1><hr>
 <h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><blockquote>
 <p>DFS中文叫做深度优先搜索，DFS算是暴力搜索的其中一种算法，这个算法主要还是可以解决一些最小路径的问题，以及搜索问题，比如迷宫问题等等，其主要思想就是通过穷举所有可能走的路并找到答案或者试出最优答案。</p>
@@ -6879,7 +6879,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Dijkstra/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Dijkstra/</url>
     <content><![CDATA[<h1 id="Dijkstra"><a href="#Dijkstra" class="headerlink" title="Dijkstra"></a>Dijkstra</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>Dijkstra算法是一种求图的单元最短路径的算法</p>
@@ -6891,7 +6891,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E5%A4%A7%E6%95%B0%E5%AD%97%E8%BF%90%E7%AE%97%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E5%A4%A7%E6%95%B0%E5%AD%97%E8%BF%90%E7%AE%97%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="Java大数字运算使用技巧"><a href="#Java大数字运算使用技巧" class="headerlink" title="Java大数字运算使用技巧"></a>Java大数字运算使用技巧</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>Java大数字使用技巧,这里只演示BigInteger了，BigDecimal高精度大数字就不演示了(用法基本一样)。</p>
@@ -6904,7 +6904,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/KMP/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/KMP/</url>
     <content><![CDATA[<h1 id="KMP"><a href="#KMP" class="headerlink" title="KMP"></a>KMP</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>KMP算法其实主要的作用就是匹配子字符串，就比如：</p>
@@ -6921,12 +6921,12 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Prim/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Prim/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E6%AD%A3%E5%88%99%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Java%E6%AD%A3%E5%88%99%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h1 id="Java正则使用技巧"><a href="#Java正则使用技巧" class="headerlink" title="Java正则使用技巧"></a>Java正则使用技巧</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>Java正则使用</p>
@@ -7257,7 +7257,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/SegmentTree(%E7%BA%BF%E6%AE%B5%E6%A0%91)/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/SegmentTree(%E7%BA%BF%E6%AE%B5%E6%A0%91)/</url>
     <content><![CDATA[<h1 id="线段树"><a href="#线段树" class="headerlink" title="线段树"></a>线段树</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>线段树模板</p>
@@ -7272,7 +7272,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Kruskal/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Kruskal/</url>
     <content><![CDATA[<h1 id="Kruskal"><a href="#Kruskal" class="headerlink" title="Kruskal"></a>Kruskal</h1><hr>
 <h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><blockquote>
 <p>Kruskal算法是一种基于图的算法，他的主要作用就是找出图中的最小生成树，这个算法会在一些比如铺设电网最小开销等问题上有相应的应用。</p>
@@ -7283,7 +7283,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Manacher/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/Manacher/</url>
     <content><![CDATA[<h1 id="Manacher"><a href="#Manacher" class="headerlink" title="Manacher"></a>Manacher</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>Manacher算法主要是用于字符串查找最长回文子串，其原理就是在原本的字符串插入其他特殊符号达到把我们所有需要所有需要匹配的回文都变成了奇回文，并且以其奇回文的中点向左右扩散计算其回文长度。</p>
@@ -7294,7 +7294,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%85%A8%E6%8E%92%E5%88%97/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%85%A8%E6%8E%92%E5%88%97/</url>
     <content><![CDATA[<h1 id="全排列"><a href="#全排列" class="headerlink" title="全排列"></a>全排列</h1><hr>
 <h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><blockquote>
 <p>此算法的主要目的就是例举出我们的数据不重复排列的方式有多少种并且知道具体的排列方式，其实如果只是想要知道排列方式有多少种直接用数学排列组合公式直接运算就行</p>
@@ -7312,7 +7312,7 @@
   </entry>
   <entry>
     <title>并查集</title>
-    <url>/2022/09/28/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%B9%B6%E6%9F%A5%E9%9B%86/</url>
+    <url>/project/2022/09/28/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%B9%B6%E6%9F%A5%E9%9B%86/</url>
     <content><![CDATA[<h1 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h1><hr>
 <h2 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h2><blockquote>
 <p>此算法主要是用于查找树中的一结点的根结点，通常会用作查找匹配两个节点的根节点是否是同一个。</p>
@@ -7330,7 +7330,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%88%86%E8%A7%A3%E8%B4%A8%E5%9B%A0%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%88%86%E8%A7%A3%E8%B4%A8%E5%9B%A0%E6%95%B0/</url>
     <content><![CDATA[<h1 id="分解质因数"><a href="#分解质因数" class="headerlink" title="分解质因数"></a>分解质因数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>分解质因数的主要作用就是将数字分解成多个质数因数，这些因数相乘等于这个数。</p>
@@ -7377,7 +7377,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%BF%AB%E8%AF%BB%E5%BF%AB%E8%BE%93/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%BF%AB%E8%AF%BB%E5%BF%AB%E8%BE%93/</url>
     <content><![CDATA[<h1 id="快读快输"><a href="#快读快输" class="headerlink" title="快读快输"></a>快读快输</h1><hr>
 <h2 id="Java快输模板："><a href="#Java快输模板：" class="headerlink" title="Java快输模板："></a>Java快输模板：</h2><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Reader</span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(System.in));</span><br><span class="line">	<span class="keyword">static</span> <span class="type">StringTokenizer</span> <span class="variable">tokenizer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringTokenizer</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">next</span><span class="params">()</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">		<span class="keyword">while</span>(!tokenizer.hasMoreTokens()) &#123;</span><br><span class="line">			tokenizer = <span class="keyword">new</span> <span class="title class_">StringTokenizer</span>(reader.readLine());</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> tokenizer.nextToken();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">nextInt</span><span class="params">()</span> <span class="keyword">throws</span> NumberFormatException, IOException &#123;</span><br><span class="line">		<span class="keyword">return</span> Integer.parseInt(next());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -7389,7 +7389,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%B7%AE%E5%88%86/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%B7%AE%E5%88%86/</url>
     <content><![CDATA[<h1 id="差分"><a href="#差分" class="headerlink" title="差分"></a>差分</h1><hr>
 <p>说明：</p>
 <blockquote>
@@ -7411,7 +7411,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%95%B0%E5%AD%97N%E6%8B%86%E5%88%86%E4%B8%BAK%E4%B8%AA%E4%B8%8D%E5%90%8C%E6%95%B0%E5%AD%97/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%95%B0%E5%AD%97N%E6%8B%86%E5%88%86%E4%B8%BAK%E4%B8%AA%E4%B8%8D%E5%90%8C%E6%95%B0%E5%AD%97/</url>
     <content><![CDATA[<h1 id="将数字N拆分为K个不同的数字"><a href="#将数字N拆分为K个不同的数字" class="headerlink" title="将数字N拆分为K个不同的数字"></a>将数字N拆分为K个不同的数字</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>将数字N拆分为K个不同的数字一共有多少种不同的方法？</p>
@@ -7422,13 +7422,13 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
     <content><![CDATA[<h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><h4 id="C-模板"><a href="#C-模板" class="headerlink" title="C++模板"></a>C++模板</h4><div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">数组模拟二叉树</span></span><br><span class="line"><span class="comment">如果以存储起点为1那么：</span></span><br><span class="line"><span class="comment">如果2^i&lt;n那么说明有左节点,如果2^i+1&lt;n那么说明有右节点,i代表的是度，n代表总体的长度,该度的最后一位计算就是2^(i+1)-1;</span></span><br><span class="line"><span class="comment">比如说你现在的度是1那么度为2的最后一位就是在数组2^(1+1)-1=3当中</span></span><br><span class="line"><span class="comment">如果以存储起点为0那么：</span></span><br><span class="line"><span class="comment">如果2^i-1&lt;n那么说明有左节点,如果2^i&lt;n那么说明有右节点,i代表的是度,n代表总体的长度，该度的最后一位计算就是2*(i+1)-2;</span></span><br><span class="line"><span class="comment">比如说你现在的度是1，那么度为2的最后一位就是在数组2^(1+1)-2=2当中</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&lt;和&lt;=的问题要看你是怎么存储的如果是从1开始存储那么就要取&lt;=n如果是从0开始存储那么就要取&lt;</span></span><br><span class="line"><span class="comment">度必须从1开始因为如果没有二叉树必须要有一个为起点</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e5</span> + <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"></span><br><span class="line"><span class="comment">/// @brief 寻找完全二叉树的总共的度</span></span><br><span class="line"><span class="comment">/// @param n 总体的长度</span></span><br><span class="line"><span class="comment">/// @param dept 度</span></span><br><span class="line"><span class="comment">/// @return 是完全二叉树的总共的度</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> dept)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 找到了最后一位那么递增一位度</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">pow</span>(<span class="number">2</span>, dept + <span class="number">1</span>) - <span class="number">1</span> == i)</span><br><span class="line">            dept++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> dept;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// @brief 输出树里面的数</span></span><br><span class="line"><span class="comment">/// @param n 总体的长度</span></span><br><span class="line"><span class="comment">/// @param dept 度</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">findTree</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> dept)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (a[dept])</span><br><span class="line">        cout &lt;&lt; a[dept] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (a[dept * <span class="number">2</span>] &amp;&amp; <span class="number">2</span> * dept &lt;= n)</span><br><span class="line">        <span class="built_in">findTree</span>(n, <span class="number">2</span> * dept);</span><br><span class="line">    <span class="keyword">if</span> (a[dept * <span class="number">2</span> + <span class="number">1</span>] &amp;&amp; <span class="number">2</span> * dept + <span class="number">1</span> &lt;= n)</span><br><span class="line">        <span class="built_in">findTree</span>(n, <span class="number">2</span> * dept + <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//以下是测试集</span></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    a[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; i++)</span><br><span class="line">        a[i] = i;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">findTree</span>(n, <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">find</span>(n, <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 ]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%B4%A0%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%B4%A0%E6%95%B0/</url>
     <content><![CDATA[<h1 id="判断是否为素数"><a href="#判断是否为素数" class="headerlink" title="判断是否为素数"></a>判断是否为素数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>质数是指在大于1的<a class="link"   href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394" >自然数 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>中，除了1和它本身以外不再有其他<a class="link"   href="https://baike.baidu.com/item/%E5%9B%A0%E6%95%B0/9539111" >因数 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的自然数。(0，1不是素数)</p>
@@ -7439,7 +7439,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%97%A5%E6%9C%9F%E5%90%88%E6%A0%BC%E5%8F%8A%E5%B9%B3%E5%B9%B4%E9%97%B0%E5%B9%B4%E5%88%A4%E6%96%AD/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%97%A5%E6%9C%9F%E5%90%88%E6%A0%BC%E5%8F%8A%E5%B9%B3%E5%B9%B4%E9%97%B0%E5%B9%B4%E5%88%A4%E6%96%AD/</url>
     <content><![CDATA[<h1 id="日期合格及平年闰年判断"><a href="#日期合格及平年闰年判断" class="headerlink" title="日期合格及平年闰年判断"></a>日期合格及平年闰年判断</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>主要用于判断日期是否合格以及判断日期是否为平年或闰年</p>
@@ -7450,7 +7450,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%95%B0%E4%BD%8DDP/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%95%B0%E4%BD%8DDP/</url>
     <content><![CDATA[<h1 id="数位DP"><a href="#数位DP" class="headerlink" title="数位DP"></a>数位DP</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>数位DP是为了解决某些数字匹配上面的问题，其中经典的写法是套用DFS算法实现数位DP。</p>
@@ -7464,7 +7464,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/</url>
     <content><![CDATA[<h1 id="最大公约数"><a href="#最大公约数" class="headerlink" title="最大公约数"></a>最大公约数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>计算最大公约数,这里只展示通过递归实现。</p>
@@ -7479,7 +7479,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%B1%82%E9%98%B6%E4%B9%98%E7%9A%84%E7%BA%A6%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%B1%82%E9%98%B6%E4%B9%98%E7%9A%84%E7%BA%A6%E6%95%B0/</url>
     <content><![CDATA[<h1 id="求阶乘的约数"><a href="#求阶乘的约数" class="headerlink" title="求阶乘的约数"></a>求阶乘的约数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>用于求阶乘有多少个约数~</p>
@@ -7490,7 +7490,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%B1%82%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%B1%82%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/</url>
     <content><![CDATA[<h1 id="求最小公倍数"><a href="#求最小公倍数" class="headerlink" title="求最小公倍数"></a>求最小公倍数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>求最小公倍数可以在求最大公因数的基础上进行，这样就可以极大提高效率,这里需要明白一个点：</p>
@@ -7503,7 +7503,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>讲解视屏：</p>
@@ -7521,7 +7521,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E7%9B%B4%E7%BA%BF/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E7%9B%B4%E7%BA%BF/</url>
     <content><![CDATA[<h1 id="直线相关"><a href="#直线相关" class="headerlink" title="直线相关"></a>直线相关</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>直线的一般式是：</p>
@@ -7555,7 +7555,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E9%93%BE%E5%BC%8F%E5%90%91%E5%89%8D%E6%98%9F/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E9%93%BE%E5%BC%8F%E5%90%91%E5%89%8D%E6%98%9F/</url>
     <content><![CDATA[<h1 id="链式向前星"><a href="#链式向前星" class="headerlink" title="链式向前星"></a>链式向前星</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>如果说邻接表是不好写但效率好，邻接矩阵是好写但效率低的话，前向星就是一个相对中庸的数据结构。前向星固然好写，但效率并不高。而在优化为链式前向星后，效率也得到了较大的提升。虽然说，世界上对链式前向星的使用并不是很广泛，但在不愿意写复杂的邻接表的情况下，链式前向星也是一个很优秀的数据结构。 </p>
@@ -7570,7 +7570,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E7%9B%B4%E9%80%9A%E9%A2%98%E5%8D%95/%E5%9F%BA%E4%BA%8E%E9%A2%98%E7%9B%AE%E7%9A%84%E8%AE%AD%E7%BB%83%EF%BC%88%E6%97%A0%E8%84%91%E8%B7%9F%E7%9D%80%E5%88%B7%EF%BC%89/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E7%9B%B4%E9%80%9A%E9%A2%98%E5%8D%95/%E5%9F%BA%E4%BA%8E%E9%A2%98%E7%9B%AE%E7%9A%84%E8%AE%AD%E7%BB%83%EF%BC%88%E6%97%A0%E8%84%91%E8%B7%9F%E7%9D%80%E5%88%B7%EF%BC%89/</url>
     <content><![CDATA[<h1 id="蓝桥题单"><a href="#蓝桥题单" class="headerlink" title="蓝桥题单"></a>蓝桥题单</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>基于题目训练！！这个题单是混合型题单，题目由浅到深。遇到新的算法就滚回去刷基础算法，刷完弄懂后再继续刷接下来的题目。</p>
@@ -7589,14 +7589,14 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E7%9B%B4%E9%80%9A%E9%A2%98%E5%8D%95/%E8%93%9D%E6%A1%A5%E5%9F%BA%E7%A1%80%E9%A2%98%E5%8D%95/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E7%9B%B4%E9%80%9A%E9%A2%98%E5%8D%95/%E8%93%9D%E6%A1%A5%E5%9F%BA%E7%A1%80%E9%A2%98%E5%8D%95/</url>
     <content><![CDATA[<h1 id="蓝桥直通题单"><a href="#蓝桥直通题单" class="headerlink" title="蓝桥直通题单"></a>蓝桥直通题单</h1><hr>
 <h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><h2 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h2><h2 id="Manacher算法"><a href="#Manacher算法" class="headerlink" title="Manacher算法"></a>Manacher算法</h2><h2 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h2><h2 id="BFS"><a href="#BFS" class="headerlink" title="BFS"></a>BFS</h2><h2 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h2><h2 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h2><h2 id="Kruskal算法"><a href="#Kruskal算法" class="headerlink" title="Kruskal算法"></a>Kruskal算法</h2><h2 id="Dijkstra算法"><a href="#Dijkstra算法" class="headerlink" title="Dijkstra算法"></a>Dijkstra算法</h2><h2 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h2><h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><p>选择问题：</p>
 <h3 id="01背包-1"><a href="#01背包-1" class="headerlink" title="01背包"></a>01背包</h3><h3 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h3><h3 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h3><h3 id="混合背包"><a href="#混合背包" class="headerlink" title="混合背包"></a>混合背包</h3><h2 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h2><h2 id="线段树"><a href="#线段树" class="headerlink" title="线段树"></a>线段树</h2>]]></content>
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E7%BB%84%E5%90%88%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/%E7%BB%84%E5%90%88%E6%95%B0/</url>
     <content><![CDATA[<h1 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h1><hr>
 <h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><blockquote>
 <p>组合数是指从n个不同元素中取出m个元素的组合数目，用C(n,m)表示。在Java中，可以使用递归或动态规划的方法来计算组合数。</p>
@@ -7607,7 +7607,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/UML%E7%B1%BB%E5%9B%BE/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/UML%E7%B1%BB%E5%9B%BE/</url>
     <content><![CDATA[<h1 id="UML类图"><a href="#UML类图" class="headerlink" title="UML类图"></a>UML类图</h1><hr>
 <p>一、UML基础知识扫盲</p>
 <p>1、概念 ： UML这三个字母的全称是Unified Modeling Language，直接翻译就是<strong>统一建模语言</strong>，简单地说就是一种有特殊用途的语言。</p>
@@ -7646,7 +7646,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/eNSP%E4%BD%BF%E7%94%A8/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/eNSP%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="eNSP使用"><a href="#eNSP使用" class="headerlink" title="eNSP使用"></a>eNSP使用</h1><hr>
 <h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><blockquote>
 <p>1.VRP概念：通用路由平台，华为公司数据通信产品的通用网络操作系统平台，拥有一致的网络界面、用户界面和管理界面。</p>
@@ -7842,7 +7842,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<hr>
 <p>考试内容概要：<br>（一）函数的概念及常见函数<br>（二）函数的性质<br>常考题型与典型例题<br>题型一 函数的性质<br>题型二复合函数</p>
 <p>单调函数一定有反函数，但反之则不然（充分但不必要条件）</p>
@@ -7868,7 +7868,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="操作系统复习"><a href="#操作系统复习" class="headerlink" title="操作系统复习"></a>操作系统复习</h1><hr>
 <h2 id="操作系统概念、层次"><a href="#操作系统概念、层次" class="headerlink" title="操作系统概念、层次"></a>操作系统概念、层次</h2><blockquote>
 <p> 操作系统是一种庞大的系统软件，由大量复杂的程序和众多的数据组合而成，他具有层次和模块结构的特点，其内部分为三个层次：操作系统对象、控制和管理的软件集合、用户接口。</p>
@@ -7904,7 +7904,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%90%84%E7%B1%BB%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%90%84%E7%B1%BB%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC/</url>
     <content><![CDATA[<h1 id="各类函数求导"><a href="#各类函数求导" class="headerlink" title="各类函数求导"></a>各类函数求导</h1><hr>
 <h2 id="常见求导"><a href="#常见求导" class="headerlink" title="常见求导"></a>常见求导</h2><p><img  
                      lazyload
@@ -7916,7 +7916,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%B1%82%E6%9E%81%E9%99%90/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%B1%82%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<h1 id="函数求极限"><a href="#函数求极限" class="headerlink" title="函数求极限"></a>函数求极限</h1><hr>
 <p><img  
                      lazyload
@@ -8021,7 +8021,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD/</url>
     <content><![CDATA[<h1 id="第一章函数、极限、连续"><a href="#第一章函数、极限、连续" class="headerlink" title="第一章	函数、极限、连续"></a>第一章	函数、极限、连续</h1><hr>
 <h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><hr>
 <h2 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h2><hr>
@@ -8042,7 +8042,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/</url>
     <content><![CDATA[<h1 id="一元微分"><a href="#一元微分" class="headerlink" title="一元微分"></a>一元微分</h1><hr>
 <h2 id="常考题型"><a href="#常考题型" class="headerlink" title="常考题型"></a>常考题型</h2><ul>
 <li>导数和微分的概念</li>
@@ -8070,7 +8070,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</url>
     <content><![CDATA[<h1 id="第三节-函数的连续性"><a href="#第三节-函数的连续性" class="headerlink" title="第三节 函数的连续性"></a>第三节 函数的连续性</h1><hr>
 <h2 id="（一）连续性的概念"><a href="#（一）连续性的概念" class="headerlink" title="（一）连续性的概念"></a>（一）连续性的概念</h2><blockquote>
 <p><img  
@@ -8128,7 +8128,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<h1 id="对数函数相关内容"><a href="#对数函数相关内容" class="headerlink" title="对数函数相关内容"></a>对数函数相关内容</h1><hr>
 <h2 id="基本知识："><a href="#基本知识：" class="headerlink" title="基本知识："></a>基本知识：</h2><blockquote>
 <p>$log_a(1) &#x3D; 0;$</p>
@@ -8163,7 +8163,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E6%9E%81%E9%99%90%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E6%9E%81%E9%99%90%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<p>$$||a|-|b||&lt;&#x3D;|a-b|$$</p>
 <p>见到e无穷就注意分左右。</p>
 <p>见到arctan也要注意分左右。</p>
@@ -8215,7 +8215,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E9%AB%98%E6%95%B02-1%20%E5%AF%BC%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/%E9%AB%98%E6%95%B02-1%20%E5%AF%BC%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89/</url>
     <content><![CDATA[<h1 id="高数2-1-导数的定义"><a href="#高数2-1-导数的定义" class="headerlink" title="高数2-1 导数的定义"></a>高数2-1 导数的定义</h1><hr>
 <h2 id="常考题型与典型例题："><a href="#常考题型与典型例题：" class="headerlink" title="常考题型与典型例题："></a>常考题型与典型例题：</h2><blockquote>
 <p>1.导数定义；&#x3D;&#x3D;难点&#x3D;&#x3D;</p>
@@ -8272,7 +8272,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%80%83%E7%A0%94%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</url>
+    <url>/project/2024/01/15/LearnNote/%E8%80%83%E7%A0%94%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%80%83%E7%A0%94%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<h1 id="考研数据结构与算法"><a href="#考研数据结构与算法" class="headerlink" title="考研数据结构与算法"></a>考研数据结构与算法</h1><hr>
 <h2 id="常见四类基本结构"><a href="#常见四类基本结构" class="headerlink" title="常见四类基本结构"></a>常见四类基本结构</h2><blockquote>
 <p>集合</p>
@@ -8343,7 +8343,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<hr>
 <p>考试内容概要：<br>（一）函数的概念及常见函数<br>（二）函数的性质<br>常考题型与典型例题<br>题型一 函数的性质<br>题型二复合函数</p>
 <p>单调函数一定有反函数，但反之则不然（充分但不必要条件）</p>
@@ -8369,7 +8369,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</url>
     <content><![CDATA[<h1 id="第三节-函数的连续性"><a href="#第三节-函数的连续性" class="headerlink" title="第三节 函数的连续性"></a>第三节 函数的连续性</h1><hr>
 <h2 id="（一）连续性的概念"><a href="#（一）连续性的概念" class="headerlink" title="（一）连续性的概念"></a>（一）连续性的概念</h2><blockquote>
 <p><img  
@@ -8427,7 +8427,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD/</url>
     <content><![CDATA[<h1 id="函数、极限、连续"><a href="#函数、极限、连续" class="headerlink" title="函数、极限、连续"></a>函数、极限、连续</h1><hr>
 <h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><hr>
 <h2 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h2><hr>
@@ -8448,7 +8448,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E9%99%90%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E9%99%90%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<p>$$||a|-|b||&lt;&#x3D;|a-b|$$</p>
 <p>见到e无穷就注意分左右。</p>
 <p>见到arctan也要注意分左右。</p>
@@ -8500,7 +8500,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%B1%82%E6%9E%81%E9%99%90/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%87%BD%E6%95%B0%E6%B1%82%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<h1 id="函数求极限"><a href="#函数求极限" class="headerlink" title="函数求极限"></a>函数求极限</h1><hr>
 <p><img  
                      lazyload
@@ -8605,7 +8605,7 @@ public class 分解质因数 &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3/</url>
+    <url>/project/2024/01/15/LearnNote/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<h1 id="对数函数相关内容"><a href="#对数函数相关内容" class="headerlink" title="对数函数相关内容"></a>对数函数相关内容</h1><hr>
 <h2 id="基本知识："><a href="#基本知识：" class="headerlink" title="基本知识："></a>基本知识：</h2><blockquote>
 <p>$log_a(1) &#x3D; 0;$</p>
