@@ -1,803 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Hexo Theme Redefine">
-    
-    <meta name="author" content="ChangBaiQi">
-    <!-- preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    
-    <!--- Seo Part-->
-    
-    <link rel="canonical" href="https://blogs.changbaiqi.top/page/6/"/>
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
-    <meta name="revisit-after" content="1 days">
-    
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>长白崎の个人博客</title><meta name="author" content="长白崎"><meta name="copyright" content="长白崎"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="长白崎の个人博客">
 <meta property="og:url" content="https://blogs.changbaiqi.top/page/6/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="长白崎の个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+<meta property="article:author" content="长白崎">
 <meta name="twitter:card" content="summary">
-    
-    
-        <!-- Google tag (gtag.js) -->
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-BNDXDVC6ZN"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-BNDXDVC6ZN');
-        </script>
-    
-    <!--- Icon Part-->
-    <link rel="icon" type="image/png" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg">
-    <meta name="theme-color" content="#A31F34">
-    <link rel="shortcut icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
-    <!--- Page Info-->
-    
-    <title>
-        
-        长白崎の个人博客
-    </title>
-
-    
-<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
-
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
+<meta name="twitter:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blogs.changbaiqi.top/page/6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '长白崎の个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-01-15 23:22:34'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
         }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
+      }
     
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        长白崎の个人博客
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
         }
 
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
         } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+          document.documentElement.classList.remove('hide-aside')
         }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
         }
-    </script>
-</div>
-    
-
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    
-        
-<link rel="stylesheet" href="/assets/build/styles.css">
-
-    
-
-    
-<link rel="stylesheet" href="/fonts/fonts.css">
-
-    
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
-
-    <!--- Font Part-->
-    
-    
-    
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    
-
-    <!--- Inject Part-->
-    
-    <script id="hexo-configurations">
-    window.config = {"hostname":"blogs.changbaiqi.top","root":"/","language":"en","path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"G-BNDXDVC6ZN"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/1f54c5ab85845cd6c2e29ee5a109605a.webp"},"title":"长白崎の个人博客","subtitle":{"text":["记录点点滴滴","欢迎来到我的个人博客"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://www.github.com/Changbaiqi","instagram":null,"zhihu":null,"twitter":null,"fa-duotone fa-envelope":"changbaiqi@foxmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"同じ高みへ","artist":"水月陵 (みずつき りょう)","url":"https://music.163.com/song/media/outer/url?id=22706973.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M00000397FdL3rnzT3_1.jpg"},{"name":"光放て！","artist":"柳麻美 (やなぎ まみ)","url":"https://vodkgeyttp8.vod.126.net/cloudmusic/obj/core/1953684844/1016b80564983ddc780304ddbb71d5c9.mp4?wsSecret=3ede5eadc192dfec14924fe4e875cc0e&wsTime=1705259191","cover":"https://p2.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
-    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
-    window.data = {"masonry":false};
-  </script>
-    
-    <!--- Fontawesome Part-->
-    
-<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/brands.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/solid.min.css">
-
-    
-<link rel="stylesheet" href="/fontawesome/regular.min.css">
-
-    
-    
-    
-        
-<link rel="stylesheet" href="/fontawesome/duotone.min.css">
-
-    
-    
-<meta name="generator" content="Hexo 7.0.0">
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
-
-
-<body>
-<div class="progress-bar-container">
-    
-        <span class="scroll-progress-bar"></span>
-    
-
-    
-        <span class="pjax-progress-bar"></span>
-<!--        <span class="swup-progress-icon">-->
-<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
-<!--        </span>-->
-    
-</div>
-
-
-<main class="page-container" id="swup">
-
-    
-        <style>
-    .home-article-item,
-    .sidebar-links,
-    .sidebar-content,
-    a.page-number,
-    a.extend,
-    .sidebar-links .links:hover,
-    .right-bottom-tools,
-    footer.footer {
-        background-color: var(--background-color-transparent-80) !important;
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
     }
-    .right-bottom-tools:hover,
-    a.page-number:hover,
-    a.extend:hover {
-        background-color: var(--primary-color) !important;
-    }
-    .site-info,
-    .home-article-sticky-label {
-        background-color: var(--background-color-transparent-15) !important;
-    }
-    .home-article-sticky-label {
-        backdrop-filter: none !important;
-    }
-    .home-banner-background {
-        filter: blur(15px);
-    }
-</style>
+  }
 
-<div class="home-banner-background">
-</div>
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
 
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">102</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/1f54c5ab85845cd6c2e29ee5a109605a.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="长白崎の个人博客"><span class="site-name">长白崎の个人博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">长白崎の个人博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Changbaiqi" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:changbaiqi@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/07/bp-shen-jing-wang-luo-suan-fa/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/bp-shen-jing-wang-luo-suan-fa/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">BP神经网络算法
+1 BP神经网络概念
+首先从名称中可以看出，Bp神经网络可以分为两个部分，bp和神经网络。bp是 Back Propagation 的简写 ，意思是反向传播。
+BP网络能学习和存贮大量的输入-输出模式映射关系，而无需事前揭示描述这种映射关系的数学方程。它的学习规则是使用最速下降法，通过反向传播来不断调整网络的权值和阈值，使网络的误差平方和最小。
+其主要的特点是：信号是正向传播的，而误差是反向传播的。
+举一个例子，某厂商生产一种产品，投放到市场之后得到了消费者的反馈，根据消费者的反馈，厂商对产品进一步升级，优化，一直循环往复，直到实现最终目的——生产出让消费者更满意的产品。产品投放就是“信号前向传播”，消费者的反馈就是“误差反向传播”。这就是BP神经网络的核心。
+2 算法流程图
 
-    
+3 神经元模型
 
-    <div class="main-content-container">
+每个神经元都接受来自其它神经元的输入信号，每个信号都通过一个带有权重的连接传递，神经元把这些信号加起来得到一个总输入值，然后将总输入值与神经元的阈值进行对比（模拟阈值电位），然后通过一个“激活函数”处理得到最终的输出（模拟细胞的激活），这个输出又会作为之后神经元的输入一层一层 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/07/juan-ji-shen-jing-wang-luo-suan-fa/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/juan-ji-shen-jing-wang-luo-suan-fa/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">卷积神经网络算法
+1、卷积神经网络-CNN 的基本原理
+ 卷积神经网络(Convolutional Neural Networks, CNNs)是一种深度学习算法，特别适用于图像处理和分析。其设计灵感来源于生物学中视觉皮层的机制，是一种强大的特征提取和分类工具。
 
+1.1、Layers
+整个CNN是由若干层不同类型的网络连接构成的的。例如下图，首先经过一次卷积滤波处理，得到了C1（卷积层 Feature map），然后又经过了一次下采样（池化）处理得到了S2（下采样层），之后又是一次卷积滤波得到C3卷积层，依次处理至途中的C5位全连接层，至此卷积的过程结束，被抽象的特征输入至传统的全连接神经网络。
 
-        <div class="main-content-header">
-            <header class="navbar-container">
 
-    <div class="navbar-content">
-        <div class="left">
-            
-                <a class="logo-image" href="/">
-                    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
-                </a>
-            
-            <a class="logo-title" href="/">
-                <h1>
-                长白崎の个人博客
-                </h1>
-            </a>
-        </div>
+1.1.1 输入层（Input Layer）
+ 这是网络的最初层，负责接收原始像素数据。每个像素的值都被视为原始特征。
 
-        <div class="right">
-            <!-- PC -->
-            <div class="desktop">
-                <ul class="navbar-list">
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class="active"
-                                   href="/"
-                                        >
-                                    <i class="fa-regular fa-house fa-fw"></i>
-                                    HOME
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/tags/"
-                                        >
-                                    <i class="fa-solid fa-tags fa-fw"></i>
-                                    TAGS
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/categories/"
-                                        >
-                                    <i class="fa-solid fa-folder fa-fw"></i>
-                                    CATEGORIES
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                    
-                        <li class="navbar-item search search-popup-trigger">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <!-- Mobile -->
-            <div class="mobile">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                
-                <div class="icon-item navbar-bar">
-                    <div class="navbar-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mobile drawer -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
-        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
-                           href="/"
-                        >
-                            <span>
-                                HOME
-                            </span>
-                            
-                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/tags/"
-                        >
-                            <span>
-                                TAGS
-                            </span>
-                            
-                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/categories/"
-                        >
-                            <span>
-                                CATEGORIES
-                            </span>
-                            
-                                <i class="fa-solid fa-folder fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-        </ul>
-
-        <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">99</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="main-content-body">
-
-            
-                <div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar flex justify-center">
-    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">ChangBaiQi</div>
-    
-        <div class="label">Lv5</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">99</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
-
-            <div class="main-content">
-
-                
-                    <div class="home-content-container">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/binarysearch/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            BinarySearch
-说明：
-BinarySearch中文又叫做二分查找，这是一种查找类的算法，但是其使用是有一定的限制的，那就是必须要区间类必须要满足相应的单调性，不然的话是无法使用的。
-
-Java代码模板：整形二分：
-123456789101...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/binarysearch/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/bfs/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            BFS
-介绍：
-BFS中文叫做广度优先搜索，BFS算是暴力搜索的其中一种算法，这个算法主要还是可以解决一些最小路径的问题，以及搜索问题，比如迷宫问题等等，其主要思想就是通过穷举所有可能走的路并找到答案或者试出最优答案，不过他相对于DFS说其有点就在于...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/bfs/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/readme/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            算法模板
-
-这里整理了一些个人自己整理的算法模板，同时也方便以后比赛回顾方便，有需要的自取。
-
-
-各位老板行行好，给个Star吧~
-
-目录：字符串相关：
-Manacher(马拉车)
-KMP
-
-树相关：
-树状数组
-
-SegmentTree(线段树)
-
-...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/shu-ju-jie-gou-yu-suan-fa/readme/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/shi-yan-shi-pei-xun-zhi-nan/shi-yan-shi-pei-xun-zhi-nan/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            培训指南
-一、常用便捷软件培训
-
-这个根据情况进行
-截图软件使用
-Markdown笔记使用
-
-二、问答艺术及Git培训
-
-Git项目管理
-
-三、基础算法培训指南
-1、C语言基础语法
-1）变量的使用（局部变量、全局变量）
-2）++i和i++的区别
-3）...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/shi-yan-shi-pei-xun-zhi-nan/shi-yan-shi-pei-xun-zhi-nan/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/fo-zu-mo-ban/readme/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            说明
-使用时只需要把文件名改为banner.txt然后拖入SpringBoot项目的resource文件夹里面即可。
-
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/fo-zu-mo-ban/readme/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/chang-jian-ji-huo-han-shu/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            常见激活函数
+1.1.2 卷积层（Convolutional Layer）
+在卷积层中，一组可学习的滤波器（卷积核）在输入数据上进行滑动操作以生成特征图（Feature Maps，也就是下图的Convolved Feature）。卷积操作允许网络学习到输入数据的局部特征。此外，由于 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/07/chang-jian-ji-huo-han-shu/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/chang-jian-ji-huo-han-shu/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">常见激活函数
 
 sigmoid: $\sigma (x) =  {1 \over 1+ e^{-x}}$
 
@@ -811,496 +207,170 @@ ReLu: $max(0,x)$
 Leaky ReLu: $max(0.1x,x)$
 
 
-Maxou...
-                        
-                    </div>
+Maxout: $max(w^T_1 x + b1, w^T _2 x + b2)$
 
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
 
-    <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/chang-jian-ji-huo-han-shu/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+ELU: $$
 
-                </div>
-            </li>
-        
-            <li class="home-article-item">
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/07/ji-suan-ji-cao-zuo-xi-tong-fu-xi/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/ji-suan-ji-cao-zuo-xi-tong-fu-xi/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">操作系统复习
+操作系统概念、层次
+ 操作系统是一种庞大的系统软件，由大量复杂的程序和众多的数据组合而成，他具有层次和模块结构的特点，其内部分为三个层次：操作系统对象、控制和管理的软件集合、用户接口。
 
-                
+操作系统的特征1、并发性
 
-                
+并发性是指两个或两个以上的事件在同一时间间隔内发生。多道程序环境下，计算机系统中同时存在多个进程，宏观上，这些进程同时执行，同时向前推进；微观上，单处理机中任何时刻只能由一个进程在执行，多个进程之间是交替执行的，多处理机中这些进程被分配到多处理机上并行执行。并发的目的是提高系统资源的利用率和系统的吞吐量。
+并发和并行是两个既相似又有区别的概念。并行是从某一时刻去观察，两个或多个事件都在运行。
 
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/juan-ji-shen-jing-wang-luo-suan-fa/">
-                            
-                        </a>
-                    </h3>
+2、共享性
 
-                    <div class="home-article-content markdown-body">
-                        
-                            卷积神经网络算法
-1、卷积神经网络-CNN 的基本原理
- 卷积神经网络(Convolutional Neural Networks, CNNs)是一种深度学习算法，特别适用于图像处理和分析。其设计灵感来源于生物学中视觉皮层的机制，是一种强大的特征提取...
-                        
-                    </div>
+共享性是指计算机系统中的资源可被多个并发执行的进程使用，而不是被其中某个进程独占使用。根据资源的属性，共享可分为互斥共享和同时共享。
+（1）互斥共享。系统中的资源，如打印机、扫描仪等，在一段时间内只允许一个进程使用。当某个进程使用该资源时，其他进程必须等待，只有当该进程使用完并释放后，其他进程才可以使用该资源，即进程之间排他、互斥地使用共享的资源。
+（2） ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/07/uml-lei-tu/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/uml-lei-tu/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">UML类图
+一、UML基础知识扫盲
+1、概念 ： UML这三个字母的全称是Unified Modeling Language，直接翻译就是统一建模语言，简单地说就是一种有特殊用途的语言。
+2、作用 ：UML可帮助我们做软件需求分析和软件设计的工作，是系统分析和设计阶段的重要产物，也是系统编码和测试的重要模型依据。
+3、分类1） 静态图 ：主要描绘了类、对象和数据结构及其存在于他们之间的关系。 类图就是其中一种。2）动态图 : 主要描绘执行流程、实体改变状态的方式。例如 ： 流程图3）物理图 ： 描绘库文件、字节文件和数据文件等以及存在于他们之间的关系
+二、如何用类图表示一个类
+类图: 用于描述系统中所包含的类以及它们之间的相互关系，帮助人们简化对系统的理解，它是系统分析和设计阶段的重要产物，也是系统编码和测试的重要模型依据。
+123456classDiagramclass PersonPerson: +age intPerson: -mobilePhone StringPerson: #sex charPerson: +speak() void
 
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
+对应Java如下代码：
+1234567 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/07/han-shu/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/han-shu/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">
+考试内容概要：（一）函数的概念及常见函数（二）函数的性质常考题型与典型例题题型一 函数的性质题型二复合函数
+单调函数一定有反函数，但反之则不然（充分但不必要条件）
+一元二次函数求根公式：
+$\displaystyle x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+定义4	将幂函数，指数，对数，三角，反三角统称为基本初等函数。了解它们的定义域，性质，图形。
+幂函数
+指数函数
+对数函数
+三角函数
+反三角函数
+定义5	由常数和基本初等函数经过有限次的加、减乘、除和复合所得到且能用一个解析式表示的函数，称为初等函数。
+常见奇函数$\sin x、\tan x、\arcsin x、\ln\frac{1-x}{1+x}、\ln(x+\sqrt{1+x^2})、\frac{e^x-1}{e^x+1}、f(x)-f(-x)$
+常见偶函数
+$x^2、|x|、\cos x、f(x)+f(-x)$
+相关定理
+奇+奇=奇；
+偶+偶=偶；
+奇x奇=偶
+偶x偶=偶
+奇x偶=奇
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/07/han-shu-qiu-ji-xian/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/han-shu-qiu-ji-xian/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">函数求极限
 
-    <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/juan-ji-shen-jing-wang-luo-suan-fa/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+常用的求极限方法（8种）
+方 法1 利用基本极限求极限
+方法2 利用等价无穷小代换求极限
+方法3 利用有理运算法则求极限
+方法4 利用洛必达法则求极限
+方法5 利用泰勒公式求极限
+方法6 利用夹逼原理求极限
+方法7 利用单调有界准则求极限
+方法8 利用定积分定义求极限
 
-                </div>
-            </li>
-        
-            <li class="home-article-item">
+方法1 利用基本极限求极限1）常用的基本极限   
 
-                
+$\lim\limits_{x\rarr0} \frac{sin x}{x} = 1$
+$\lim\limits_{x\rarr0}(1+x)^\frac{1}{x} = e$ 
+$\lim\limits_{x\rarr\infty}(1+\frac{1}{x})^x=e$ （这里注意一下，比如$\lim\limits_{x\to \infty}(1+{(\pm)a \over x})^x = e^{(\pm)a}$）
+$\lim\limits_{x\rarr0}\frac{a^x-1}{x} = \ln a$
+$\lim\limits_{n\to \infty}{\sqrt[n]{n}} = 1$
+$\lim\limits_{n\to \infty} ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/07/han-shu-ji-xian-lian-xu/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/han-shu-ji-xian-lian-xu/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">函数、极限、连续
+第一节
+第二节
+极限存在的准则：
+1）夹逼准则：
 
-                
+常用在数列n项和
 
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/relu-han-shu/">
-                            
-                        </a>
-                    </h3>
+2）单调有界准则
 
-                    <div class="home-article-content markdown-body">
-                        
-                            ReLU函数
-介绍：
+单调有界数列必有极限。
+单调增、有上界的数列必有极限；
+单调减、有下界的数列必有极限；
+递推关系的数列极限往往可以使用；
 
-ReLU函数是一种非线性激活函数，其函数形式为f(x) = max(0, x)。**当输入值小于0时，ReLU函数输出0；当输入值大于0时，ReLU函数输出输入值本身。ReLU函数具有以下特点：
+第三节
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/07/ji-xian-de-gai-nian/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/ji-xian-de-gai-nian/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">$$||a|-|b||&lt;=|a-b|$$
+见到e无穷就注意分左右。
+见到arctan也要注意分左右。
+什么是等价无穷小：等价无穷小意味着：
 
-简单性：ReLU函数的定义简...
-                        
-                    </div>
+ $$\lim\limits_{x\rarr0}\frac{a(x)}{b(x)}=1$$
 
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
+比如:
 
-    <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/relu-han-shu/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+$$a(x)=x^2 和 b(x)=3x^2$$
+这个都是二阶的，但是它们并非等价无穷小，因为等价无穷小意味着：
+$$\lim\limits_{x\rarr0}\frac{a(x)}{b(x)}=1$$
+而上面这个例子结果是$$3\neq1$$
+这就叫同阶不等价无穷小，因为同阶无穷小包括等价无穷小
 
-                </div>
-            </li>
-        
-            <li class="home-article-item">
+无穷小的性质
+有限个无穷小的和仍是无穷小。
+有限个无穷小的积仍是无穷小。
+无穷小量与有界量的积仍是无穷小。
 
-                
+无穷大量
+无穷大量的概念，若函数$$f(x)当x\rarr x_0(或x\rarr\infty)时趋于无穷，则称f(x)为x\rarr x_0(或x \rarr \infty)时的无穷大量。$$
+即:若对任意给的的M&gt;0，总存在$$\delta$$ &gt;0，当
+$$0&lt;|x-x_0|&lt;\delta时，横有|f(x ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/07/han-shu-de-lian-xu-xing/" title="C++复习特性关键点快速总结"><img class="post-bg" src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++复习特性关键点快速总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/07/han-shu-de-lian-xu-xing/" title="C++复习特性关键点快速总结">C++复习特性关键点快速总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-07T01:25:00.000Z" title="发表于 2018-09-07 09:25:00">2018-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span></div><div class="content">第三节 函数的连续性
+（一）连续性的概念
 
-                
 
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/bp-shen-jing-wang-luo-suan-fa/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            BP神经网络算法
-1 BP神经网络概念
-首先从名称中可以看出，Bp神经网络可以分为两个部分，bp和神经网络。bp是 Back Propagation 的简写 ，意思是反向传播。
-BP网络能学习和存贮大量的输入-输出模式映射关系，而无需事前揭示描述这种...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/01/15/learnnote/ren-gong-zhi-neng/bp-shen-jing-wang-luo-suan-fa/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/01/15/learnnote/web-qian-duan/vue-xue-xi/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            Vue
-创建Vue项目的命令：1npm init vue@latest
+（二）间断点及其分类1.间断点的定义
 
 
 
-文件结构
-src:
+2.间断点的分类
 
-这个文件夹就是我们主要进行写代码的文件夹。
 
-page.json:
 
-这个文件包括了项目版本运行，以及依赖导入版本等，这个文件有点像maven的配置文...
-                        
-                    </div>
+什么叫做可去间断点：
 
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Jan 15 2024 16:06:18 GMT+0800">
-                
-                    2024-01-15
-                
-            </span>
-        </span>
-        
-        
-    </div>
+给定一个函数f (x)，如果x₀是函数f (x)的间断点，并且f (x)在x₀处的左极限和右极限均存在的点称为第一类间断点。 若f (x)在x₀处得到左、右极限均存在且相等的间断点，称为可去间断点。
 
-    <a href="/2024/01/15/learnnote/web-qian-duan/vue-xue-xi/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+（三）连续性的运算与性质
 
-                </div>
-            </li>
-        
-    </ul>
 
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/7/"><i class="fa-regular fa-angle-right"></i></a>
-</div>
+（四）闭区间上连续函数的性质
 
-    </div>
-</div>
 
-                    <div class="comment-container pjax"></div>
-                
 
-            </div>
-
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/5/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/#content-inner">11</a><a class="extend next" rel="next" href="/page/7/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">长白崎</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">102</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Changbaiqi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Changbaiqi" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:changbaiqi@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">公告测试</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/ying-yu-si-ji-fen-zhi-ping-gu/" title="无题"><img src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/01/15/ying-yu-si-ji-fen-zhi-ping-gu/" title="无题">无题</a><time datetime="2024-01-15T14:44:36.455Z" title="发表于 2024-01-15 22:44:36">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/readme/" title="无题"><img src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/01/15/readme/" title="无题">无题</a><time datetime="2024-01-15T14:44:36.365Z" title="发表于 2024-01-15 22:44:36">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/readme/" title="无题"><img src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/01/15/readme/" title="无题">无题</a><time datetime="2024-01-15T14:44:36.359Z" title="发表于 2024-01-15 22:44:36">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/web-bu-ju-xue-xi/" title="无题"><img src="/img/1f54c5ab85845cd6c2e29ee5a109605a.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/01/15/web-bu-ju-xue-xi/" title="无题">无题</a><time datetime="2024-01-15T14:44:36.285Z" title="发表于 2024-01-15 22:44:36">2024-01-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/15/vue-xue-xi/" title="无题"><img src="/img/wallhaven-wqery6-dark.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/01/15/vue-xue-xi/" title="无题">无题</a><time datetime="2024-01-15T14:44:36.284Z" title="发表于 2024-01-15 22:44:36">2024-01-15</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
             
-
-        </div>
-
-        <div class="main-content-footer">
-            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
-    <div class="info-container py-3 text-center">
-        
-        <div class="text-center">
-            &copy;
-            
-              <span>2022</span>
-              -
-            
-            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ChangBaiQi</a>
-        </div>
-        
-            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
-            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
-                
-                    <span id="busuanzi_container_site_uv" class="lg:!block">
-                        <span class="text-sm">VISITOR COUNT</span>
-                        <span id="busuanzi_value_site_uv"></span>
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv" class="lg:!block">
-                        <span class="text-sm">TOTAL PAGE VIEWS</span>
-                        <span id="busuanzi_value_site_pv"></span>
-                    </span>
-                
             </div>
-        
-        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
-            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.0</a></span>
-        </div>
-        
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                https://beian.miit.gov.cn
-                
-                ">桂ICP备2022007220号-2</a></div>
-        
-        
-            <div>
-                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
-            </div>
-        
-        
-            <script data-swup-reload-script>
-                try {
-                    function odometer_init() {
-                    const elements = document.querySelectorAll('.odometer');
-                    elements.forEach(el => {
-                        new Odometer({
-                            el,
-                            format: '( ddd).dd',
-                            duration: 200
-                        });
-                    });
-                    }
-                    odometer_init();
-                } catch (error) {}
-            </script>
-        
-        
-        
-    </div>  
-</footer>
-        </div>
-    </div>
-
-    
-
-    <div class="right-side-tools-container">
-        <div class="side-tools-container">
-    <ul class="hidden-tools-list">
-        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
-            <i class="fa-regular fa-magnifying-glass-plus"></i>
-        </li>
-
-        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
-            <i class="fa-regular fa-magnifying-glass-minus"></i>
-        </li>
-
-        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-            <i class="fa-regular fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        
-
-        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
-            <i class="fa-regular fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="visible-tools-list">
-        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-            <i class="fa-regular fa-cog fa-spin"></i>
-        </li>
-        
-            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
-        
-    </ul>
-</div>
-
-    </div>
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fa-solid fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="Search..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="popup-btn-close">
-                <i class="fa-solid fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-</main>
-
-
-    
-<script src="/js/libs/Swup.min.js"></script>
-
-<script src="/js/libs/SwupSlideTheme.min.js"></script>
-
-<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
-
-<script src="/js/libs/SwupProgressPlugin.min.js"></script>
-
-<script src="/js/libs/SwupScrollPlugin.min.js"></script>
-
-<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
-
-<script>
-    const swup = new Swup({
-        plugins: [
-            new SwupScriptsPlugin({
-                optin: true,
-            }),
-            new SwupProgressPlugin(),
-            new SwupScrollPlugin({
-                offset: 80,
-            }),
-            new SwupSlideTheme({
-                mainElement: ".main-content-body",
-            }),
-            new SwupPreloadPlugin(),
-        ],
-        containers: ["#swup"],
-    });
-</script>
-
-
-
-
-
-
-
-
-<script src="/js/tools/imageViewer.js" type="module"></script>
-
-<script src="/js/utils.js" type="module"></script>
-
-<script src="/js/main.js" type="module"></script>
-
-<script src="/js/layouts/navbarShrink.js" type="module"></script>
-
-<script src="/js/tools/scrollTopBottom.js" type="module"></script>
-
-<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
-
-<script src="/js/layouts/categoryList.js" type="module"></script>
-
-
-
-    
-<script src="/js/tools/localSearch.js" type="module"></script>
-
-
-
-
-    
-<script src="/js/tools/codeBlock.js" type="module"></script>
-
-
-
-
-    
-<script src="/js/layouts/lazyload.js" type="module"></script>
-
-
-
-
-    
-<script src="/js/tools/runtime.js"></script>
-
-    
-<script src="/js/libs/odometer.min.js"></script>
-
-    
-<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
-
-
-
-
-  
-<script src="/js/libs/Typed.min.js"></script>
-
-  
-<script src="/js/plugins/typed.js" type="module"></script>
-
-
-
-
-
-
-
-
-
-<div class="post-scripts" data-swup-reload-script>
-    
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
-
-<script src="/js/layouts/toc.js" type="module"></script>
-
-<script src="/js/plugins/tabs.js" type="module"></script>
-
-    
-</div>
-
-
-    <div id="aplayer"></div>
-
-<script src="/js/libs/APlayer.min.js"></script>
-
-
-<script src="/js/plugins/aplayer.js"></script>
-
-
-</body>
-</html>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C++</span><span class="card-category-list-count">86</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">算法</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%BD%91/"><span class="card-category-list-name">计网</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%BD%91/%E7%BB%84%E7%BD%91%E5%AE%9E%E4%B9%A0/"><span class="card-category-list-name">组网实习</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%BD%91/%E7%BB%84%E7%BD%91%E5%AE%9E%E4%B9%A0/eNSP/"><span class="card-category-list-name">eNSP</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AE%A1%E7%BD%91/" style="font-size: 1.1em; color: #999">计网</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.37em; color: #99a4b2">算法</a> <a href="/tags/%E7%BB%84%E7%BD%91%E5%AE%9E%E4%B9%A0/" style="font-size: 1.1em; color: #999">组网实习</a> <a href="/tags/eNSP/" style="font-size: 1.1em; color: #999">eNSP</a> <a href="/tags/Hexo/" style="font-size: 1.23em; color: #999ea6">Hexo</a> <a href="/tags/C/" style="font-size: 1.5em; color: #99a9bf">C++</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/09/"><span class="card-archive-list-date">九月 2018</span><span class="card-archive-list-count">87</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">102</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-01-15T15:22:33.887Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/1f54c5ab85845cd6c2e29ee5a109605a.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 长白崎</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/"><span>备案号：桂ICP备2022007220号-2</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["Hello World!"])
+  } else {
+    document.getElementById("subtitle").textContent = "Hello World!"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
