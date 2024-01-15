@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="ChangBaiQi">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://blogs.changbaiqi.top/2024/01/15/learnnote/java-xue-xi-bi-ji/java-zhi-spring-kuang-jia-xue-xi-bi-ji/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="Spring一、介绍：1.1.Spring是什么 Spring是分层的JavaSE&#x2F;EE应用full-stack轻量级开源框架，以IOC（Inverse Of Control：反转控制）和AOP（Aspect Oriented Programming：面向切面编程）为内核。 提供了展现层SpringMVC和持久层SpringJDBCTemplate以及业务层事务管理等众多的企业级应用技术，还能整合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://blogs.changbaiqi.top/2024/01/15/learnnote/java-xue-xi-bi-ji/java-zhi-spring-kuang-jia-xue-xi-bi-ji/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Spring一、介绍：1.1.Spring是什么 Spring是分层的JavaSE&#x2F;EE应用full-stack轻量级开源框架，以IOC（Inverse Of Control：反转控制）和AOP（Aspect Oriented Programming：面向切面编程）为内核。 提供了展现层SpringMVC和持久层SpringJDBCTemplate以及业务层事务管理等众多的企业级应用技术，还能整合">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5CSpring%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/2024/01/15/learnnote/java-xue-xi-bi-ji/java-zhi-spring-kuang-jia-xue-xi-bi-ji/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6/Spring/%E5%AF%BC%E5%85%A5Spring%E6%A1%86%E6%9E%B6.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E7%BC%96%E5%86%99Dao%E6%8E%A5%E5%8F%A3.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E7%BC%96%E5%86%99Dao%E5%AE%9E%E7%8E%B0%E7%B1%BB.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E5%88%9B%E5%BB%BASpring%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E5%88%9B%E5%BB%BASpring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E9%85%8D%E7%BD%AEUserDaoImpI.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E4%BD%BF%E7%94%A8Spring%E7%9A%84API%E8%8E%B7%E5%BE%97Bean%E5%AE%9E%E4%BE%8B.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5Cscope%E5%8F%96%E5%80%BC.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E6%B3%A8%E5%85%A5.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5Cpset%E6%B3%A8%E5%85%A5.png">
+<meta property="og:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E6%99%AE%E9%80%9A%E5%B1%9E%E6%80%A7%E7%9A%84%E6%B3%A8%E5%85%A5.png">
+<meta property="article:published_time" content="2024-01-15T08:06:17.708Z">
+<meta property="article:modified_time" content="2023-02-24T01:46:09.085Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blogs.changbaiqi.top/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5CSpring%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png">
+    
+    
+        <!-- Google tag (gtag.js) -->
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-BNDXDVC6ZN"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BNDXDVC6ZN');
+        </script>
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+    <!--- Page Info-->
+    
+    <title>
+        
+        长白崎の个人博客
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        长白崎の个人博客
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    window.config = {"hostname":"blogs.changbaiqi.top","root":"/","language":"en","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"G-BNDXDVC6ZN"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/1f54c5ab85845cd6c2e29ee5a109605a.webp"},"title":"长白崎の个人博客","subtitle":{"text":["记录点点滴滴","欢迎来到我的个人博客"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://www.github.com/Changbaiqi","instagram":null,"zhihu":null,"twitter":null,"fa-duotone fa-envelope":"changbaiqi@foxmail.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"同じ高みへ","artist":"水月陵 (みずつき りょう)","url":"https://music.163.com/song/media/outer/url?id=22706973.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M00000397FdL3rnzT3_1.jpg"},{"name":"光放て！","artist":"柳麻美 (やなぎ まみ)","url":"https://vodkgeyttp8.vod.126.net/cloudmusic/obj/core/1953684844/1016b80564983ddc780304ddbb71d5c9.mp4?wsSecret=3ede5eadc192dfec14924fe4e875cc0e&wsTime=1705259191","cover":"https://p2.music.126.net/KNG-m7xRLgGiov4pfeMERw==/109951165392169353.jpg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+        
+<link rel="stylesheet" href="/fontawesome/duotone.min.css">
+
+    
+    
+<meta name="generator" content="Hexo 7.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+
+    <div class="navbar-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                长白崎の个人博客
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories/"
+                                        >
+                                    <i class="fa-solid fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories/"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-solid fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">99</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3"></h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">ChangBaiQi</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv5</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-01-15 16:06:17</span>
+        <span class="mobile">2024-01-15 16:06:17</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-02-24 09:46:09</span>
+            <span class="mobile">2023-02-24 09:46:09</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.7k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>6 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><h2 id="一、介绍："><a href="#一、介绍：" class="headerlink" title="一、介绍："></a>一、介绍：</h2><h3 id="1-1-Spring是什么"><a href="#1-1-Spring是什么" class="headerlink" title="1.1.Spring是什么"></a>1.1.Spring是什么</h3><blockquote>
+<p>Spring是分层的JavaSE/EE应用full-stack轻量级开源框架，以IOC（Inverse Of Control：反转控制）和AOP（Aspect Oriented Programming：面向切面编程）为内核。</p>
+<p>提供了展现层SpringMVC和持久层SpringJDBCTemplate以及业务层事务管理等众多的企业级应用技术，还能整合开源世界众多著名的第三方框架和类库，逐渐成为使用最多的JavaEE企业应用开源框架。</p>
+</blockquote>
+<h3 id="1-2-Spring的优势"><a href="#1-2-Spring的优势" class="headerlink" title="1.2.Spring的优势"></a>1.2.Spring的优势</h3><h4 id="1-方便解耦，简化开发"><a href="#1-方便解耦，简化开发" class="headerlink" title="1)方便解耦，简化开发"></a>1)方便解耦，简化开发</h4><blockquote>
+<p>通过Spring提供的IOC容器，开源将对象间的依赖关系交由Spring进行控制，避免硬编码所造成的多度耦合。</p>
+<p>用户也不必再为单例模式类、属性文件解析等这些很底层的需求编写代码，开源更专注于上层的应用。</p>
+</blockquote>
+<h4 id="2-AOP编程的支持"><a href="#2-AOP编程的支持" class="headerlink" title="2)AOP编程的支持"></a>2)AOP编程的支持</h4><blockquote>
+<p>通过Spring的AOP功能，方便进行面向切面编程，许多不容易用传统OOP实现的功能开源通过AOP轻松实现。</p>
+</blockquote>
+<h4 id="3-声明式事务的支持"><a href="#3-声明式事务的支持" class="headerlink" title="3)声明式事务的支持"></a>3)声明式事务的支持</h4><blockquote>
+<p>可以将我们从单调烦闷的事务管理代码中解脱出来，通过声明式灵活的进行事务管理，提高开发效率和质量。</p>
+</blockquote>
+<h4 id="4-方便程序的测试"><a href="#4-方便程序的测试" class="headerlink" title="4)方便程序的测试"></a>4)方便程序的测试</h4><blockquote>
+<p>可以用非容器依赖的编程方式进行几乎所有的测试工作，测试不再是昂贵的操作，而是随手可做的事情。</p>
+</blockquote>
+<h4 id="5-方便集成各种优秀框架"><a href="#5-方便集成各种优秀框架" class="headerlink" title="5)方便集成各种优秀框架"></a>5)方便集成各种优秀框架</h4><blockquote>
+<p>Spring对各种优秀框架（Struts、Hibemate、Hessian、Quartz等）的支持。</p>
+</blockquote>
+<h4 id="6-降低JavaEE-API的使用难度"><a href="#6-降低JavaEE-API的使用难度" class="headerlink" title="6)降低JavaEE API的使用难度"></a>6)降低JavaEE API的使用难度</h4><blockquote>
+<p>Spring对JavaEE API（JDBC、JavaMail、远程调用等）进行了薄薄的封装层，使这些API的使用难度大为降低。</p>
+</blockquote>
+<h4 id="7-Java源码是经典学习范例"><a href="#7-Java源码是经典学习范例" class="headerlink" title="7)Java源码是经典学习范例"></a>7)Java源码是经典学习范例</h4><blockquote>
+<p>Spring的源代码设计精妙、结构清晰、匠心独用，处处体现着大师对Java设计模式灵活运用以及对Java技术的高深造诣。它的源代码无意是Java技术的最佳实践的范例。</p>
+</blockquote>
+<h3 id="1-3-Spring的体系结构"><a href="#1-3-Spring的体系结构" class="headerlink" title="1.3.Spring的体系结构"></a>1.3.Spring的体系结构</h3><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5CSpring%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png"></p>
+</blockquote>
+<h2 id="二、Spring快速入门"><a href="#二、Spring快速入门" class="headerlink" title="二、Spring快速入门"></a>二、Spring快速入门</h2><h3 id="2-1-Spring程序开发步骤"><a href="#2-1-Spring程序开发步骤" class="headerlink" title="2.1.Spring程序开发步骤"></a>2.1.Spring程序开发步骤</h3><h4 id="1-导入Spring开发的基本包坐标："><a href="#1-导入Spring开发的基本包坐标：" class="headerlink" title="1.导入Spring开发的基本包坐标："></a>1.导入Spring开发的基本包坐标：</h4><blockquote>
+<img lazyload="" src="/images/loading.svg" data-src="图片文件\Spring\导入Spring框架.png">
+</blockquote>
+<h4 id="2-编写Dao接口和实现类"><a href="#2-编写Dao接口和实现类" class="headerlink" title="2.编写Dao接口和实现类"></a>2.编写Dao接口和实现类</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E7%BC%96%E5%86%99Dao%E6%8E%A5%E5%8F%A3.png"></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E7%BC%96%E5%86%99Dao%E5%AE%9E%E7%8E%B0%E7%B1%BB.png"></p>
+</blockquote>
+<h4 id="3-创建Spring核心配置文件"><a href="#3-创建Spring核心配置文件" class="headerlink" title="3.创建Spring核心配置文件"></a>3.创建Spring核心配置文件</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E5%88%9B%E5%BB%BASpring%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png"></p>
+</blockquote>
+<h4 id="4-创建Spring配置文件中配置UserDaoImpI"><a href="#4-创建Spring配置文件中配置UserDaoImpI" class="headerlink" title="4.创建Spring配置文件中配置UserDaoImpI"></a>4.创建Spring配置文件中配置UserDaoImpI</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E5%88%9B%E5%BB%BASpring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E9%85%8D%E7%BD%AEUserDaoImpI.png"></p>
+</blockquote>
+<h4 id="5-使用Spring的API获得Bean实例"><a href="#5-使用Spring的API获得Bean实例" class="headerlink" title="5.使用Spring的API获得Bean实例"></a>5.使用Spring的API获得Bean实例</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E4%BD%BF%E7%94%A8Spring%E7%9A%84API%E8%8E%B7%E5%BE%97Bean%E5%AE%9E%E4%BE%8B.png"></p>
+</blockquote>
+<h3 id="2-2-知识要点：Spring的开发步骤"><a href="#2-2-知识要点：Spring的开发步骤" class="headerlink" title="2.2.知识要点：Spring的开发步骤"></a>2.2.知识要点：Spring的开发步骤</h3><blockquote>
+<p>1.导入坐标</p>
+<p>2.创建Bean</p>
+<p>3.创建applicationContext.xml</p>
+<p>4.在配置文件中进行配置</p>
+<p>5.创建ApplicationContext对象getBean</p>
+</blockquote>
+<h2 id="三、Spring配置文件"><a href="#三、Spring配置文件" class="headerlink" title="三、Spring配置文件"></a>三、Spring配置文件</h2><h3 id="3-1-Bean标签基本配置"><a href="#3-1-Bean标签基本配置" class="headerlink" title="3.1.Bean标签基本配置"></a>3.1.Bean标签基本配置</h3><blockquote>
+<p>用于配置对象交由Spring来创建。</p>
+<p>默认情况下它调用的是类中的无参构造函数，如果没有无参构造函数则不能创建成功。</p>
+<p>基本属性：</p>
+<ul>
+<li>id：Bean实例在Spring容器中的唯一标识</li>
+<li>class：Bean的全限定名称</li>
+</ul>
+</blockquote>
+<h3 id="3-2-Bean标签范围配置"><a href="#3-2-Bean标签范围配置" class="headerlink" title="3.2.Bean标签范围配置"></a>3.2.Bean标签范围配置</h3><h4 id="1-scope：指对象的作用范围，取值如下："><a href="#1-scope：指对象的作用范围，取值如下：" class="headerlink" title="1)scope：指对象的作用范围，取值如下："></a>1)scope：指对象的作用范围，取值如下：</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5Cscope%E5%8F%96%E5%80%BC.png"></p>
+</blockquote>
+<h4 id="2-当scope的取值为singleton时："><a href="#2-当scope的取值为singleton时：" class="headerlink" title="2)当scope的取值为singleton时："></a>2)当scope的取值为singleton时：</h4><blockquote>
+<p>Bean的实例化个数：1个</p>
+<p>Bean的实例化时机：当Spring核心文件被加载时，实例化配置的Bean实例</p>
+<p>Bean的生命周期：</p>
+<ul>
+<li>对象创建：当应用加载，创建容器时，对象就被创建了</li>
+<li>对象运行：只要容器在，对象一直活着</li>
+<li>对象销毁：当应用卸载，销毁容器时，对象就被销毁了</li>
+</ul>
+</blockquote>
+<h4 id="3-当scope的取值为prototype时："><a href="#3-当scope的取值为prototype时：" class="headerlink" title="3)当scope的取值为prototype时："></a>3)当scope的取值为prototype时：</h4><blockquote>
+<p>Bean的实例化个数：多个</p>
+<p>Bean的实例化时机：当调用getBean()方法时实例化Bean</p>
+<ul>
+<li>对象创建：当使用对象，创建新的对象实例</li>
+<li>对象运行：只要对象在使用中，就一直活着</li>
+<li>对象销毁：当对象长时间不用时，被Java的垃圾回收器回收了</li>
+</ul>
+</blockquote>
+<p>即：</p>
+<p>singleton：在ApplicationContext的时候就会创建对象，并且只会是一个对象，当使用getBean的时候引用的也是同一个对象。</p>
+<p>prototype：在ApplicationContext的时候并不会创建对象，只会在getBean的时候进行创建，并且每个getBean都会新生成一个对象。</p>
+<h3 id="3-3-Bean生命周期配置"><a href="#3-3-Bean生命周期配置" class="headerlink" title="3.3.Bean生命周期配置"></a>3.3.Bean生命周期配置</h3><blockquote>
+<ul>
+<li>init-method：指定类中的初始化方法名称</li>
+<li>destroy-method：指定类中销毁方法名称</li>
+</ul>
+</blockquote>
+<h3 id="3-4-Bean实例化三种方式"><a href="#3-4-Bean实例化三种方式" class="headerlink" title="3.4.Bean实例化三种方式"></a>3.4.Bean实例化三种方式</h3><blockquote>
+<ul>
+<li>无参构造方法实例化</li>
+<li>工厂静态方法实例化</li>
+<li>工厂实例方法实例化</li>
+</ul>
+</blockquote>
+<h3 id="3-5-Bean的依赖注入分析"><a href="#3-5-Bean的依赖注入分析" class="headerlink" title="3.5.Bean的依赖注入分析"></a>3.5.Bean的依赖注入分析</h3><h3 id="3-6-Bean的依赖注入概念"><a href="#3-6-Bean的依赖注入概念" class="headerlink" title="3.6.Bean的依赖注入概念"></a>3.6.Bean的依赖注入概念</h3><blockquote>
+<p>依赖注入（Dependency Injection）：它是Spring框架核心IOC的具体实现。</p>
+<p>在编写程序时，通过控制反转，把对象的创建交给了Spring，但是代码中不可能出现没有依赖的情况。</p>
+<p>IOC解耦只是降低他们的依赖关系，但不会消除。例如：业务层仍会调用持久层的方法。</p>
+<p>那这种业务层和持久层的依赖关系，在使用Spring之后，就让Spring来维护了。</p>
+<p>简单的说，就是坐等框架把持久层对象传入业务层，而不用我们自己去获取。</p>
+</blockquote>
+<h3 id="3-7-Bean的依赖注入方式"><a href="#3-7-Bean的依赖注入方式" class="headerlink" title="3.7.Bean的依赖注入方式"></a>3.7.Bean的依赖注入方式</h3><h4 id="怎么将UserDao怎样注入到UserService内部呢？"><a href="#怎么将UserDao怎样注入到UserService内部呢？" class="headerlink" title="怎么将UserDao怎样注入到UserService内部呢？"></a>怎么将UserDao怎样注入到UserService内部呢？</h4><ul>
+<li>构造方法</li>
+<li>set方法</li>
+</ul>
+<h4 id="1-有参构造注入"><a href="#1-有参构造注入" class="headerlink" title="1)有参构造注入"></a>1)有参构造注入</h4><blockquote>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E6%B3%A8%E5%85%A5.png"></p>
+</blockquote>
+<h4 id="2-set方法注入"><a href="#2-set方法注入" class="headerlink" title="2)set方法注入"></a>2)set方法注入</h4><p>P命名空间注入本质也是set方法注入，但比起上述的set方法注入更加方便，主要体现在配置文件中，如下：</p>
+<blockquote>
+<p>首先需要引入P命名空间：</p>
+<div class="highlight-container" data-rel="Xml"><figure class="iseeu highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:p="http://www.springframework.org/schema/p"</span><br></pre></td></tr></tbody></table></figure></div>
+
+<p>其次，需要修改注入方式：</p>
+<div class="highlight-container" data-rel="Xml"><figure class="iseeu highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userService"</span> <span class="attr">class</span>=<span class="string">"com.itheima.service.impl.UserServiceImpl"</span> <span class="attr">p:userDao-ref</span>=<span class="string">"userDao"</span>/&gt;</span></span><br></pre></td></tr></tbody></table></figure></div>
+
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5Cpset%E6%B3%A8%E5%85%A5.png"></p>
+</blockquote>
+<h3 id="3-8-Bean的依赖注入的数据类型"><a href="#3-8-Bean的依赖注入的数据类型" class="headerlink" title="3.8.Bean的依赖注入的数据类型"></a>3.8.Bean的依赖注入的数据类型</h3><p>上面的操作，都是注入的引用Bean，除了对象的引用考科一注入，普通数据类型，集合等都可以在容器中进行注入。</p>
+<h4 id="注入数据的三种数据类型"><a href="#注入数据的三种数据类型" class="headerlink" title="注入数据的三种数据类型"></a>注入数据的三种数据类型</h4><ul>
+<li>普通数据类型</li>
+<li>引用数据类型</li>
+<li>集合数据类型</li>
+</ul>
+<blockquote>
+<p>普通属性的注入：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CSpring%5C%E6%99%AE%E9%80%9A%E5%B1%9E%E6%80%A7%E7%9A%84%E6%B3%A8%E5%85%A5.png"></p>
+<p>List类型注入：</p>
+<p>Map类型注入：</p>
+</blockquote>
+<h3 id="3-9-引入其他配置文件（分模块开发）"><a href="#3-9-引入其他配置文件（分模块开发）" class="headerlink" title="3.9.引入其他配置文件（分模块开发）"></a>3.9.引入其他配置文件（分模块开发）</h3><p>实际开发中，Spring的配置内容非常多，这就导致Spring配置很繁杂且体积很大，所以，可以将部分配置拆解到其他配置文件中，而在Spring主配置文件通过import标签进行加载。</p>
+<div class="highlight-container" data-rel="Xml"><figure class="iseeu highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">import</span> <span class="attr">resource</span>=<span class="string">"applicationContext-xxx.xml"</span>/&gt;</span></span><br></pre></td></tr></tbody></table></figure></div>
+
+<h3 id="4-0-知识要点：Spring的重点配置"><a href="#4-0-知识要点：Spring的重点配置" class="headerlink" title="4.0.知识要点：Spring的重点配置"></a>4.0.知识要点：Spring的重点配置</h3><blockquote>
+<div class="highlight-container" data-rel="Xml"><figure class="iseeu highlight xml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span>&gt;</span>标签</span><br><span class="line">    id属性:在容器中Bean实例的唯一标识，不允许重复</span><br><span class="line">    class属性:要实例化的Bean的全限定名</span><br><span class="line">    scope属性:Bean的作用范围，常用是SingLeton（默认）和prototype</span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span>&gt;</span>标签:属性注入</span><br><span class="line">        name属性:属性名称</span><br><span class="line">        value属性:注入的普通属性值</span><br><span class="line">        ref属性:注入的对象引用值</span><br><span class="line">        <span class="tag">&lt;<span class="name">list</span>&gt;</span>标签</span><br><span class="line">        <span class="tag">&lt;<span class="name">map</span>&gt;</span>标签</span><br><span class="line">            <span class="tag">&lt;<span class="name">entry</span>&gt;</span>标签:这个是map使用的</span><br><span class="line">        <span class="tag">&lt;<span class="name">properties</span>&gt;</span>标签</span><br><span class="line">            <span class="tag">&lt;<span class="name">props</span>&gt;</span>这个是Properties使用的标签</span><br><span class="line">                <span class="tag">&lt;<span class="name">prop</span>&gt;</span>props内的一个标签</span><br><span class="line">   <span class="tag">&lt;<span class="name">constructor-arg</span>&gt;</span>标签</span><br><span class="line"><span class="tag">&lt;<span class="name">import</span>&gt;</span>标签:导入其他的Spring的分文件</span><br></pre></td></tr></tbody></table></figure></div>
+
+</blockquote>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> </li>
+        <li><strong>Author:</strong> ChangBaiQi</li>
+        <li><strong>Created at
+                :</strong> 2024-01-15 16:06:17</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2023-02-24 09:46:09
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://blogs.changbaiqi.top/2024/01/15/learnnote/java-xue-xi-bi-ji/java-zhi-spring-kuang-jia-xue-xi-bi-ji/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/01/15/learnnote/java-xue-xi-bi-ji/java-fen-ceng-si-xiang-bi-ji/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/01/15/learnnote/java-xue-xi-bi-ji/java-zhi-springmvc-xue-xi-bi-ji/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://blogs-comment-4r0fyugme-changbaiqis-projects.vercel.app',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring"><span class="nav-text">Spring</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="nav-text">一、介绍：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Spring%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">1.1.Spring是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Spring%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">1.2.Spring的优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Spring%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="nav-text">1.3.Spring的体系结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Spring%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8"><span class="nav-text">二、Spring快速入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Spring%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4"><span class="nav-text">2.1.Spring程序开发步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E7%9F%A5%E8%AF%86%E8%A6%81%E7%82%B9%EF%BC%9ASpring%E7%9A%84%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4"><span class="nav-text">2.2.知识要点：Spring的开发步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-text">三、Spring配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Bean%E6%A0%87%E7%AD%BE%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="nav-text">3.1.Bean标签基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Bean%E6%A0%87%E7%AD%BE%E8%8C%83%E5%9B%B4%E9%85%8D%E7%BD%AE"><span class="nav-text">3.2.Bean标签范围配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%85%8D%E7%BD%AE"><span class="nav-text">3.3.Bean生命周期配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-Bean%E5%AE%9E%E4%BE%8B%E5%8C%96%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="nav-text">3.4.Bean实例化三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-Bean%E7%9A%84%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%88%86%E6%9E%90"><span class="nav-text">3.5.Bean的依赖注入分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-Bean%E7%9A%84%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%A6%82%E5%BF%B5"><span class="nav-text">3.6.Bean的依赖注入概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-Bean%E7%9A%84%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="nav-text">3.7.Bean的依赖注入方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-Bean%E7%9A%84%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">3.8.Bean的依赖注入的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-9-%E5%BC%95%E5%85%A5%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%88%E5%88%86%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%EF%BC%89"><span class="nav-text">3.9.引入其他配置文件（分模块开发）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-0-%E7%9F%A5%E8%AF%86%E8%A6%81%E7%82%B9%EF%BC%9ASpring%E7%9A%84%E9%87%8D%E7%82%B9%E9%85%8D%E7%BD%AE"><span class="nav-text">4.0.知识要点：Spring的重点配置</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">ChangBaiQi</a>
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.0</a></span>
+        </div>
+        
+            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
+                
+                https://beian.miit.gov.cn
+                
+                ">桂ICP备2022007220号-2</a></div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
+
+
+</body>
+</html>
