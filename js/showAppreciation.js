@@ -1,4 +1,4 @@
-window.onload=(function(){
+window.onload=(function(){  
     const MCO = {
         '1':'#EA5455', //100>=money
         '2': '#b294db', // 100>money>=50
@@ -35,5 +35,4 @@ window.onload=(function(){
     };
     
     rewardDom.innerHTML = html;
-        
 })();
