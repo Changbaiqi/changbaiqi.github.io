@@ -18,6 +18,7 @@ window.onload=(function(){
         { name: '*🐵',color: MCO['3'], money: '35.00', date: '2023/11/20'},
         { name: '*迁',color: MCO['4'], money: '20.00', date: '2023/11/07'},
         { name: '*遥',color: MCO['4'], money: '18.88', date: '2023/11/29'},
+        { name: '云深不知处',color: MCO['4'], money: '10.00', date: '2024/01/27'},
         { name: '*ཀ',color: MCO['4'], money: '10.00', date: '2023/11/22'},
         { name: '*许',color: MCO['5'], money: '6.60', date: '2023/12/14'},
         { name: '云深不知处',color: MCO['7'], money: '0.01', date: '2024/01/27'}
