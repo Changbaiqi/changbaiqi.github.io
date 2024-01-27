@@ -21,7 +21,8 @@ window.onload=(function(){
         { name: '云深不知处',color: MCO['4'], money: '10.00', date: '2024/01/27'},
         { name: '*ཀ',color: MCO['4'], money: '10.00', date: '2023/11/22'},
         { name: '*许',color: MCO['5'], money: '6.60', date: '2023/12/14'},
-        { name: '云深不知处',color: MCO['7'], money: '0.01', date: '2024/01/27'}
+        { name: '云深不知处',color: MCO['7'], money: '0.01', date: '2024/01/27'},
+        { name: '**杰',color: MCO['7'], money: '0.01', date: '2024/01/27'}
     ];
 
     const rewardDom = document.getElementById('reward');
