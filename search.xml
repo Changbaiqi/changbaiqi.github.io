@@ -625,7 +625,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux学习</title>
+    <title>Linux学习(CentOS)</title>
     <url>/2023/02/24/linux-xue-xi/</url>
     <content><![CDATA[<h1>Linux学习</h1>
 <hr>
@@ -758,6 +758,53 @@
 <h3 id="解压缩命令">解压缩命令</h3>
 <blockquote>
 <figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">tar -zxvf 压缩文件名.tar.gz</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看防火墙状态">查看防火墙状态</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl status firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+<p>运行上述命令后，如果看到有绿色字样标注的“active（running）”，说明防火墙是开启状态。</p>
+</blockquote>
+<h3 id="开启防火墙">开启防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl start firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="关闭防火墙">关闭防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+<p>关闭后，可查看防火墙状态，当显示disavtive（dead）的字样，说明CentOS 7防火墙已经关闭。<br>
+但要注意的是，上面的命令只是临时关闭了CentOS 7防火墙，当重启操作系统后，防火墙服务还是会再次启动。如果想要永久关闭防火墙则还需要禁用防火墙服务。</p>
+</blockquote>
+<h3 id="禁用防火墙服务">禁用防火墙服务</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">systemctl disable firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看防火墙规则">查看防火墙规则</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –list-all</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查询端口是否开放">查询端口是否开放</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –query-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>这里的8080指的就是需要查看的指定端口</p>
+</blockquote>
+<h3 id="重启防火墙">重启防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –reload</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="开放指定端口">开放指定端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –permanent –add-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>以上例子为开放端口8080</p>
+<p>(修改配置后需要重启防火墙)</p>
+<p>参数解释：<br>
+firewall-cmd: 是Linux提供的操作firewall的一个工具；<br>
+–permanent：表示设置为持久；<br>
+–add-port：表示添加的端口。</p>
+</blockquote>
+<h3 id="移除某个防火墙开启的端口">移除某个防火墙开启的端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –permanent –remove-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>(修改配置后需要重启防火墙)</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -9715,6 +9762,31 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </categories>
       <tags>
         <tag>DP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宝塔常用指令</title>
+    <url>/2024/03/02/bao-ta-chang-yong-zhi-ling/</url>
+    <content><![CDATA[<ul>
+<li>
+<p>查看面板入口（也可以通过该命令判断服务器是否安装了宝塔面板）</p>
+<figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">/etc/init.d/bt default</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p>使用 bt 命令 重置用户密码</p>
+<p><img src="/images/loading2.gif" data-original="/2024/03/02/bao-ta-chang-yong-zhi-ling/images/f39a46610138cf74d3687a6cf8be9f20.png" alt="f39a46610138cf74d3687a6cf8be9f20"></p>
+</li>
+<li>
+<p>重启面板</p>
+<figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">bt restart</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>宝塔</category>
+      </categories>
+      <tags>
+        <tag>宝塔</tag>
       </tags>
   </entry>
 </search>
