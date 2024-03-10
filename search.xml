@@ -753,11 +753,19 @@
 </blockquote>
 <h3 id="压缩命令">压缩命令</h3>
 <blockquote>
-<figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">tar -zcvf 压缩文件名称 .tar.gz 被压缩文件名</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">tar -zcvf 压缩文件名称 .tar.gz <span class="comment">#被压缩文件名</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">zip -r mydata.zip mydata #压缩mydata目录</span><br></pre></td></tr></tbody></table></figure>
+<p>注意unzip指令cnetos不自带需要先安装unzip才行</p>
+<p>unzip安装：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">yum install zip unzip</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 <h3 id="解压缩命令">解压缩命令</h3>
 <blockquote>
 <figure class="highlight sh"><table><tbody><tr><td class="code"><pre><span class="line">tar -zxvf 压缩文件名.tar.gz</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">unzip 文件夹名称.zip</span><br></pre></td></tr></tbody></table></figure>
+<p>注意unzip指令cnetos不自带需要先安装unzip才行</p>
+<p>unzip安装：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">yum install zip unzip</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 <h3 id="查看防火墙状态">查看防火墙状态</h3>
 <blockquote>
@@ -782,6 +790,10 @@
 <blockquote>
 <figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –list-all</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
+<h3 id="查看开放端口">查看开放端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd --list-ports</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
 <h3 id="查询端口是否开放">查询端口是否开放</h3>
 <blockquote>
 <figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –query-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
@@ -805,6 +817,23 @@ firewall-cmd: 是Linux提供的操作firewall的一个工具；<br>
 <blockquote>
 <figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd –permanent –remove-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
 <p>(修改配置后需要重启防火墙)</p>
+</blockquote>
+<h3 id="查看防火墙帮助">查看防火墙帮助</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">firewall-cmd --help</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看-root-用户登录成功的IP及次数">查看 root 用户登录成功的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">grep "Accepted password for root" /var/log/secure | awk '{print $11}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p>看看是否有不熟悉的IP地址</p>
+</blockquote>
+<h3 id="查看尝试暴力破解-root-账户的IP及次数">查看尝试暴力破解 root 账户的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">grep "Failed password for root" /var/log/secure | awk '{print $11}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看尝试暴力破解用户名的IP及次数">查看尝试暴力破解用户名的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">grep "Failed password for invalid user" /var/log/secure | awk '{print $13}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 ]]></content>
       <categories>
@@ -8579,11 +8608,17 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h2 id="Java代码模板：">Java代码模板：</h2>
 <h3 id="整形二分：">整形二分：</h3>
 <blockquote>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//这是一个Java整数二分模板</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">binarySearch</span><span class="params">()</span>{</span><br><span class="line">	<span class="comment">//l为二分的左值，r为二分的右值，mid为二分的中间值</span></span><br><span class="line">    <span class="type">int</span> l=<span class="number">0</span>,r=<span class="number">100</span>,mid;</span><br><span class="line">    <span class="comment">//这里的l&lt;=r为二分的结束条件</span></span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r){</span><br><span class="line">        <span class="comment">//计算二分的mid</span></span><br><span class="line">        mid = (l+r)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//这里的check函数主要的作用就是通过已知的必要条件传入check进行综合分析然后判断应该之后的二分是右移还是左移</span></span><br><span class="line">        <span class="keyword">if</span>(check(Object c))</span><br><span class="line">            l = mid+<span class="number">1</span>; <span class="comment">//这里是右移</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            r = mid-<span class="number">1</span>; <span class="comment">//这里是左移</span></span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//这个是check函数，check函数的书写需要结合实际来</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">check</span><span class="params">(Object c)</span>{</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//这是一个Java整数二分模板</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">binarySearch</span><span class="params">()</span>{</span><br><span class="line">	<span class="comment">//l为二分的左值，r为二分的右值，mid为二分的中间值</span></span><br><span class="line">    <span class="type">int</span> l=<span class="number">0</span>,r=<span class="number">100</span>,mid;</span><br><span class="line">    <span class="comment">//这里的l&lt;=r为二分的结束条件</span></span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r){</span><br><span class="line">        <span class="comment">//计算二分的mid</span></span><br><span class="line">        mid = (l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="comment">//这里的check函数主要的作用就是通过已知的必要条件传入check进行综合分析然后判断应该之后的二分是右移还是左移</span></span><br><span class="line">        <span class="keyword">if</span>(check(Object c))</span><br><span class="line">            l = mid+<span class="number">1</span>; <span class="comment">//这里是右移</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            r = mid-<span class="number">1</span>; <span class="comment">//这里是左移</span></span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//这个是check函数，check函数的书写需要结合实际来</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">check</span><span class="params">(Object c)</span>{</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 <h3 id="高精度二分：">高精度二分：</h3>
 <blockquote>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//这个是Java的高精度二分</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">BianrySearch</span><span class="params">()</span>{</span><br><span class="line">    <span class="comment">//l为这里的左值，r为这里的右值，mid为中值</span></span><br><span class="line">    <span class="type">double</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>,r=<span class="number">1e11</span>,mid;</span><br><span class="line">    <span class="comment">//这里不在是和之前整形二分一样的l&lt;r了，这里因为高精度的特性所以必须要写成右值-左值&gt;0.000001，这里的0.000001可以多添一些0别太少就行</span></span><br><span class="line">	<span class="keyword">while</span>(r-l&gt;<span class="number">0.00001</span>) {</span><br><span class="line">		mid = (l+r)/<span class="number">2.0</span>;</span><br><span class="line">		<span class="comment">//这里是check函数，负责根据必要条件镜进行判断是右移还是左移</span></span><br><span class="line">        <span class="keyword">if</span>(check(Object o))</span><br><span class="line">			l = mid;<span class="comment">//右移</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			r =mid;<span class="comment">//左移</span></span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"><span class="comment">//check函数</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">check</span><span class="params">()</span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></blockquote>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//这个是Java的高精度二分</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">BianrySearch</span><span class="params">()</span>{</span><br><span class="line">    <span class="comment">//l为这里的左值，r为这里的右值，mid为中值</span></span><br><span class="line">    <span class="type">double</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>,r=<span class="number">1e11</span>,mid;</span><br><span class="line">    <span class="comment">//这里不在是和之前整形二分一样的l&lt;r了，这里因为高精度的特性所以必须要写成右值-左值&gt;0.000001，这里的0.000001可以多添一些0别太少就行</span></span><br><span class="line">	<span class="keyword">while</span>(r-l&gt;<span class="number">1e-5</span>) {</span><br><span class="line">		mid = (l+r)/<span class="number">2.0</span>;</span><br><span class="line">		<span class="comment">//这里是check函数，负责根据必要条件镜进行判断是右移还是左移</span></span><br><span class="line">        <span class="keyword">if</span>(check(Object o))</span><br><span class="line">			l = mid;<span class="comment">//右移</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			r =mid;<span class="comment">//左移</span></span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"><span class="comment">//check函数</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">check</span><span class="params">()</span>{</span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h2 id="C-代码模板">C++代码模板</h2>
+<h3 id="整形二分">整形二分</h3>
+<blockquote>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="comment">//l为二分的左值，r为二分的右值，mid为二分的中间值</span></span><br><span class="line">    <span class="type">int</span> l = <span class="number">0</span>,r = <span class="number">10000</span>,mid=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r){</span><br><span class="line">        mid = (r+l+<span class="number">1</span>)&gt;&gt;<span class="number">1</span>;     <span class="comment">//计算二分的mid</span></span><br><span class="line">        <span class="comment">//这里的check函数主要的作用就是通过已知的必要条件传入check进行综合分析然后判断应该之后的二分是右移还是左移</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(mid))</span><br><span class="line">            l = mid;<span class="comment">//右移</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            r = mid<span class="number">-1</span>; <span class="comment">//左移</span></span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//check函数</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(<span class="type">int</span> mid)</span></span>{</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
 ]]></content>
       <categories>
         <category>算法</category>
@@ -9176,9 +9211,13 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <p>就比如我们需要知道5个物品有多少个不重复的排列方式：</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>A</mi><mn>5</mn><mn>5</mn></msubsup><mo>=</mo><mfrac><mrow><mn>5</mn><mo stretchy="false">!</mo></mrow><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow><mn>1</mn></mfrac><mo>=</mo><mn>120</mn></mrow><annotation encoding="application/x-tex">A^5_5=\frac{5!}{(5-5)!}=\frac{5\times4\times3\times2\times1}{1}=120
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1111em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3074em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">5</span><span class="mclose">)!</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">5</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">120</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>A</mi><mi>m</mi><mi>n</mi></msubsup><mo>=</mo><mfrac><mrow><mi>m</mi><mo stretchy="false">!</mo></mrow><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">A^n_m=\frac{m!}{(m-n)!}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9614em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3074em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">n</span><span class="mclose">)!</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>如果我们需要计算5个物品如果两两组合有多少种不重复的组合，那么：</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>C</mi><mn>5</mn><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><mn>5</mn><mo stretchy="false">!</mo></mrow><mrow><mn>2</mn><mo stretchy="false">!</mo><mo stretchy="false">(</mo><mn>5</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">C^{2}_{5}=\frac{5!}{2!(5-2)!}=10
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1111em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-2.453em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.3074em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mclose">!</span><span class="mopen">(</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">2</span><span class="mclose">)!</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">5</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>C</mi><mi>m</mi><mi>n</mi></msubsup><mo>=</mo><mfrac><msubsup><mi>A</mi><mi>m</mi><mi>n</mi></msubsup><msubsup><mi>A</mi><mi>n</mi><mi>n</mi></msubsup></mfrac></mrow><annotation encoding="application/x-tex">C^{n}_{m}=\frac{A^n_m}{A^n_n}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9614em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-2.453em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.2933em;vertical-align:-0.933em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.5904em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-2.453em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.933em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 </blockquote>
 <p>Java代码模板：</p>
 <blockquote>
@@ -9606,7 +9645,7 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 <p>这里圈里面的数字代表的是物品的编号，编号为0可以忽略他只作为根节点。其附近的w、v、s分别代表对应编号物品的体积、价值、依赖的父物品。</p>
 ]]></content>
       <categories>
-        <category>算法</category>
+        <category>数据结构与算法</category>
       </categories>
       <tags>
         <tag>DP</tag>
@@ -9671,7 +9710,7 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 <p>WPL：带权路径长度。</p>
 ]]></content>
       <categories>
-        <category>数学结构与算法</category>
+        <category>数据结构与算法</category>
       </categories>
       <tags>
         <tag>数据结构与算法</tag>
@@ -9758,7 +9797,7 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 </blockquote>
 ]]></content>
       <categories>
-        <category>算法</category>
+        <category>数据结构与算法</category>
       </categories>
       <tags>
         <tag>DP</tag>
@@ -9787,6 +9826,61 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </categories>
       <tags>
         <tag>宝塔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/10/test/</url>
+    <content><![CDATA[<h1>Markdown笔记</h1>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/10/nignx-xue-xi/</url>
+    <content><![CDATA[<hr>
+<hr>
+<h1>Nginx学习</h1>
+<hr>
+<p>常用指令：</p>
+<p>停止</p>
+<p>systemctl stop nginx</p>
+<p>重启</p>
+<p>systemctl restart nginx</p>
+<h2 id="关于nginx总是403问题：">关于nginx总是403问题：</h2>
+<p>说明：</p>
+<blockquote>
+<p>如果使用的是Centos那么并且防火墙啥的都关了可能存在SELinux的问题，只需要把SELinux关了就行</p>
+<p>centos关闭SELinux指令：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">sed -i s#SELINUX=enforcing#SELINUX=disabled# /etc/selinux/config</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>竞赛算法使用分析</title>
+    <url>/2024/03/08/jing-sai-suan-fa-shi-yong-fen-xi/</url>
+    <content><![CDATA[<h1>竞赛算法使用分析</h1>
+<hr>
+<blockquote>
+<p>说明：</p>
+</blockquote>
+<ul>
+<li>关于算法分析本人全凭经验之谈，具体还是要根据自身和题目情况而定</li>
+</ul>
+<p>针对有序性数据（单调增、或者减）可以联想到二分或者双指针等算法</p>
+<p>针对时序性数据可以联想使用优先队列。</p>
+<p>带有状态绑定的可以联想DP</p>
+<p>数字或者字符特征统计的可以尝试联想数位DP或者Manacher或者KMP</p>
+<p>数据区间操作类可以联想差分、前缀和、树状数组、线段树</p>
+<p>矩阵类可以试着联想纬度压缩后进行双指针，或者使用二分差分或者二维前缀和</p>
+<p>关于线性平均类题型可以思考一下方差相关的数学定理和平均相关的数学定理</p>
+<p>前缀和的问题开数组最好是从1开始比较好</p>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构与算法</tag>
       </tags>
   </entry>
 </search>
