@@ -9314,7 +9314,13 @@ public class 分解质因数 {
     <url>/2023/10/22/chai-fen/</url>
     <content><![CDATA[<h1>差分</h1>
 <hr>
-<p>说明：</p>
+<h2 id="什么是差分：">什么是差分：</h2>
+<blockquote>
+<p>差分一一种处理数据的巧妙而简单的方法，它应用于区间的修改和询问问题。把给定的数据集A分成多个区间，对这些区间做多次操作，每次操作是对某个区间内的所有元素做相同的加减操作，若一个个地修改区间内的元素，非常耗时。引入差分数组D，当修改某个区间时，只需要修改这个区间的断点，就能记录整个区间的修改，而对端点的修改非常容易，复杂度为O(1)。当所有修改操作结束后，再利用差分数组计算出新的A。</p>
+<p>数据A可以是一维线性数组a[]、二维矩阵a[][]、三维立体a[][][]。相应地，定义一维差分数组D[]、二维差分数组D[][]、三维差分数组D[][][]。一维差分容易理解，二维和三维差分需要一点空间想象力。</p>
+<p>类似于数学中的求导和积分，差分可以看成<a href="https://so.csdn.net/so/search?q=%E5%89%8D%E7%BC%80%E5%92%8C&amp;spm=1001.2101.3001.7020">前缀和</a>的逆运算。前缀和就是积分、差分就是微分。</p>
+</blockquote>
+<h2 id="差分在写题时候作用：">差分在写题时候作用：</h2>
 <blockquote>
 <p>一般的，差分主要用于让一个序列某一特定范围内的所有值都加上或减去一个常数。</p>
 <p>所以差分往往应用于线性的场合，即一维数组的环境，但是除此之外，差分还可以用于二维数组，甚至三维！！！</p>
@@ -9323,10 +9329,18 @@ public class 分解质因数 {
 </blockquote>
 <h2 id="一维差分">一维差分</h2>
 <hr>
+<blockquote></blockquote>
+<h3 id="Java模板">Java模板</h3>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="C-模板">C++模板</h3>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 <h2 id="二维差分">二维差分</h2>
 <hr>
-<p>说明：</p>
-<blockquote></blockquote>
+<h3 id="前缀和">前缀和</h3>
+<blockquote>
+<p>在一维差分中，原数组a[]是从第1个D[1]开始的差分数组D[]的前缀和，a[k]=D[1]+D[2]+…+D[k]。</p>
+<p>在二维差分中，a[][]是差分数组D[][]的前缀和，即由原点坐标(1,1)和坐标(i,j)围成的矩阵中，所有D[][]。</p>
+</blockquote>
 <p>推荐例题：</p>
 <blockquote>
 <p><a href="https://www.luogu.com.cn/problem/P3397">P3397 地毯 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></p>
@@ -9881,6 +9895,51 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </categories>
       <tags>
         <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排列组合</title>
+    <url>/2024/03/15/pai-lie-zu-he/</url>
+    <content><![CDATA[<h1>排列组合</h1>
+<hr>
+<h2 id="Java模板">Java模板</h2>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## C++模板</span><br><span class="line"></span><br><span class="line">```c++</span><br><span class="line"><span class="type">int</span> <span class="title function_">arrange</span><span class="params">(<span class="type">int</span> m,<span class="type">int</span> n)</span>{</span><br><span class="line">    <span class="keyword">if</span>(m==n) <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">return</span> m*arrange(m-<span class="number">1</span>,n);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">dfs</span><span class="params">(<span class="type">int</span> x)</span>{</span><br><span class="line">    <span class="keyword">if</span>(x==n){</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span><span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">            printf(<span class="string">"%d"</span>,a[i]);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;++i){</span><br><span class="line">            <span class="keyword">if</span>(!mark[i]){</span><br><span class="line">                a[x]=i;++mark[i];</span><br><span class="line">            }</span><br><span class="line">            dfs(x+<span class="number">1</span>);</span><br><span class="line">            mark[i]=<span class="number">0</span>; <span class="comment">//回溯</span></span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>排列组合</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速幂</title>
+    <url>/2024/03/15/kuai-su-mi/</url>
+    <content><![CDATA[<h1>快速幂</h1>
+<hr>
+<p>说明：</p>
+<blockquote>
+<p><strong>快速幂</strong>（<strong>Exponentiation by squaring</strong>，平方求幂）是一种简单而有效的小算法，它可以以$$O(logn)$$的时间复杂度计算乘方。快速幂不仅本身非常常见，而且后续很多算法也都会用到快速幂。</p>
+<p>让我们先来思考一个问题：<strong>7的10次方，怎样算比较快？</strong></p>
+<p><strong>方法1：<strong>最朴素的想法，7*7=49，49*7=343，… 一步一步算，共进行了</strong>9次</strong>乘法。</p>
+<p>这样算无疑太慢了，尤其对计算机的CPU而言，每次运算只乘上一个个位数，无疑太屈才了。这时我们想到，也许可以拆分问题。</p>
+<p><strong>方法2：<strong>先算7的5次方，即7*7*7*7*7，再算它的平方，共进行了</strong>5次</strong>乘法。</p>
+<p>但这并不是最优解，因为对于“7的5次方”，我们仍然可以拆分问题。</p>
+<p><strong>方法3：<strong>先算7*7得49，则7的5次方为49*49*7，再算它的平方，共进行了</strong>4次</strong>乘法。</p>
+<p>模仿这样的过程，我们得到一个在$$O(logn)$$时间内计算出幂的算法，也就是快速幂。</p>
+</blockquote>
+<h2 id="Java模板-迭代法">Java模板(迭代法)</h2>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="type">long</span> <span class="title function_">qpow</span><span class="params">(<span class="type">long</span> a,<span class="type">int</span> n)</span>{</span><br><span class="line">    <span class="type">long</span> <span class="variable">sum</span> <span class="operator">=</span><span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(n!=<span class="number">0</span>){</span><br><span class="line">        <span class="keyword">if</span>((n&amp;<span class="number">1</span>)!=<span class="number">0</span>)</span><br><span class="line">            sum=sum*a;</span><br><span class="line">        a=a*a;</span><br><span class="line">        n&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="C-模板-迭代法">C++模板(迭代法)</h2>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//非递归快速幂</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> n)</span></span>{</span><br><span class="line">    <span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(n){</span><br><span class="line">        <span class="keyword">if</span>(n&amp;<span class="number">1</span>)        <span class="comment">//如果n的当前末位为1</span></span><br><span class="line">            ans *= a;  <span class="comment">//ans乘上当前的a</span></span><br><span class="line">        a *= a;        <span class="comment">//a自乘</span></span><br><span class="line">        n &gt;&gt;= <span class="number">1</span>;       <span class="comment">//n往右移一位</span></span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="C-模板-递归法">C++模板(递归法)</h2>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (n % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">qpow</span>(a, n - <span class="number">1</span>) * a;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    {</span><br><span class="line">        <span class="type">int</span> temp = <span class="built_in">qpow</span>(a, n / <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">return</span> temp * temp;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>快速幂</tag>
       </tags>
   </entry>
 </search>
