@@ -1,3 +1,4 @@
+https://blogs.changbaiqi.top/2024/03/02/nignx-xue-xi/
 https://blogs.changbaiqi.top/2024/03/15/kuai-su-mi/
 https://blogs.changbaiqi.top/2024/03/15/pai-lie-zu-he/
 https://blogs.changbaiqi.top/2023/10/22/chai-fen/
@@ -9,7 +10,6 @@ https://blogs.changbaiqi.top/2024/01/24/kao-yan-shu-ju-jie-gou-yu-suan-fa/
 https://blogs.changbaiqi.top/2023/05/19/quan-pai-lie/
 https://blogs.changbaiqi.top/2024/03/10/test/
 https://blogs.changbaiqi.top/2023/02/24/linux-xue-xi/
-https://blogs.changbaiqi.top/2024/03/10/nignx-xue-xi/
 https://blogs.changbaiqi.top/2024/03/02/bao-ta-chang-yong-zhi-ling/
 https://blogs.changbaiqi.top/2024/02/27/gfw-yuan-li-he-feng-suo-ji-zhu/
 https://blogs.changbaiqi.top/2024/02/27/hexo-chang-yong-zhi-ling/
@@ -188,6 +188,7 @@ https://blogs.changbaiqi.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%
 https://blogs.changbaiqi.top/tags/%E5%AE%9D%E5%A1%94/
 https://blogs.changbaiqi.top/tags/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88/
 https://blogs.changbaiqi.top/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/
+https://blogs.changbaiqi.top/tags/Nginx/
 https://blogs.changbaiqi.top/categories/C/
 https://blogs.changbaiqi.top/categories/Git/
 https://blogs.changbaiqi.top/categories/%E5%89%8D%E7%AB%AF/
@@ -222,3 +223,4 @@ https://blogs.changbaiqi.top/categories/%E7%BB%84%E7%BD%91%E5%AE%9E%E4%B9%A0/
 https://blogs.changbaiqi.top/categories/eNSP/
 https://blogs.changbaiqi.top/categories/%E5%AE%9D%E5%A1%94/
 https://blogs.changbaiqi.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/
+https://blogs.changbaiqi.top/categories/Nginx/

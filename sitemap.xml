@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blogs.changbaiqi.top/2024/03/02/nignx-xue-xi/</loc>
+    
+    <lastmod>2024-03-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blogs.changbaiqi.top/2024/03/15/kuai-su-mi/</loc>
     
     <lastmod>2024-03-15</lastmod>
@@ -95,15 +104,6 @@
     <loc>https://blogs.changbaiqi.top/2023/02/24/linux-xue-xi/</loc>
     
     <lastmod>2024-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blogs.changbaiqi.top/2024/03/10/nignx-xue-xi/</loc>
-    
-    <lastmod>2024-03-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1549,6 +1549,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blogs.changbaiqi.top/tags/Nginx/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -1784,6 +1791,13 @@
   
   <url>
     <loc>https://blogs.changbaiqi.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blogs.changbaiqi.top/categories/Nginx/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

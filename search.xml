@@ -9850,11 +9850,9 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/03/10/nignx-xue-xi/</url>
-    <content><![CDATA[<hr>
-<hr>
-<h1>Nginx学习</h1>
+    <title>Nginx学习</title>
+    <url>/2024/03/02/nignx-xue-xi/</url>
+    <content><![CDATA[<h1>Nginx学习</h1>
 <hr>
 <p>常用指令：</p>
 <p>停止</p>
@@ -9869,6 +9867,12 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 <figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line">sed -i s#SELINUX=enforcing#SELINUX=disabled# /etc/selinux/config</span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
   </entry>
   <entry>
     <title>竞赛算法使用分析</title>
