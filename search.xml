@@ -389,7 +389,17 @@
     <content><![CDATA[<h1>Hexo博客笔记书写Front-matter参数大全</h1>
 <hr>
 <h2 id="常见Front-matter">常见Front-matter</h2>
-<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: typora-vue-theme主题介绍</span><br><span class="line">date: 2018-09-07 09:25:00</span><br><span class="line">author: 赵奇</span><br><span class="line">img: /source/images/xxx.jpg</span><br><span class="line">top: true</span><br><span class="line">hide: false</span><br><span class="line">cover: true</span><br><span class="line">coverImg: /images/1.jpg</span><br><span class="line">password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span><br><span class="line">toc: false</span><br><span class="line">mathjax: false</span><br><span class="line">summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</span><br><span class="line">categories: Markdown</span><br><span class="line">tags:</span><br><span class="line">  - Typora</span><br><span class="line">  - Markdown</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight txt"><table><tbody><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: typora-vue-theme主题介绍</span><br><span class="line">date: 2018-09-07 09:25:00</span><br><span class="line">author: 长白崎</span><br><span class="line">img: /source/images/xxx.jpg</span><br><span class="line">top: true</span><br><span class="line">hide: false</span><br><span class="line">cover: true</span><br><span class="line">published: false</span><br><span class="line">coverImg: /images/1.jpg</span><br><span class="line">password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span><br><span class="line">toc: false</span><br><span class="line">mathjax: false</span><br><span class="line">summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</span><br><span class="line">categories: Markdown</span><br><span class="line">tags:</span><br><span class="line">  - Typora</span><br><span class="line">  - Markdown</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="参数说明">参数说明</h2>
+<ul>
+<li>title 文章标题</li>
+<li>date 文章发布时间</li>
+<li>author 文章作者</li>
+<li>img 标题图片</li>
+<li>top 是否置顶true为置顶</li>
+<li>hide 是否隐藏文章true为隐藏</li>
+<li>published 是否公开文章false为不公开</li>
+</ul>
 <h2 id="Quick-Start">Quick Start</h2>
 <h3 id="Create-a-new-post">Create a new post</h3>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
@@ -9401,7 +9411,7 @@ public class 分解质因数 {
 </blockquote>
 <h2 id="Java代码模板：">Java代码模板：</h2>
 <blockquote>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: TODO</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 长白崎</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2023/3/25 16:34</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 并查集主要作用就是搜索两棵树的父节点是否是同一个节点。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> {</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line"></span><br><span class="line">        <span class="comment">//并查集中用于记录每个结点的父节点的数组，数组下标代表的就是对应节点，对应下标数组元素的内容代表的是其父结点。</span></span><br><span class="line">        <span class="type">int</span> parent[] = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">100</span>];</span><br><span class="line">        <span class="comment">//这一步是必不可少的，这一步是为了初始化并查集的数组，初始状态下每个结点的父结点就是他本身。</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span><span class="number">0</span> ; i&lt; parent.length ; ++i) parent[i] =i;</span><br><span class="line">        <span class="type">int</span> <span class="variable">point</span> <span class="operator">=</span> find(parent,<span class="number">1</span>); <span class="comment">//比如这里是查找1的根节点</span></span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//并查集核心查找算法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">find</span><span class="params">(<span class="type">int</span> parent[],<span class="type">int</span> point)</span>{</span><br><span class="line">        <span class="keyword">while</span>(parent[point]!=point)</span><br><span class="line">            point = parent[point];</span><br><span class="line">        <span class="keyword">return</span> point;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: TODO</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 长白崎</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2023/3/25 16:34</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 并查集主要作用就是搜索两棵树的父节点是否是同一个节点。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> {</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> {</span><br><span class="line"></span><br><span class="line">        <span class="comment">//并查集中用于记录每个结点的父节点的数组，数组下标代表的就是对应节点，对应下标数组元素的内容代表的是其父结点。</span></span><br><span class="line">        <span class="type">int</span> parent[] = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">100</span>];</span><br><span class="line">        <span class="comment">//这一步是必不可少的，这一步是为了初始化并查集的数组，初始状态下每个结点的父结点就是他本身。</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span><span class="number">0</span> ; i&lt; parent.length ; ++i) parent[i] =i;</span><br><span class="line">        <span class="type">int</span> <span class="variable">point</span> <span class="operator">=</span> find(parent,<span class="number">1</span>); <span class="comment">//比如这里是查找1的根节点</span></span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//并查集核心查找算法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">find</span><span class="params">(<span class="type">int</span> parent[],<span class="type">int</span> point)</span>{</span><br><span class="line">        <span class="keyword">while</span>(parent[point]!=point)</span><br><span class="line">            point = parent[point];</span><br><span class="line">        <span class="keyword">return</span> point;</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//带有路径压缩</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">find</span><span class="params">(<span class="type">int</span> parent[],<span class="type">int</span> point)</span>{</span><br><span class="line">        <span class="keyword">if</span>(parent[point]!=point) parent[point] = find(parent[point]);</span><br><span class="line">        <span class="keyword">return</span> parent[point];</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 </blockquote>
 ]]></content>
       <categories>
@@ -9843,13 +9853,6 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/03/10/test/</url>
-    <content><![CDATA[<h1>Markdown笔记</h1>
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>Nginx学习</title>
     <url>/2024/03/02/nignx-xue-xi/</url>
     <content><![CDATA[<h1>Nginx学习</h1>
@@ -9944,6 +9947,59 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </categories>
       <tags>
         <tag>快速幂</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正向代理和反向代理</title>
+    <url>/2024/03/16/zheng-xiang-dai-li-he-fan-xiang-dai-li/</url>
+    <content><![CDATA[<h1>正向代理和反向代理</h1>
+<h2 id="一、代理">一、代理</h2>
+<hr>
+<p>代理就相当于中间商,本来A和B是可以直接连接的,但是此时添加了一个C在中间,A跟B不直接连接,而是通过C作为中介进行连接。最常见的例子就是二手东,其实很多我们租房子时签约的人不是房子的真正房东,而是房东委托的中介,房东不想管事或者房子太多,只靠自己无法进行管理,所以才会通过中介(代理)进行处理,像蛋壳、自如这样的租房软件其实也是中介的一种,真正的房东是直接将房子委托给这样的第三方中介进行出租。</p>
+<p>一个完整的请求是由: client(客户端) -&gt; proxy(代理) -&gt; server(服务端) 组成。</p>
+<h2 id="二、正向代理">二、正向代理</h2>
+<hr>
+<p>正向代理: 顺着请求的方向进行的代理，即代理服务器它是由你配置为你服务，去请求目标服务器地址。</p>
+<p>举例一: 如我们现在想要访问谷歌,但是由于某些原因,无法直接访问到谷歌,我们可以通过连接一台代理服务器,代理服务将我们的请求提交到谷歌,然后再将谷歌的响应反馈给我们,对于谷歌而言,它只知道有一个请求过来,但是它并不会知道我们是无法直接访问它的。</p>
+<p><img src="/images/loading2.gif" data-original="/2024/03/16/zheng-xiang-dai-li-he-fan-xiang-dai-li/images/v2-8bcb5360b9edd2f7a650ef70fac42a38_720w.webp" alt="img"></p>
+<p>正向代理的作用:</p>
+<ol>
+<li>访问原来无法访问的资源，如google</li>
+<li>可以做缓存，加速访问资源</li>
+<li>对客户端访问授权，上网进行认证</li>
+<li>代理可以记录用户访问记录（上网行为管理），对外隐藏用户信息</li>
+</ol>
+<h2 id="三、反向代理">三、反向代理</h2>
+<hr>
+<p>反向代理: 跟正向代理相反,它是为目标服务器进行服务的,但是请求的流程还是: clieng -&gt; proxy -&gt; server。</p>
+<p>举例: 比如我们访问百度网站，百度的代理服务器对外的域名为 <a href="https://link.zhihu.com/?target=https%3A//www.baidu.com">https://www.baidu.com</a> 。具体内部的服务器节点我们不知道。现实中我们通过访问百度的代理服务器后，代理服务器给我们转发请求到他们N多的服务器节点中的一个给我们进行搜索后将结果返回,此时,代理服务器对我们客户端来说就充当了提供响应的服务器,但是对于目标服务器来说,它只是进行了一个请求和转发的功能。</p>
+<p><img src="/images/loading2.gif" data-original="/2024/03/16/zheng-xiang-dai-li-he-fan-xiang-dai-li/images/v2-8e2bc94b0415da303730a572fd6e0121_720w.webp" alt="img"></p>
+<p>反向代理的作用:</p>
+<ol>
+<li>保证内网的安全，阻止web攻击，大型网站，通常将反向代理作为公网访问地址，Web服务器是内网。</li>
+<li>负载均衡，通过反向代理服务器来优化网站的负载。</li>
+</ol>
+<h2 id="四、两者的区别与联系">四、两者的区别与联系</h2>
+<hr>
+<p>正向代理即是客户端代理, 代理客户端, 服务端不知道实际发起请求的客户端.</p>
+<p>反向代理即是服务端代理, 代理服务端, 客户端不知道实际提供服务的服务端.</p>
+<p><img src="/images/loading2.gif" data-original="/2024/03/16/zheng-xiang-dai-li-he-fan-xiang-dai-li/images/v2-d0f22453818a20bf83ef62ecc32c64b2_720w.webp" alt="img"></p>
+<p>联系:</p>
+<p>1、正向代理中，proxy和client同属一个LAN，对server透明；</p>
+<p>2、反向代理中，proxy和server同属一个LAN，对client透明。</p>
+<h2 id="五、总结">五、总结</h2>
+<hr>
+<p>事实上,正向代理和反向代理的作用都是进行请求和转发,但是为了区别正向代理,所以后出现的就成为反向代理。</p>
+<p>生活中最常见的例子:</p>
+<p>1、正向代理: 卖票的黄牛</p>
+<p>2、反向代理: 出租房的二手东</p>
+<p>文章截自：<a href="https://zhuanlan.zhihu.com/p/163948996">一文帮你梳理清楚「正向代理和反向代理的区别与联系」 - 知乎 (zhihu.com)</a></p>
+]]></content>
+      <categories>
+        <category>计网</category>
+      </categories>
+      <tags>
+        <tag>代理</tag>
       </tags>
   </entry>
 </search>
