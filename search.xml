@@ -7199,7 +7199,7 @@ c-10,0,-16.667,5,-20,15z M410 15 H367 v585 v2400 v585 h43z"></path></svg></span>
 <p>比赛前1个月每日一题计划（难度逐渐提高）</p>
 </blockquote>
 <blockquote>
-<p>每两周进行算法双周赛（根据情况来定）</p>
+<p>每一到两周进行算法双周赛（根据情况来定）</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -9630,6 +9630,128 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 <h2 id="说明：">说明：</h2>
 <blockquote>
 <p>如果说邻接表是不好写但效率好，邻接矩阵是好写但效率低的话，前向星就是一个相对中庸的数据结构。前向星固然好写，但效率并不高。而在优化为链式前向星后，效率也得到了较大的提升。虽然说，世界上对链式前向星的使用并不是很广泛，但在不愿意写复杂的邻接表的情况下，链式前向星也是一个很优秀的数据结构。</p>
+<p>我们先展示代码再做具体讲解，链式向前星的结构模板代码如下：</p>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Edge</span>{    <span class="comment">//表示边</span></span><br><span class="line">    <span class="type">int</span> w;</span><br><span class="line"><span class="type">int</span> to;</span><br><span class="line">    <span class="type">int</span> next;</span><br><span class="line">}edge[<span class="number">10005</span>];</span><br><span class="line">  </span><br><span class="line"><span class="type">int</span> cnt=<span class="number">0</span>;      <span class="comment">//用以控制并统计边的数量</span></span><br><span class="line">  </span><br><span class="line"><span class="type">int</span> head[<span class="number">10005</span>];    <span class="comment">//表示来源的边序号</span></span><br></pre></td></tr></tbody></table></figure>
+<p>具体的解释为：</p>
+<ul>
+<li>
+<p>Edge表示边，这个结构体数组将逐步记录边信息，其中包含有三个元素</p>
+</li>
+<li>
+<p>w为权重即边之间的权值，下图中为默认的1，不演示</p>
+</li>
+<li>
+<p>to表示为第i条边指向哪一个结点</p>
+</li>
+<li>
+<p>edge[i].next表示第i条边的下一条边的序号</p>
+</li>
+<li>
+<p>cnt表示边的数量，在输入时利用他逐个+1</p>
+</li>
+<li>
+<p>head表示第x个结点所需要访问的边</p>
+</li>
+</ul>
+<p>同样的我们以这个结构的图为例，链式向前星中需要存储如下内容：</p>
+<p><img src="/images/loading2.gif" data-original="/2023/11/05/lian-shi-xiang-qian-xing/images/1576070705244555.png" alt="图的存储链式向前星"></p>
+<p>上图可以得到一个这样的运算表格（不唯一）</p>
+<table>
+<thead>
+<tr>
+<th>Edge[0].to</th>
+<th>2</th>
+<th>Edge[0].next</th>
+<th>-1</th>
+<th>Head[1]</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge[1].to</td>
+<td>3</td>
+<td>Edge[1].next</td>
+<td>0</td>
+<td>Head[1]</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Edge[2].to</td>
+<td>4</td>
+<td>Edge[2].next</td>
+<td>-1</td>
+<td>Head[2]</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Edge[3].to</td>
+<td>5</td>
+<td>Edge[3].next</td>
+<td>2</td>
+<td>Head[2]</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Edge[4].to</td>
+<td>4</td>
+<td>Edge[4].next</td>
+<td>-1</td>
+<td>Head[3]</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Edge[5].to</td>
+<td>5</td>
+<td>Edge[5].next</td>
+<td>-1</td>
+<td>Head[4]</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>可以见的，比如我们访问与1相互联通的所有结点，我们首先访问head[1]的内容，head的下标表示1结点，其内容表示我们应该访问边的标号，此时我们得到了数据1，表明我们需要访问边1，此时我们找到edge[1]并获取第一个to的内容，表示1结点与3结点相连通，接下来访问next的内容，在edge[1].next中获得了下一条边的标号0，因此接下来访问edge[0]的内容，得到了新得信息，edge[0].to=2，表示1结点与2结点相互联通，在访问next的内容为-1时表示没有下一条了，结束向下访问，自此，我们获得了与1相互联通的所有结点的信息。</p>
+<p>因此可以得到如下的信息表：</p>
+<table>
+<thead>
+<tr>
+<th>结点1</th>
+<th>-1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结点2</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>结点3</td>
+<td>-1</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>结点4</td>
+<td>-1</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>结点5</td>
+<td>-1</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>添加边信息时使用以下代码:</p>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">add_edge</span><span class="params">(<span class="type">int</span> from, <span class="type">int</span> to, <span class="type">int</span> w)</span> </span>{</span><br><span class="line">    edge[cnt].to = to;</span><br><span class="line">    edge[cnt].w = w;</span><br><span class="line">    edge[cnt].next = head[from];</span><br><span class="line">    head[from] = cnt++;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>注意，我们需要对全体数组进行赋-1的初值，这对于出错和检验错误都是很有帮助的，因为-1正是本算法的判定边界点，当然，这个边界点也可以由自己定位任意一个负数。</p>
+<p><img src="/images/loading2.gif" data-original="/2023/11/05/lian-shi-xiang-qian-xing/images/v2-e4d36f5057745f83030a98407a3160a9_720w.webp" alt="img"></p>
 </blockquote>
 <h3 id="C-模板：">C++模板：</h3>
 <figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX 5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,cnt;<span class="comment">//点数量，边数量，cnt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Edge</span>{</span><br><span class="line">    <span class="type">int</span> to;</span><br><span class="line">    <span class="type">int</span> w;</span><br><span class="line">    <span class="type">int</span> next;</span><br><span class="line">} edge[MAX];</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> head[MAX];</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 初始化</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i =<span class="number">0</span>;i&lt;=n;++i) head[i]=<span class="number">-1</span>;</span><br><span class="line">    cnt=<span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 添加边</span></span><br><span class="line"><span class="comment"> * @param u 边起点</span></span><br><span class="line"><span class="comment"> * @param v 边终点</span></span><br><span class="line"><span class="comment"> * @param w 边权值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add_Edge</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> v,<span class="type">int</span> w)</span></span>{</span><br><span class="line">    edge[cnt].to=v; <span class="comment">//设置终点值</span></span><br><span class="line">    edge[cnt].w=w; <span class="comment">//设置权值</span></span><br><span class="line">    edge[cnt].next=head[u]; <span class="comment">//设置以u为起点的上一条边的编号</span></span><br><span class="line">    head[u]=cnt++; <span class="comment">//更新以u为起点的上一条边的编号</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="built_in">setbuf</span>(stdout,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    cin &gt;&gt;n&gt;&gt;m;<span class="comment">//n个点，m条边</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">init</span>(); <span class="comment">//初始化</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> u,v,w;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i =<span class="number">0</span> ;i &lt;m;++i){<span class="comment">//输入m条边</span></span><br><span class="line">        cin &gt;&gt; u&gt;&gt;v&gt;&gt;w;</span><br><span class="line">        <span class="built_in">add_Edge</span>(u,v,w);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;++i){<span class="comment">//n个起点</span></span><br><span class="line">        cout&lt;&lt;<span class="string">"以"</span>&lt;&lt;i&lt;&lt;<span class="string">"为起点的边:"</span>&lt;&lt;endl;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = head[i]; j!=<span class="number">-1</span>;j=edge[j].next){</span><br><span class="line">            cout&lt;&lt;i&lt;&lt;<span class="string">"--&gt;"</span>&lt;&lt;edge[j].to&lt;&lt;endl;</span><br><span class="line">        }</span><br><span class="line">        cout &lt;&lt;endl;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
@@ -9936,7 +10058,7 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
 <p>模仿这样的过程，我们得到一个在$$O(logn)$$时间内计算出幂的算法，也就是快速幂。</p>
 </blockquote>
 <h2 id="Java模板-迭代法">Java模板(迭代法)</h2>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="type">long</span> <span class="title function_">qpow</span><span class="params">(<span class="type">long</span> a,<span class="type">int</span> n)</span>{</span><br><span class="line">    <span class="type">long</span> <span class="variable">sum</span> <span class="operator">=</span><span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(n!=<span class="number">0</span>){</span><br><span class="line">        <span class="keyword">if</span>((n&amp;<span class="number">1</span>)!=<span class="number">0</span>)</span><br><span class="line">            sum=sum*a;</span><br><span class="line">        a=a*a;</span><br><span class="line">        n&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="type">long</span> <span class="title function_">qpow</span><span class="params">(<span class="type">long</span> a,<span class="type">int</span> n)</span>{</span><br><span class="line">    <span class="type">long</span> <span class="variable">sum</span> <span class="operator">=</span><span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(n!=<span class="number">0</span>){</span><br><span class="line">        <span class="keyword">if</span>((n&amp;<span class="number">1</span>)!=<span class="number">0</span>)</span><br><span class="line">            sum=sum*a;</span><br><span class="line">        a=a*a;</span><br><span class="line">        n&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="C-模板-迭代法">C++模板(迭代法)</h2>
 <figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">//非递归快速幂</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> n)</span></span>{</span><br><span class="line">    <span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(n){</span><br><span class="line">        <span class="keyword">if</span>(n&amp;<span class="number">1</span>)        <span class="comment">//如果n的当前末位为1</span></span><br><span class="line">            ans *= a;  <span class="comment">//ans乘上当前的a</span></span><br><span class="line">        a *= a;        <span class="comment">//a自乘</span></span><br><span class="line">        n &gt;&gt;= <span class="number">1</span>;       <span class="comment">//n往右移一位</span></span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="C-模板-递归法">C++模板(递归法)</h2>
@@ -10000,6 +10122,63 @@ $$\frac{A_1}{A_2}=\frac{B_1}{B_2}\not=\frac{C_1}{C_2}\leftrightarrow两直线平
       </categories>
       <tags>
         <tag>代理</tag>
+        <tag>v2ray</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/23/suan-fa-ti-xing-fen-xi/</url>
+    <content><![CDATA[<h1>算法题型分析</h1>
+<hr>
+<p>DFS算法：</p>
+<p>数据类模拟类算法题</p>
+<p>地图模拟类算法题</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>互质</title>
+    <url>/2024/03/23/hu-zhi/</url>
+    <content><![CDATA[<h1>互质</h1>
+<hr>
+<h2 id="什么是互质：">什么是互质：</h2>
+<blockquote>
+<p>互质是公约数只有1的两个整数，叫做互质整数。<a href="https://baike.baidu.com/item/%E5%85%AC%E7%BA%A6%E6%95%B0/1063409?fromModule=lemma_inlink">公约数</a>只有1的两个<a href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394?fromModule=lemma_inlink">自然数</a>，叫做互质自然数，后者是前者的特殊情形。</p>
+</blockquote>
+<p>在考虑两个区间互质的情况之前我们先考虑它的一个子问题，一个数x与一个区间[l,r]的互质问题。</p>
+<p>处理这个问题，最简单的方法肯定是遍历区间，复杂度为O(n)，n为区间长度，显然太慢。</p>
+<p>这时我们可以逆向思维，转换问题，我们可以考虑求不互质的个数，然后再用全部个数减去不互质的个数。</p>
+<p>不互质也就是说，有公共的因子，如果把问题转换成求同有某个因子的数量，那就好处理， 比如如果计算都有因子2，设区间为[l,r]，那我们只要计算1~r的个数减去1~l-1的个数，也非常好算，只要r/2-(l-1)/2 就可以计算出区间[l,r]中有因子2的数字的数量(这里的除法若无特殊说明都为整数除法，即向下取整)。</p>
+<p>这样我们就可以把数x进行因数分解，然后对每一个因数去计算区间中有几个数同时有这个因数，累加到sum[i](i为当前这个因数中有几个质因子)，这样我们就把区间中的数分类到了，几个集合中，数sun[i]，就表示区间中与x共有i个质因子的数的数量，当然这些集合并不是区间的一个划分，因为这几个集合是有共有部分的，这时我们就用到我们上面推出的公式了。</p>
+<p>假设区间中一个数y与x的共有质因子数量为1，那在sum[1]中会对他算一次，sum[2]中会对它算0次.</p>
+<p>如果共有质因子的数量为2，那sun[1]中会对它算2次（比如y有质因子(2,3),x有质因子（2，3，5）,这时取2，计算了一次，取3又计算了一次，所以是两次），sum[2]对他计算1次。</p>
+<p>同样，如果共有质因子的数量为2，那sun[1]中会对它算3次，sum[2]对他计算3次(3个中选2个)，sum[3]是一次，sum[4]零次。</p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>互质</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>逆元</title>
+    <url>/2024/03/23/ni-yuan/</url>
+    <content><![CDATA[<h1>逆元</h1>
+<hr>
+<h2 id="逆元的本质：">逆元的本质：</h2>
+<blockquote>
+<p>逆元的定义： 假设 a 除<br>
+b，且a和b都是整数，非浮点数，那么我们希望不做除法，因为取余数的话除法很麻烦，所以我们希望把除法变成乘法，希望找到一个数，使得a/b的余数 == ax%m。 即对于某一个b，我们能够找到一个数x，使得a/b和ax模m的余数相同的话， 则把x记作b的模m的逆元，记作b的-1次方； 即b的逆元， b的-1次方，是一个整数，是一个标记。即我们可以把所有a/b的情况转化为a*b的逆元的情况下 % M；即把除法变成了整数。</p>
+<p><img src="/images/loading2.gif" data-original="/2024/03/23/ni-yuan/images/f045b7206ee24d1bbd0f7889c79c6498.png" alt="在这里插入图片描述"></p>
+</blockquote>
+<h2 id="C-模板：">C++模板：</h2>
+<figure class="highlight c++"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> LL;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">quick_power</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> p)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="type">int</span> res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (b)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">if</span> (b&amp;<span class="number">1</span>) res = (LL)res * a % p;</span><br><span class="line">        a = (LL)a*a % p;</span><br><span class="line">        b &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> res % p;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> (n -- )</span><br><span class="line">    {</span><br><span class="line">        <span class="type">int</span> a, p;</span><br><span class="line">        cin &gt;&gt; a &gt;&gt; p;</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> x = <span class="built_in">quick_power</span>(a, p<span class="number">-2</span>, p); <span class="comment">//直接求出逆元的值！</span></span><br><span class="line">        <span class="keyword">if</span> (a%p) cout &lt;&lt; x &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">puts</span>(<span class="string">"impossible"</span>);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>逆元</tag>
       </tags>
   </entry>
 </search>
