@@ -1,7 +1,7 @@
 https://blogs.changbaiqi.top/2023/05/19/lan-qiao-zhi-tong-ti-dan/
+https://blogs.changbaiqi.top/2023/05/19/manacher/
 https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2024/04/08/ou-la-han-shu/
-https://blogs.changbaiqi.top/2023/05/19/lan-qiao-ji-chu-ti-dan/
 https://blogs.changbaiqi.top/2024/04/08/yue-shu/
 https://blogs.changbaiqi.top/2023/05/19/shu-zhuang-shu-zu/
 https://blogs.changbaiqi.top/2024/03/08/ge-ren-suan-fa-xue-xi-jin-du-biao/
@@ -17,7 +17,6 @@ https://blogs.changbaiqi.top/2023/05/19/fen-jie-zhi-yin-shu/
 https://blogs.changbaiqi.top/2023/11/16/kuai-du-kuai-shu/
 https://blogs.changbaiqi.top/2023/05/19/segmenttree-xian-duan-shu/
 https://blogs.changbaiqi.top/2023/05/19/prim/
-https://blogs.changbaiqi.top/2023/05/19/manacher/
 https://blogs.changbaiqi.top/2023/05/19/kruskal/
 https://blogs.changbaiqi.top/2023/05/19/kmp/
 https://blogs.changbaiqi.top/2023/05/19/java-zheng-ze-shi-yong-ji-qiao/
@@ -95,7 +94,6 @@ https://blogs.changbaiqi.top/2023/10/30/git-xiang-guan-cao-zuo/
 https://blogs.changbaiqi.top/2023/02/24/flutter-ji-chu-xue-xi/
 https://blogs.changbaiqi.top/2023/02/24/c-cao-fu-xi-te-xing-guan-jian-dian-kuai-su-zong-jie/
 https://blogs.changbaiqi.top/2023/09/17/ying-yu-si-ji-fen-zhi-ping-gu/
-https://blogs.changbaiqi.top/2023/05/19/ji-yu-ti-mu-de-xun-lian-wu-nao-gen-zhao-shua/
 https://blogs.changbaiqi.top/2023/12/11/relu-han-shu/
 https://blogs.changbaiqi.top/2023/02/24/bp-shen-jing-wang-luo-suan-fa/
 https://blogs.changbaiqi.top/2023/12/10/juan-ji-shen-jing-wang-luo-suan-fa/
