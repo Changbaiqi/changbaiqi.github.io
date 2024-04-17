@@ -1,4 +1,5 @@
 https://blogs.changbaiqi.top/2023/05/19/lan-qiao-zhi-tong-ti-dan/
+https://blogs.changbaiqi.top/2023/05/19/qiu-zui-xiao-gong-bei-shu/
 https://blogs.changbaiqi.top/2023/05/19/dijkstra/
 https://blogs.changbaiqi.top/2024/04/08/ou-la-han-shu/
 https://blogs.changbaiqi.top/2024/03/23/ni-yuan/
@@ -34,7 +35,6 @@ https://blogs.changbaiqi.top/2023/06/06/shu-zi-n-chai-fen-wei-k-ge-bu-tong-shu-z
 https://blogs.changbaiqi.top/2023/05/22/shu-wei-dp/
 https://blogs.changbaiqi.top/2023/05/19/ri-qi-he-ge-ji-ping-nian-run-nian-pan-duan/
 https://blogs.changbaiqi.top/2023/05/19/quan-pai-lie/
-https://blogs.changbaiqi.top/2023/05/19/qiu-zui-xiao-gong-bei-shu/
 https://blogs.changbaiqi.top/2023/05/26/qiu-jie-cheng-de-yue-shu/
 https://blogs.changbaiqi.top/2024/03/15/pai-lie-zu-he/
 https://blogs.changbaiqi.top/2023/11/05/lian-shi-xiang-qian-xing/
