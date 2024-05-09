@@ -11,7 +11,7 @@ window.onload=(function(){
     const data = [
         { name: '我是张*锐',color: MCO['1'], money: '200.00', date: '2024/01/10'},
         { name: '我是张*锐',color: MCO['1'], money: '400.00', date: '2023/12/01'},
-        { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '20234/05/01'},
+        { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2024/05/01'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/28'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/27'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/14'},
@@ -23,6 +23,7 @@ window.onload=(function(){
         { name: '云深不知处',color: MCO['4'], money: '10.00', date: '2024/01/27'},
         { name: '*ཀ',color: MCO['4'], money: '10.00', date: '2023/11/22'},
         { name: '*许',color: MCO['5'], money: '6.60', date: '2023/12/14'},
+        { name: '行风行里',color: MCO['5'], money: '5.00', date: '2024/05/09'},
         { name: '好先生',color: MCO['6'], money: '3.00', date: '2024/04/14'},
         { name: '云深不知处',color: MCO['7'], money: '0.01', date: '2024/01/27'},
         { name: '**杰',color: MCO['7'], money: '0.01', date: '2024/01/27'}
