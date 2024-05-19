@@ -1,7 +1,7 @@
 ---
 title: "赞助墙"
 type: sponsorWall
-layout: "sponsorWall
+layout: sponsorWall
 ---
 
 {% raw %}

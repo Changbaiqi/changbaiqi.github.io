@@ -7,6 +7,8 @@ layout: "二次元风景图"
 
 
 
+{% raw %}
+
 {% gallery %}
 ![](./assets/index/images/1.jpg)
 ![](./assets/index/images/2.webp)
@@ -34,3 +36,4 @@ layout: "二次元风景图"
 ![](./assets/index/images/24.jpg)
 ![](./assets/index/images/25.jpg)
 {% endgallery %}
+{% rawend %}
