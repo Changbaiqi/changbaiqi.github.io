@@ -36,4 +36,4 @@ layout: "二次元风景图"
 ![](./assets/index/images/24.jpg)
 ![](./assets/index/images/25.jpg)
 {% endgallery %}
-{% rawend %}
+{% endraw %}
