@@ -25,7 +25,7 @@ window.onload=(function(){
         { name: '清心寡欲',color: MCO['4'], money: '12.00', date: '2024/05/08'},
         { name: '云深不知处',color: MCO['4'], money: '10.00', date: '2024/01/27'},
         { name: '*ཀ',color: MCO['4'], money: '10.00', date: '2023/11/22'},
-        { name: '*衣',color: MCO['5'], money: '6.66', date: '2024/09/11'},
+        { name: 'TT',color: MCO['5'], money: '6.66', date: '2024/09/11'},
         { name: 'J*u',color: MCO['5'], money: '6.66', date: '2024/09/11'},
         { name: '*许',color: MCO['5'], money: '6.60', date: '2023/12/14'},
         { name: '**霖',color: MCO['5'], money: '5.00', date: '2024/09/11'},
