@@ -23,6 +23,7 @@ window.onload=(function(){
         { name: '*遥',color: MCO['4'], money: '18.88', date: '2023/11/29'},
         { name: '***焕',color: MCO['4'], money: '16.66', date: '2024/09/11'},
         { name: '清心寡欲',color: MCO['4'], money: '12.00', date: '2024/05/08'},
+        { name: '**霖',color: MCO['4'], money: '10.00', date: '2024/09/13'},
         { name: 'by 江风易天',color: MCO['4'], money: '10.00', date: '2024/09/12'},
         { name: '云深不知处',color: MCO['4'], money: '10.00', date: '2024/01/27'},
         { name: '*ཀ',color: MCO['4'], money: '10.00', date: '2023/11/22'},
