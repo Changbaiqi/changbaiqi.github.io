@@ -1,3 +1,4 @@
+https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2023/02/24/linux-xue-xi/
 https://blogs.changbaiqi.top/2023/02/24/docker-xue-xi/
 https://blogs.changbaiqi.top/2024/07/02/ru-he-pei-zhi-docker-jing-xiang/
@@ -30,7 +31,6 @@ https://blogs.changbaiqi.top/photo/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E%E6%99%AF
 https://blogs.changbaiqi.top/sponsorWall/index.html
 https://blogs.changbaiqi.top/2023/03/22/sql-da-quan/
 https://blogs.changbaiqi.top/2024/03/08/ge-ren-suan-fa-xue-xi-jin-du-biao/
-https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2023/05/14/springsecurity-xue-xi/
 https://blogs.changbaiqi.top/2023/05/19/segmenttree-xian-duan-shu/
 https://blogs.changbaiqi.top/2023/10/30/git-xiang-guan-cao-zuo/
