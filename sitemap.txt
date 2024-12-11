@@ -1,8 +1,8 @@
+https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2023/10/30/git-xiang-guan-cao-zuo/
 https://blogs.changbaiqi.top/2024/12/01/go-yu-yan-cai-keng/
 https://blogs.changbaiqi.top/2024/11/27/githubactions/
 https://blogs.changbaiqi.top/2024/06/08/github/
-https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2024/12/01/ji-chang-ping-tai/
 https://blogs.changbaiqi.top/2024/12/01/stm32/
 https://blogs.changbaiqi.top/2023/02/24/docker-xue-xi/

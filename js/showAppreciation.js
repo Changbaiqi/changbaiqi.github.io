@@ -37,6 +37,7 @@ window.onload=(function(){
         { name: '*呢',color: MCO['5'], money: '5.00', date: '2024/09/19'},
         { name: '**霖',color: MCO['5'], money: '5.00', date: '2024/09/11'},
         { name: '行风行里',color: MCO['5'], money: '5.00', date: '2024/05/09'},
+        { name: '鹤川',color: MCO['6'], money: '3.00', date: '2024/12/11'},
         { name: '好先生',color: MCO['6'], money: '3.00', date: '2024/04/14'},
         { name: '**玮',color: MCO['7'], money: '1.00', date: '2024/09/11'},
         { name: '云深不知处',color: MCO['7'], money: '0.01', date: '2024/01/27'},
