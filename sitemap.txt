@@ -1,10 +1,13 @@
+https://blogs.changbaiqi.top/2023/02/24/xiang-mu-zhong-de-shi-ti-lei-fen-lei-de-qu-bie-he-zuo-yong/
+https://blogs.changbaiqi.top/2025/01/01/yolov8/
+https://blogs.changbaiqi.top/2025/01/01/yolo/
+https://blogs.changbaiqi.top/2023/03/22/stm32/
+https://blogs.changbaiqi.top/2024/06/08/github/
 https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2023/10/30/git-xiang-guan-cao-zuo/
 https://blogs.changbaiqi.top/2024/12/01/go-yu-yan-cai-keng/
 https://blogs.changbaiqi.top/2024/11/27/githubactions/
-https://blogs.changbaiqi.top/2024/06/08/github/
 https://blogs.changbaiqi.top/2024/12/01/ji-chang-ping-tai/
-https://blogs.changbaiqi.top/2024/12/01/stm32/
 https://blogs.changbaiqi.top/2023/02/24/docker-xue-xi/
 https://blogs.changbaiqi.top/2023/02/24/linux-xue-xi/
 https://blogs.changbaiqi.top/2024/07/02/ru-he-pei-zhi-docker-jing-xiang/
@@ -238,6 +241,9 @@ https://blogs.changbaiqi.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%
 https://blogs.changbaiqi.top/tags/%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86/
 https://blogs.changbaiqi.top/tags/%E7%AE%97%E6%B3%95%E9%A2%98%E5%9E%8B%E5%88%86%E6%9E%90/
 https://blogs.changbaiqi.top/tags/Github/
+https://blogs.changbaiqi.top/tags/%E9%9D%A2%E7%9B%B8%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/
+https://blogs.changbaiqi.top/tags/%E5%90%8E%E7%AB%AF/
+https://blogs.changbaiqi.top/tags/STM32/
 https://blogs.changbaiqi.top/categories/C/
 https://blogs.changbaiqi.top/categories/Hexo/
 https://blogs.changbaiqi.top/categories/Kotlin/
@@ -278,3 +284,7 @@ https://blogs.changbaiqi.top/categories/%E7%BB%84%E7%BD%91%E5%AE%9E%E4%B9%A0/
 https://blogs.changbaiqi.top/categories/%E8%93%9D%E6%A1%A5/
 https://blogs.changbaiqi.top/categories/eNSP/
 https://blogs.changbaiqi.top/categories/GithubActions/
+https://blogs.changbaiqi.top/categories/Github/
+https://blogs.changbaiqi.top/categories/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/
+https://blogs.changbaiqi.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/
+https://blogs.changbaiqi.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/STM32/
