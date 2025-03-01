@@ -1,5 +1,13 @@
-https://blogs.changbaiqi.top/2025/01/18/guan-yu-ru-he-jie-jue-flutter-da-bao-yi-zhi-ting-liu-zai-build-jie-duan-fen-xi-yu-jie-jue/
+https://blogs.changbaiqi.top/2025/03/02/mysql-zhong-sql-de-zhi-xing-shun-xu/
+https://blogs.changbaiqi.top/2025/03/01/shi-me-shi-mi-deng-xing/
+https://blogs.changbaiqi.top/2023/02/24/shell-xue-xi/
+https://blogs.changbaiqi.top/2023/02/24/docker-xue-xi/
+https://blogs.changbaiqi.top/2023/12/28/vue3-xue-xi/
+https://blogs.changbaiqi.top/2023/05/19/ri-qi-he-ge-ji-ping-nian-run-nian-pan-duan/
+https://blogs.changbaiqi.top/2025/02/14/oauth2.0-ru-men/
+https://blogs.changbaiqi.top/2025/02/15/kafka-shi-yong/
 https://blogs.changbaiqi.top/2025/01/18/ji-chang-ping-tai/
+https://blogs.changbaiqi.top/2025/01/18/guan-yu-ru-he-jie-jue-flutter-da-bao-yi-zhi-ting-liu-zai-build-jie-duan-fen-xi-yu-jie-jue/
 https://blogs.changbaiqi.top/2025/01/18/yolov8/
 https://blogs.changbaiqi.top/2025/01/18/yolo/
 https://blogs.changbaiqi.top/2024/01/24/go-yu-yan-cai-keng/
@@ -13,7 +21,6 @@ https://blogs.changbaiqi.top/2024/06/08/github/
 https://blogs.changbaiqi.top/about/index.html
 https://blogs.changbaiqi.top/2023/10/30/git-xiang-guan-cao-zuo/
 https://blogs.changbaiqi.top/2024/11/27/githubactions/
-https://blogs.changbaiqi.top/2023/02/24/docker-xue-xi/
 https://blogs.changbaiqi.top/2024/07/02/ru-he-pei-zhi-docker-jing-xiang/
 https://blogs.changbaiqi.top/2024/07/01/hadoop-shi-yong/
 https://blogs.changbaiqi.top/2024/06/29/cnn-juan-ji-shen-jing-wang-luo-suan-fa/
@@ -70,7 +77,6 @@ https://blogs.changbaiqi.top/2023/05/19/binarysearch/
 https://blogs.changbaiqi.top/2023/05/19/bfs/
 https://blogs.changbaiqi.top/2023/05/19/zhi-xian/
 https://blogs.changbaiqi.top/2023/06/06/shu-zi-n-chai-fen-wei-k-ge-bu-tong-shu-zi/
-https://blogs.changbaiqi.top/2023/05/19/ri-qi-he-ge-ji-ping-nian-run-nian-pan-duan/
 https://blogs.changbaiqi.top/2023/05/19/quan-pai-lie/
 https://blogs.changbaiqi.top/2023/05/26/qiu-jie-cheng-de-yue-shu/
 https://blogs.changbaiqi.top/2024/03/15/pai-lie-zu-he/
@@ -94,7 +100,6 @@ https://blogs.changbaiqi.top/2024/02/27/gfw-yuan-li-he-feng-suo-ji-zhu/
 https://blogs.changbaiqi.top/2024/02/27/hexo-chang-yong-zhi-ling/
 https://blogs.changbaiqi.top/2023/11/17/dui-shu-han-shu-xiang-guan/
 https://blogs.changbaiqi.top/2023/02/24/web-bu-ju-xue-xi/
-https://blogs.changbaiqi.top/2023/12/28/vue3-xue-xi/
 https://blogs.changbaiqi.top/2023/02/24/axios-xue-xi/
 https://blogs.changbaiqi.top/2023/02/24/ajax-xue-xi/
 https://blogs.changbaiqi.top/2023/12/21/kotlin-ji-chu/
@@ -255,6 +260,11 @@ https://blogs.changbaiqi.top/tags/VPN/
 https://blogs.changbaiqi.top/tags/V2R/
 https://blogs.changbaiqi.top/tags/YOLO/
 https://blogs.changbaiqi.top/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/
+https://blogs.changbaiqi.top/tags/%E5%B9%82%E7%AD%89%E6%80%A7/
+https://blogs.changbaiqi.top/tags/Kafka/
+https://blogs.changbaiqi.top/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/
+https://blogs.changbaiqi.top/tags/OAuth/
+https://blogs.changbaiqi.top/tags/Linux-shell/
 https://blogs.changbaiqi.top/categories/C/
 https://blogs.changbaiqi.top/categories/Hexo/
 https://blogs.changbaiqi.top/categories/Kotlin/
@@ -304,3 +314,5 @@ https://blogs.changbaiqi.top/categories/GO/
 https://blogs.changbaiqi.top/categories/%E6%9C%BA%E5%9C%BA/
 https://blogs.changbaiqi.top/categories/YOLO/
 https://blogs.changbaiqi.top/categories/Flutter/
+https://blogs.changbaiqi.top/categories/Kafka/
+https://blogs.changbaiqi.top/categories/%E9%89%B4%E6%9D%83%E8%AE%A4%E8%AF%81/
