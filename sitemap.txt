@@ -1,3 +1,4 @@
+https://blogs.changbaiqi.top/2023/02/24/springcloud-xue-xi-bi-ji/
 https://blogs.changbaiqi.top/2025/03/01/shi-me-shi-mi-deng-xing/
 https://blogs.changbaiqi.top/2025/03/02/mysql-zhong-sql-de-zhi-xing-shun-xu/
 https://blogs.changbaiqi.top/2023/02/24/shell-xue-xi/
@@ -106,7 +107,6 @@ https://blogs.changbaiqi.top/2023/12/21/kotlin-ji-chu/
 https://blogs.changbaiqi.top/2023/02/24/webrtc/
 https://blogs.changbaiqi.top/2023/02/24/web-xiang-mu-de-kai-fa/
 https://blogs.changbaiqi.top/2023/02/24/ssm-jia-gou-kai-fa-wen-dang/
-https://blogs.changbaiqi.top/2023/02/24/springcloud-xue-xi-bi-ji/
 https://blogs.changbaiqi.top/2023/02/24/springboot-xue-xi-bi-ji/
 https://blogs.changbaiqi.top/2023/09/20/rocketmq-bi-ji/
 https://blogs.changbaiqi.top/2023/02/24/rabbitmq-xiao-xi-dui-lie-xue-xi-bi-ji/
