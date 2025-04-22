@@ -104,3 +104,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# 中文链接转拼音插件
+permalink_pinyin:
+  enable: true # 启用插件
+  separator: '-' # 分词符，将使用此符号分隔两个汉字间的拼音
