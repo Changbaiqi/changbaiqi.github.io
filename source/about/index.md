@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "关于我"
 type: about
 layout: "about"
 date: 2024-01-15 02:38:16
@@ -11,7 +11,7 @@ date: 2024-01-15 02:38:16
 
 > 专业
 
-* 计算机科学与技术
+* 计算机科学与技术（本科）
 
 > 擅长技术
 
@@ -37,6 +37,8 @@ date: 2024-01-15 02:38:16
 * Java语言
 * C#语言
 * Dart语言
+* Go语言
+* Git项目管理
 * 前端三件套（HTML、CSS、JavaScript）
 * Kotlin
 * C基础
@@ -69,6 +71,7 @@ date: 2024-01-15 02:38:16
 * Unity游戏开发
 * Android基础逆向
 * Web基础逆向
+* Docker
 
 > 算法学习
 

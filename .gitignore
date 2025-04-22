@@ -2,7 +2,10 @@
 Thumbs.db
 db.json
 *.log
+# 忽略node_modules
 node_modules/
+# 不忽略指定魔改的依赖
+!./node_modules/hexo-asset-images
 public/
 .deploy*/
 _multiconfig.yml
