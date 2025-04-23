@@ -34,4 +34,5 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         !=partial('includes/footer', {}, {cache: true})
 
     include ./rightside.pug
+    !=partial('includes/right-menu/index',{},{cache:true})
     include ./additional-js.pug
