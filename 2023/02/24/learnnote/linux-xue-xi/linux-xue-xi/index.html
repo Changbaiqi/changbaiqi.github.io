@@ -1,0 +1,664 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Linux学习(CentOS) | 长白崎の个人博客</title><meta name="author" content="长白崎"><meta name="copyright" content="长白崎"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Linux学习  目录作用  &#x2F;	根目录 &#x2F;bin	存放必要的指令 &#x2F;boot	存放内核以及启动所需的文件 &#x2F;dev	存放设备文件 &#x2F;etc	存放系统配置文件 &#x2F;home	普通用户的宿主目录，用户数据存放在其主目录中 &#x2F;lib	存放必要的运行库 &#x2F;mnt	存放临时的映射文件系统，通常用来挂载使用。 &#x2F;proc	存放存储进程和系统信息 &#x2F;root	超级用户的主目录 &#x2F;sbin	存放系统管理程序 &#x2F;t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux学习(CentOS)">
+<meta property="og:url" content="http://blogs.changbaiqi.top/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/index.html">
+<meta property="og:site_name" content="长白崎の个人博客">
+<meta property="og:description" content="Linux学习  目录作用  &#x2F;	根目录 &#x2F;bin	存放必要的指令 &#x2F;boot	存放内核以及启动所需的文件 &#x2F;dev	存放设备文件 &#x2F;etc	存放系统配置文件 &#x2F;home	普通用户的宿主目录，用户数据存放在其主目录中 &#x2F;lib	存放必要的运行库 &#x2F;mnt	存放临时的映射文件系统，通常用来挂载使用。 &#x2F;proc	存放存储进程和系统信息 &#x2F;root	超级用户的主目录 &#x2F;sbin	存放系统管理程序 &#x2F;t">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://blogs.changbaiqi.top/TestBlog/img/arrrgdwshs.webp">
+<meta property="article:published_time" content="2023-02-24T01:46:09.000Z">
+<meta property="article:modified_time" content="2025-04-19T15:13:46.363Z">
+<meta property="article:author" content="长白崎">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blogs.changbaiqi.top/TestBlog/img/arrrgdwshs.webp"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Linux学习(CentOS)",
+  "url": "http://blogs.changbaiqi.top/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/",
+  "image": "http://blogs.changbaiqi.top/TestBlog/img/arrrgdwshs.webp",
+  "datePublished": "2023-02-24T01:46:09.000Z",
+  "dateModified": "2025-04-19T15:13:46.363Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "长白崎",
+      "url": "http://blogs.changbaiqi.top/TestBlog/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&spec=640&img_type=jpg"><link rel="canonical" href="http://blogs.changbaiqi.top/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/TestBlog/css/index.css?v=5.3.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=[object Object]"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', '[object Object]')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', '[object Object]', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/TestBlog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Linux学习(CentOS)',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="/css/showAppreciation.css"><meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (true) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" onerror="this.onerror=null;this.src='/TestBlog/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/TestBlog/archives/"><div class="headline">文章</div><div class="length-num">145</div></a><a href="/TestBlog/tags/"><div class="headline">标签</div><div class="length-num">125</div></a><a href="/TestBlog/categories/"><div class="headline">分类</div><div class="length-num">59</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/TestBlog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/TestBlog/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/TestBlog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/TestBlog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/TestBlog/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/TestBlog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/TestBlog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/TestBlog/sponsorWall/"><i class="fa-fw fa-fw fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/arrrgdwshs.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/TestBlog/"><span class="site-name">长白崎の个人博客</span></a><a class="nav-page-title" href="/TestBlog/"><span class="site-name">Linux学习(CentOS)</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/TestBlog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/TestBlog/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/TestBlog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/TestBlog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/TestBlog/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/TestBlog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/TestBlog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/TestBlog/sponsorWall/"><i class="fa-fw fa-fw fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Linux学习(CentOS)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-24T01:46:09.000Z" title="发表于 2023-02-24 09:46:09">2023-02-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-19T15:13:46.363Z" title="更新于 2025-04-19 23:13:46">2025-04-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/TestBlog/categories/Linux/">Linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/#post-comment"><span class="waline-comment-count" data-path="/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1>Linux学习</h1>
+<hr>
+<h2 id="目录作用">目录作用</h2>
+<blockquote>
+<p>/	根目录</p>
+<p>/bin	存放必要的指令</p>
+<p>/boot	存放内核以及启动所需的文件</p>
+<p>/dev	存放设备文件</p>
+<p>/etc	存放系统配置文件</p>
+<p>/home	普通用户的宿主目录，用户数据存放在其主目录中</p>
+<p>/lib	存放必要的运行库</p>
+<p>/mnt	存放临时的映射文件系统，通常用来挂载使用。</p>
+<p>/proc	存放存储进程和系统信息</p>
+<p>/root	超级用户的主目录</p>
+<p>/sbin	存放系统管理程序</p>
+<p>/tmp	存放临时文件</p>
+<p>/usr	存放应用程序，命令程序文件、程序库、手册和其它文档、</p>
+<p>/var	系统默认日志存放目录</p>
+</blockquote>
+<h2 id="Linux常用命令">Linux常用命令</h2>
+<hr>
+<p>​		默认进入系统，我们会看到这样的字符：[root@localhost~]#，其中#代表当前是root用户登录，如果是$表示当前为普通用户。</p>
+<p>​		我们了解Linux由很多目录文件构成，那我们来学习第一个Linux命令：</p>
+<p>​		cd 命令，cd	/home；解析：进入/home目录</p>
+<p>​		cd /root 进入/root目录；cd …/返回上一级目录；cd ./当前目录；（.和…可以理解为相对路径：例如：cd /home/test ，cd加完整的路径，可以理解为绝对路径）</p>
+<p>更多的指令：</p>
+<blockquote>
+<p>ls ./		查看当前目录所有的文件和目录。</p>
+</blockquote>
+<blockquote>
+<p>ls -a 查看所有的文件，包括隐藏文件以.开头的文件。</p>
+</blockquote>
+<p>​</p>
+<blockquote>
+<p>pwd	显示当前所在的目录。</p>
+</blockquote>
+<blockquote>
+<p>mkdir	创建目录，用法 mkdir test，命令后接目录的名称。</p>
+</blockquote>
+<blockquote>
+<p>rmdir	删除空目录</p>
+</blockquote>
+<blockquote>
+<p>rm	删除文件或者目录，用法	rm -rf test.txt（-r表示递归，-f表示强制）。</p>
+</blockquote>
+<blockquote>
+<p>cp 拷贝文件，用法，cp old.txt	/tmp/new.txt，常用来备份；如果拷贝目录需	要加-r参数。</p>
+</blockquote>
+<blockquote>
+<p>mv	重命名或者移动文件或者目录，用法，mv old.txt new.txt</p>
+</blockquote>
+<blockquote>
+<p>touch	创建文件，用法，touch test.txt，如果文件存在，则表示修改当前文			件时间。</p>
+</blockquote>
+<blockquote>
+<p>Useradd	创建用户，用法 useradd wugk，userdel删除用户。</p>
+</blockquote>
+<blockquote>
+<p>Groupadd	创建组，用法groupadd wugk1，groupdel删除组。</p>
+</blockquote>
+<blockquote>
+<p>find [目录下开始查找] -name “test.txt”</p>
+</blockquote>
+<blockquote>
+<p>cat test.txt		打开文件（Linux默认的文本编辑器）</p>
+</blockquote>
+<blockquote>
+<p>vi	修改某个文件，vi有三种模式：（ESC退出编辑）</p>
+<p>命令行模式、文本输入模式、末行模式。</p>
+<p>:w为保存的意思，:wq为保存退出</p>
+<p>默认vi打开一个文件，首先是命令行模式，然后按i进入文本输入模式，可以在文件里写入字符等信息。</p>
+<p>写完后，按ESC进入命令行模式，然后输入:进入末行模式，例如输入:wq表示保存退出。</p>
+<p>如果想直接退出，不保存，可以执行:q!，q!感叹号表示强制退出。</p>
+</blockquote>
+<blockquote>
+<p>cat	查看文件内容，分页查看，cat是全部查看，如果篇幅很多，只能看到最后的篇幅。可以使用cat和more同时使用，例如：cat test.txt |more 分页显示text内容，|符号是管道符，用于把|前的输出作为后面命令的输入。</p>
+</blockquote>
+<blockquote>
+<p>echo	回显，用法 echo ok，会显示ok，输入什么就打印什么。</p>
+<p>echo ok &gt; test.txt；把ok字符覆盖test.txt内容，&gt;表示追加并覆盖的意思。</p>
+<p>&gt;&gt;两个大于符号，表示追加，echo ok &gt;&gt; test.txt，表示向test.txt文件追加OK字符。不覆盖原文件里的内容。</p>
+</blockquote>
+<p>初学者常见的命令就如上所示，当然还有很多深入的命令需要学习。</p>
+<blockquote>
+<p><img src="/images/loading2.gif" data-original="./Linux%E5%AD%A6%E4%B9%A0/images/sl-l%E6%8C%87%E4%BB%A4.png" alt=""></p>
+<p>ls -l [文件名]	查看文件属性</p>
+<p>- rw- r-- r-- 1 root root12 Jul 31 04:24 test.txt</p>
+<p>第一位表示文件类型，-表示文件，d表示目录；后面每三位为一组。</p>
+<p>第一组：2-4位表示文件所有者的权限，即用户user权限，简称u</p>
+<p>第二组：5-7位表示文件所有者所属组成员的权限，group权限，简称g</p>
+<p>第三组：8-10位表示所有者所属之外的用户的权限，other权限，简称o</p>
+<p>从上面这个文件，我们可以看出test.txt文件对应的权限为：</p>
+<p>root哟怒具有读和写的权限，root组具有读的权限，其他人具有读的权限。</p>
+<p>为了能更简单快捷的使用和熟悉权限，rwx权限可以用数字来表示，分别表示r（4）、w（2）、x（1）。</p>
+<p>test.txt权限可以表示为：644</p>
+</blockquote>
+<blockquote>
+<p>chmod [组]+[权限] [文件]	修改文件权限的指令</p>
+<p>比如：chmod o+w test.txt</p>
+<p>​		chmod o-w test.txt</p>
+<p>​		chmod u=rwx,g=rw,o=r test.txt</p>
+<p>​		chomod 644 test.txt</p>
+</blockquote>
+<blockquote>
+<p>chown -R abc:abc test.txt</p>
+<p>修改权限组为abc abc</p>
+<p>-rw-r–r-- a abc abc …</p>
+</blockquote>
+<h3 id="将最近的后台任务调到前台：">将最近的后台任务调到前台：</h3>
+<blockquote>
+<p>fg</p>
+</blockquote>
+<h3 id="命令进程号码N的命令进程放到前台执行">命令进程号码N的命令进程放到前台执行</h3>
+<blockquote>
+<p>fg N</p>
+</blockquote>
+<h3 id="将命令进程号码为N的命令进程放到后台执行">将命令进程号码为N的命令进程放到后台执行</h3>
+<blockquote>
+<p>bg N</p>
+</blockquote>
+<h3 id="查看当前在后台执行的命令，可查看命令进程号码">查看当前在后台执行的命令，可查看命令进程号码</h3>
+<blockquote>
+<p>jobs</p>
+</blockquote>
+<h3 id="压缩命令">压缩命令</h3>
+<blockquote>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf 压缩文件名称 .tar.gz <span class="comment">#被压缩文件名</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r mydata.zip mydata #压缩mydata目录</span><br></pre></td></tr></tbody></table></figure>
+<p>注意unzip指令cnetos不自带需要先安装unzip才行</p>
+<p>unzip安装：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zip unzip</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="解压缩命令">解压缩命令</h3>
+<blockquote>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf 压缩文件名.tar.gz</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip 文件夹名称.zip</span><br></pre></td></tr></tbody></table></figure>
+<p>注意unzip指令cnetos不自带需要先安装unzip才行</p>
+<p>unzip安装：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zip unzip</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看防火墙状态">查看防火墙状态</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+<p>运行上述命令后，如果看到有绿色字样标注的“active（running）”，说明防火墙是开启状态。</p>
+</blockquote>
+<h3 id="开启防火墙">开启防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="关闭防火墙">关闭防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+<p>关闭后，可查看防火墙状态，当显示disavtive（dead）的字样，说明CentOS 7防火墙已经关闭。<br>
+但要注意的是，上面的命令只是临时关闭了CentOS 7防火墙，当重启操作系统后，防火墙服务还是会再次启动。如果想要永久关闭防火墙则还需要禁用防火墙服务。</p>
+</blockquote>
+<h3 id="禁用防火墙服务">禁用防火墙服务</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl disable firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看防火墙规则">查看防火墙规则</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd –list-all</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看开放端口">查看开放端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-ports</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查询端口是否开放">查询端口是否开放</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd –query-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>这里的8080指的就是需要查看的指定端口</p>
+</blockquote>
+<h3 id="重启防火墙">重启防火墙</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd –reload</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="开放指定端口">开放指定端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd –permanent –add-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>以上例子为开放端口8080</p>
+<p>(修改配置后需要重启防火墙)</p>
+<p>参数解释：<br>
+firewall-cmd: 是Linux提供的操作firewall的一个工具；<br>
+–permanent：表示设置为持久；<br>
+–add-port：表示添加的端口。</p>
+</blockquote>
+<h3 id="移除某个防火墙开启的端口">移除某个防火墙开启的端口</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd –permanent –remove-port=8080/tcp</span><br></pre></td></tr></tbody></table></figure>
+<p>(修改配置后需要重启防火墙)</p>
+</blockquote>
+<h3 id="查看防火墙帮助">查看防火墙帮助</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --help</span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看-root-用户登录成功的IP及次数">查看 root 用户登录成功的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep "Accepted password for root" /var/log/secure | awk '{print $11}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p>看看是否有不熟悉的IP地址</p>
+</blockquote>
+<h3 id="查看尝试暴力破解-root-账户的IP及次数">查看尝试暴力破解 root 账户的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep "Failed password for root" /var/log/secure | awk '{print $11}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="查看尝试暴力破解用户名的IP及次数">查看尝试暴力破解用户名的IP及次数</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep "Failed password for invalid user" /var/log/secure | awk '{print $13}' | sort | uniq -c | sort -nr | more</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+</blockquote>
+<h3 id="图像转边命令行">图像转边命令行</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl set-default multi-user.target</span><br></pre></td></tr></tbody></table></figure>
+<p>输入之后再输入reboot重启即可。</p>
+</blockquote>
+<h3 id="命令行转变图形">命令行转变图形</h3>
+<blockquote>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl set-default graphical.target</span><br></pre></td></tr></tbody></table></figure>
+<p>输入之后再输入reboot重启即可。</p>
+</blockquote>
+<h3 id="添加环境变量">添加环境变量</h3>
+<p>1、打开终端，使用root用户或者具有sudo权限的用户登录到系统中。</p>
+<p>2、编辑/etc/profile文件，例如使用vim编辑器：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/profile</span><br></pre></td></tr></tbody></table></figure>
+<p>3、在文件末尾添加你需要设置的环境变量，例如添加JAVA_HOME环境变量：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/jdk1.8.0_281</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br></pre></td></tr></tbody></table></figure>
+<p>4、保存并退出文件，然后配置生效：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/environment #使配置立即生效。</span><br></pre></td></tr></tbody></table></figure>
+<p>5、验证环境变量是否设置成功：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $JAVA_HOME</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="修改文件名称">修改文件名称</h3>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv a.txt a1.txt</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="vim操作">vim操作</h2>
+<hr>
+<p>全部删除：按esc键后，先按gg（到达顶部），然后dG<br>
+全部复制：按esc键后，先按gg，然后ggyG<br>
+全选高亮显示：按esc键后，先按gg，然后ggvG或者ggVG</p>
+<p>单行复制：按esc键后, 然后yy<br>
+单行删除：按esc键后, 然后dd<br>
+粘贴：按esc键后, 然后p</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://blogs.changbaiqi.top/TestBlog">长白崎</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://blogs.changbaiqi.top/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/">http://blogs.changbaiqi.top/TestBlog/2023/02/24/learnnote/linux-xue-xi/linux-xue-xi/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://blogs.changbaiqi.top/TestBlog" target="_blank">长白崎の个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/TestBlog/tags/Linux/">Linux</a></div><div class="post-share"><div class="social-share" data-image="/TestBlog/img/arrrgdwshs.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/TestBlog/img/wechatpay.png" target="_blank"><img class="post-qr-code-img" src="/TestBlog/img/wechatpay.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/TestBlog/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/TestBlog/img/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/TestBlog/2023/02/24/learnnote/linux-xue-xi/shell-xue-xi/" title="Shell学习"><img class="cover" src="/TestBlog/img/4c33f9df3f514027cb1b31bf2e123d66.webp" onerror="onerror=null;src='/TestBlog/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Shell学习</div></div><div class="info-2"><div class="info-item-1">Shell学习  echo 说明：#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。echo 命令用于向窗口输出文本。 12#!/bin/bashecho "Hello World!" Shell 变量 在 Shell 编程中，变量是用于存储数据值的名称。 定义变量时，变量名不加美元符号（$，PHP语言中变量需要），如： 1shellyour_name="runoob" 注意，变量名和等号之间不能有空格，这可能和你熟悉的所有编程语言都不一样。同时，变量名的命名须遵循如下规则：  只包含字母、数字和下划线： 变量名可以包含字母（大小写敏感）、数字和下划线 _，不能包含其他特殊字符。 不能以数字开头： 变量名不能以数字开头，但可以包含数字。 避免使用 Shell 关键字： 不要使用Shell的关键字（例如 if、then、else、fi、for、while 等）作为变量名，以免引起混淆。 使用大写字母表示常量： 习惯上，常量的变量名通常使用大写字母，例如 PI=3.14。 避免使用特殊符号： 尽量避免在变量名中使用特殊符号，因为它们可能与...</div></div></div></a><a class="pagination-related" href="/TestBlog/2023/02/24/learnnote/web-qian-duan/ajax-xue-xi/" title="Ajax学习"><img class="cover" src="/TestBlog/img/tyujhezcbn.webp" onerror="onerror=null;src='/TestBlog/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Ajax学习</div></div><div class="info-2"><div class="info-item-1">AJAX特点 优点  可以无需刷新页面而与服务器端进行通信。 允许你根据用户事件来更新部分页面内容。  缺点  没有浏览历史，不能回退 存在跨域问题（同源） SEO不友好（对搜索引擎不友好）  安装nodemon插件指令：  npm install -g nodemon 以后就可以用：nodemon *.js 来运行Nodejs了  </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://q.qlogo.cn/headimg_dl?dst_uin=2084069833&amp;spec=640&amp;img_type=jpg" onerror="this.onerror=null;this.src='/TestBlog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">长白崎</div><div class="author-info-description"></div><div class="site-data"><a href="/TestBlog/archives/"><div class="headline">文章</div><div class="length-num">145</div></a><a href="/TestBlog/tags/"><div class="headline">标签</div><div class="length-num">125</div></a><a href="/TestBlog/categories/"><div class="headline">分类</div><div class="length-num">59</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Changbaiqi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Changbaiqi" target="_blank" title="Github"><i class="fab fa-github" style="color: #4a7dbe;"></i></a><a class="social-icon" href="mailto:changbaiqi@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/36987520" target="_blank" title="BiliBili"><i class="fab fa-bilibili" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Ciallo～(∠・ω< )⌒★</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Linux学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">目录作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.</span> <span class="toc-text">Linux常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E6%9C%80%E8%BF%91%E7%9A%84%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%88%B0%E5%89%8D%E5%8F%B0%EF%BC%9A"><span class="toc-number">1.2.1.</span> <span class="toc-text">将最近的后台任务调到前台：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%BF%9B%E7%A8%8B%E5%8F%B7%E7%A0%81N%E7%9A%84%E5%91%BD%E4%BB%A4%E8%BF%9B%E7%A8%8B%E6%94%BE%E5%88%B0%E5%89%8D%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.2.</span> <span class="toc-text">命令进程号码N的命令进程放到前台执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E5%91%BD%E4%BB%A4%E8%BF%9B%E7%A8%8B%E5%8F%B7%E7%A0%81%E4%B8%BAN%E7%9A%84%E5%91%BD%E4%BB%A4%E8%BF%9B%E7%A8%8B%E6%94%BE%E5%88%B0%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.3.</span> <span class="toc-text">将命令进程号码为N的命令进程放到后台执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%9C%A8%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C%E7%9A%84%E5%91%BD%E4%BB%A4%EF%BC%8C%E5%8F%AF%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4%E8%BF%9B%E7%A8%8B%E5%8F%B7%E7%A0%81"><span class="toc-number">1.2.4.</span> <span class="toc-text">查看当前在后台执行的命令，可查看命令进程号码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.5.</span> <span class="toc-text">压缩命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.6.</span> <span class="toc-text">解压缩命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%98%B2%E7%81%AB%E5%A2%99%E7%8A%B6%E6%80%81"><span class="toc-number">1.2.7.</span> <span class="toc-text">查看防火墙状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">1.2.8.</span> <span class="toc-text">开启防火墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">1.2.9.</span> <span class="toc-text">关闭防火墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.2.10.</span> <span class="toc-text">禁用防火墙服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%98%B2%E7%81%AB%E5%A2%99%E8%A7%84%E5%88%99"><span class="toc-number">1.2.11.</span> <span class="toc-text">查看防火墙规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.2.12.</span> <span class="toc-text">查看开放端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E5%BC%80%E6%94%BE"><span class="toc-number">1.2.13.</span> <span class="toc-text">查询端口是否开放</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-number">1.2.14.</span> <span class="toc-text">重启防火墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.2.15.</span> <span class="toc-text">开放指定端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E9%99%A4%E6%9F%90%E4%B8%AA%E9%98%B2%E7%81%AB%E5%A2%99%E5%BC%80%E5%90%AF%E7%9A%84%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.2.16.</span> <span class="toc-text">移除某个防火墙开启的端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%98%B2%E7%81%AB%E5%A2%99%E5%B8%AE%E5%8A%A9"><span class="toc-number">1.2.17.</span> <span class="toc-text">查看防火墙帮助</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B-root-%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E7%9A%84IP%E5%8F%8A%E6%AC%A1%E6%95%B0"><span class="toc-number">1.2.18.</span> <span class="toc-text">查看 root 用户登录成功的IP及次数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B0%9D%E8%AF%95%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3-root-%E8%B4%A6%E6%88%B7%E7%9A%84IP%E5%8F%8A%E6%AC%A1%E6%95%B0"><span class="toc-number">1.2.19.</span> <span class="toc-text">查看尝试暴力破解 root 账户的IP及次数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B0%9D%E8%AF%95%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E7%94%A8%E6%88%B7%E5%90%8D%E7%9A%84IP%E5%8F%8A%E6%AC%A1%E6%95%B0"><span class="toc-number">1.2.20.</span> <span class="toc-text">查看尝试暴力破解用户名的IP及次数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E8%BD%AC%E8%BE%B9%E5%91%BD%E4%BB%A4%E8%A1%8C"><span class="toc-number">1.2.21.</span> <span class="toc-text">图像转边命令行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BD%AC%E5%8F%98%E5%9B%BE%E5%BD%A2"><span class="toc-number">1.2.22.</span> <span class="toc-text">命令行转变图形</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.2.23.</span> <span class="toc-text">添加环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0"><span class="toc-number">1.2.24.</span> <span class="toc-text">修改文件名称</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vim%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">vim操作</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/TestBlog/2025/04/22/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/dan-diao-zhan/" title="单调栈"><img src="/TestBlog/img/lkjdntub.webp" onerror="this.onerror=null;this.src='/TestBlog/img/404.jpg'" alt="单调栈"/></a><div class="content"><a class="title" href="/TestBlog/2025/04/22/learnnote/shu-ju-jie-gou-yu-suan-fa/suan-fa-mo-ban/dan-diao-zhan/" title="单调栈">单调栈</a><time datetime="2025-04-22T11:07:17.356Z" title="发表于 2025-04-22 19:07:17">2025-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/TestBlog/2025/04/22/learnnote/ren-gong-zhi-neng/sumo-yu-python-jiao-ben/" title="无标题"><img src="/TestBlog/img/89938429686470d440d6fea7fc9e7c81.webp" onerror="this.onerror=null;this.src='/TestBlog/img/404.jpg'" alt="无标题"/></a><div class="content"><a class="title" href="/TestBlog/2025/04/22/learnnote/ren-gong-zhi-neng/sumo-yu-python-jiao-ben/" title="无标题">无标题</a><time datetime="2025-04-22T11:07:17.320Z" title="发表于 2025-04-22 19:07:17">2025-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/TestBlog/2025/04/19/learnnote/sql-xue-xi/mysql-tong-shi-an-zhuang-duo-ge-ban-ben/" title="MySQL同时安装多个版本"><img src="/TestBlog/img/a69c2420022265dac5e17416ab7bdd12.webp" onerror="this.onerror=null;this.src='/TestBlog/img/404.jpg'" alt="MySQL同时安装多个版本"/></a><div class="content"><a class="title" href="/TestBlog/2025/04/19/learnnote/sql-xue-xi/mysql-tong-shi-an-zhuang-duo-ge-ban-ben/" title="MySQL同时安装多个版本">MySQL同时安装多个版本</a><time datetime="2025-04-19T06:30:35.000Z" title="发表于 2025-04-19 14:30:35">2025-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/TestBlog/2025/04/18/learnnote/java-xue-xi-bi-ji/zookeeper-xue-xi/" title="zookeeper学习"><img src="/TestBlog/img/fgjehd.webp" onerror="this.onerror=null;this.src='/TestBlog/img/404.jpg'" alt="zookeeper学习"/></a><div class="content"><a class="title" href="/TestBlog/2025/04/18/learnnote/java-xue-xi-bi-ji/zookeeper-xue-xi/" title="zookeeper学习">zookeeper学习</a><time datetime="2025-04-18T07:34:09.000Z" title="发表于 2025-04-18 15:34:09">2025-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/TestBlog/2025/04/18/learnnote/java-xue-xi-bi-ji/activemq-xue-xi/" title="ActiveMQ学习"><img src="/TestBlog/img/ruyhsadfk.webp" onerror="this.onerror=null;this.src='/TestBlog/img/404.jpg'" alt="ActiveMQ学习"/></a><div class="content"><a class="title" href="/TestBlog/2025/04/18/learnnote/java-xue-xi-bi-ji/activemq-xue-xi/" title="ActiveMQ学习">ActiveMQ学习</a><time datetime="2025-04-18T07:18:00.000Z" title="发表于 2025-04-18 15:18:00">2025-04-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 长白崎</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/TestBlog/js/utils.js?v=5.3.5"></script><script src="/TestBlog/js/main.js?v=5.3.5"></script><script src="/TestBlog/js/tw_cn.js?v=5.3.5"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css')
+    if (false) {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://vercel.changbaiqi.top',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: true,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.5.5/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client@3.5.5/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'waline-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = async (ele) => {
+    try {
+      const res = await fetch('https://vercel.changbaiqi.top/api/comment?type=recent&count=6')
+      const result = await res.json()
+      const walineArray = result.data.map(e => {
+        return {
+          'content': changeContent(e.comment),
+          'avatar': e.avatar,
+          'nick': e.nick,
+          'url': e.url + '#' + e.objectId,
+          'date': e.time || e.insertedAt
+        }
+      })
+      btf.saveToLocal.set(keyName, JSON.stringify(walineArray), 10/(60*24))
+      generateHtml(walineArray, ele)
+    } catch (err) {
+      console.error(err)
+      ele.textContent= "无法获取评论，请确认相关配置是否正确"
+    }
+  }
+
+  run(keyName, getComment)
+})</script><div class="aplayer no-destroy" data-id="9156303892" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/showAppreciation.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/click-show-text.min.js" data-mobile="true" data-text="爱国,公正,平等,富强,和谐,热爱,Ciallo～(∠・ω&lt; )⌒★" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: true,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false 
+        ? (usePjax ? pjax.loadUrl('/TestBlog/404.html') : window.location.href = '/TestBlog/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: true,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
