@@ -3,12 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 长白崎の个人博客
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 长白崎
+language: 
+  - zh-CN
+  - en
 timezone: ''
 
 # URL
@@ -29,7 +31,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: [_posts/**/README.md]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -103,9 +105,51 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Changbaiqi/changbaiqi.github.io.git
+  branch: main
+# deploy:
+#   type: git
+#   repo: https://gitee.com/Changbaiqi/Changbaiqi.git
+#   branch: main
+
+all_minifier: true
+
+# hexo-admin authentification
+admin:
+  username: root
+  password_hash: $2a$10$A6E7UMJC7qhIasicTSB9puTnEJIw5Wsa9kIOGxi9pXO3BTa/LqPwG
+  secret: my super secret phrase
+
+
 
 # 中文链接转拼音插件
 permalink_pinyin:
   enable: true # 启用插件
   separator: '-' # 分词符，将使用此符号分隔两个汉字间的拼音
+
+
+aplayer:
+  asset_inject: false
+  meting: true
+
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
+
+
+# offline config passed to sw-precache.
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+
+# 懒加载
+lazyload:
+  enable: true
+  onlypost: true
+  loadingImg: /images/loading2.gif
+  isSPA: true
+  preloadRatio: 3
