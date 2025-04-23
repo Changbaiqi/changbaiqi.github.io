@@ -15,8 +15,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blogs.changbaiqi.top/TestBlog/
-root: /TestBlog/
+url: http://blogs.changbaiqi.top
+root: 
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -57,6 +57,8 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
