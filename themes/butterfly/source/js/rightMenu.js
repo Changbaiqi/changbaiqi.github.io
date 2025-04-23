@@ -14,16 +14,17 @@ rmf.showRightMenu = function(isTrue, x=0, y=0){
 }
 
 // 昼夜切换
-rmf.switchDarkMode = function(){
-    saveToLocal.set('theme','dart',2)
+rmf.switchDarkMode = ()=>{
+    
     const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     if (nowMode === 'light') {
-        activateDarkMode()
+        activateDarkMode();
         saveToLocal.set('theme', 'dark', 2)
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
     } else {
         activateLightMode()
         saveToLocal.set('theme', 'light', 2)
+        localStorage.setItem('theme', 'light')
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
     }
     // handle some cases
@@ -33,7 +34,7 @@ rmf.switchDarkMode = function(){
 };
 
 // 阅读模式
-rmf.switchReadMode = function(){
+rmf.switchReadMode = ()=>{
     const $body = document.body
     $body.classList.add('read-mode')
     const newEle = document.createElement('button')
