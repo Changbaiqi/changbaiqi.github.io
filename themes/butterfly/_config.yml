@@ -1111,7 +1111,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://lf6-unpkg.zstaticcdn.com/${name}@${version}/${file}
 
   option:
     # abcjs_basic_js:
@@ -1119,7 +1119,7 @@ CDN:
     # algolia_js:
     # algolia_search:
     # aplayer_css:
-    # aplayer_js:
+    # aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
