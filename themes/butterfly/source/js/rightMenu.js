@@ -15,22 +15,16 @@ rmf.showRightMenu = function(isTrue, x=0, y=0){
 
 // 昼夜切换
 rmf.switchDarkMode = ()=>{
-    
-    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
-    if (nowMode === 'light') {
-        activateDarkMode();
-        saveToLocal.set('theme', 'dark', 2)
+    const willChangeMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+      if (willChangeMode === 'dark') {
+        btf.activateDarkMode()
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
-    } else {
-        activateLightMode()
-        saveToLocal.set('theme', 'light', 2)
-        localStorage.setItem('theme', 'light')
+      } else {
+        btf.activateLightMode()
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
-    }
-    // handle some cases
-    typeof utterancesTheme === 'function' && utterancesTheme()
-    typeof FB === 'object' && window.loadFBComment()
-    window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)
+      }
+      btf.saveToLocal.set('theme', willChangeMode, 2)
+      handleThemeChange(willChangeMode)
 };
 
 // 阅读模式
