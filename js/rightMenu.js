@@ -12,11 +12,12 @@ rm.showRightMenu = function (isTrue, x = 0, y = 0) {
 };
 let rmWidth = $('#rightMenu').width();
 let rmHeight = $('#rightMenu').height();
-rm.reloadrmSize = function () {
-    rmWidth = $("#rightMenu").width();
-    rmHeight = $("#rightMenu").height()
-};
-window.oncontextmenu = function (event) {
+rm.reloadrmSize = () => {
+    const $rightMenu = $("#rightMenu");
+    rmWidth = $rightMenu.outerWidth();
+    rmHeight = $rightMenu.outerHeight();
+  };
+  window.addEventListener("contextmenu", function (event) {
     if (document.body.clientWidth > 768) {
         let pageX = event.clientX + 10;	
         let pageY = event.clientY;
@@ -36,7 +37,8 @@ window.oncontextmenu = function (event) {
         $('#rightmenu-mask').attr('style', 'display: flex');
         return false;
     }
-};
+});
+
 function removeRightMenu() {
     rm.showRightMenu(false);
     $('#rightmenu-mask').attr('style', 'display: none');
@@ -44,15 +46,15 @@ function removeRightMenu() {
 function stopMaskScroll() {
     if (document.getElementById("rightmenu-mask")) {
         let xscroll = document.getElementById("rightmenu-mask");
-        xscroll.addEventListener("mousewheel", function (e) {
+        xscroll.addEventListener("wheel", function (e) {
             removeRightMenu();
-        }, false);
+        }, {passive: true});
     };
     if (document.getElementById("rightMenu")) {
         let xscroll = document.getElementById("rightMenu");
-        xscroll.addEventListener("mousewheel", function (e) {
+        xscroll.addEventListener("wheel", function (e) {
             removeRightMenu();
-        }, false);
+        }, {passive: true});
     }
 }
 /**
@@ -126,13 +128,21 @@ function translatePage() {
         currentEncoding = 1;
         targetEncoding = 2;
         saveToLocal.set(targetEncodingCookie, targetEncoding, 2);
-        translateBody();
+        try {
+            translateBody(obj);
+          } catch (e) {
+            console.warn('Translate error in node:', obj, e);
+        }
         if (isSnackbar) btf.snackbarShow(snackbarData.cht_to_chs);
     } else if (targetEncoding === 2) {
         currentEncoding = 2;
         targetEncoding = 1;
         saveToLocal.set(targetEncodingCookie, targetEncoding, 2);
-        translateBody();
+        try {
+            translateBody(obj);
+          } catch (e) {
+            console.warn('Translate error in node:', obj, e);
+        }
         if (isSnackbar) btf.snackbarShow(snackbarData.chs_to_cht);
     }
 }
