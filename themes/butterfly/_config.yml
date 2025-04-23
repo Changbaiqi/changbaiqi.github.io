@@ -1090,8 +1090,8 @@ inject:
     - <link rel="stylesheet" href="/css/rightMenu.css">
     - <link rel="stylesheet" href="/css/showAppreciation.css">
   bottom:
+    - <script src="https://cdn.staticfile.net/jquery/3.7.1/jquery.min.js"></script> # JQ库
     - <div class="aplayer no-destroy" data-id="9156303892" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
-    - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
     - <script defer data-pjax src="/js/rightMenu.js"></script>
     - <script src="/js/showAppreciation.js"></script>
     # - <script src="xxxx"></script>
