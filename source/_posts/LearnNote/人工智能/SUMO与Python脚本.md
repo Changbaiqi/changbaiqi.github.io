@@ -1,5 +1,12 @@
 ---
-
+title: ReLU函数
+date: 2025-02-11 14:04:36
+author: 长白崎
+categories:
+  - ["Python","SUMO"]
+tags:
+  - "SUMO"
+  - "Python"
 ---
 
 # SUMO与Python脚本
