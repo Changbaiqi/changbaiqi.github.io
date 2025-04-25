@@ -11,6 +11,7 @@ window.onload=(function(){
     const data = [
         { name: '我是张*锐',color: MCO['1'], money: '200.00', date: '2024/01/10'},
         { name: '我是张*锐',color: MCO['1'], money: '400.00', date: '2023/12/01'},
+        { name: '*闻',color: MCO['1'], money: '100.00', date: '2025/04/25'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2024/05/01'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/28'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/27'},
