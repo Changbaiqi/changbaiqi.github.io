@@ -874,10 +874,10 @@ hr_icon:
 # Typewriter Effect
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true
   shake: true
-  mobile: false
+  mobile: true
 
 # Background effects
 # --------------------------------------
