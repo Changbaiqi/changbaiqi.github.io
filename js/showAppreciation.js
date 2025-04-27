@@ -17,6 +17,7 @@ window.onload=(function(){
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/27'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/14'},
         { name: '我是张*锐',color: MCO['1'], money: '100.00', date: '2023/11/01'},
+        { name: '*遥',color: MCO['2'], money: '58.88', date: '2025/04/27'},
         { name: 'Venator',color: MCO['2'], money: '52.00', date: '2024/09/11'},
         { name: '*🐵',color: MCO['3'], money: '35.00', date: '2023/11/20'},
         { name: '加载中······',color: MCO['4'], money: '20.00', date: '2024/10/08'},
