@@ -22,7 +22,7 @@ tags:
 ## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上
 vue --version
 ## 安装或者升级你的@vue/cli
-np m install -g @vue/cli
+npm install -g @vue/cli
 ## 创建
 vue create vue_test
 ## 启动

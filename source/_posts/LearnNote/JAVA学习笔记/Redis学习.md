@@ -24,12 +24,16 @@ tags:
 wget https://download.redis.io/releases/redis-7.2.0.tar.gz
 ```
 
+如果没有wget指令那么使用以下指令下载wget（centos系统）
 
+```shell
+sudo yum install -y wget
+```
 
 解压文件
 
 ```shell
- tar -zxvf redis-7.2.0.tar.gz
+tar -zxvf redis-7.2.0.tar.gz
 ```
 
 进入redis安装目录
