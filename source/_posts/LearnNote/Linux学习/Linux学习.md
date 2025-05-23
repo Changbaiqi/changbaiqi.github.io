@@ -264,7 +264,7 @@ tags:
 ### 开放指定端口
 
 > ```shell
-> firewall-cmd –permanent –add-port=8080/tcp
+> firewall-cmd --zone=public --add-port=8080/tcp --permanent
 > ```
 >
 > 以上例子为开放端口8080
@@ -273,6 +273,9 @@ tags:
 >
 > 参数解释：
 > firewall-cmd: 是Linux提供的操作firewall的一个工具；
+>
+> --zone=public: 指定作用域为公共区域;
+>
 > –permanent：表示设置为持久；
 > –add-port：表示添加的端口。
 
